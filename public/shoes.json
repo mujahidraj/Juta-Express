@@ -154,7 +154,7 @@
     "cod_available": true,
     "warranty": "1 Year",
     "quantity_available": 500,
-    "is_best_seller": true,
+    "is_best_seller": false,
     "is_new_arrival": false,
     "is_trending": false,
     "is_featured": false
@@ -207,7 +207,7 @@
     "cod_available": true,
     "warranty": "None",
     "quantity_available": 300,
-    "is_best_seller": true,
+    "is_best_seller": false,
     "is_new_arrival": false,
     "is_trending": true,
     "is_featured": false

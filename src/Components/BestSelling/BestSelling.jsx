@@ -5,8 +5,13 @@ import BestSellingCard from "../BestSellingCard/BestSellingCard";
 const BestSelling = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
-
   // 1. Handle Responsiveness (Update items to show based on screen width)
+  const newData = data.filter(items=> items.is_best_seller===true)
+  
+
+  console.log(newData);
+  
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
@@ -23,11 +28,13 @@ const BestSelling = ({ data }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+   
+
   // 2. Next Slide Logic
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
       // If we are at the end, loop back to the start (0)
-      if (prevIndex >= data.length - itemsToShow) return 0;
+      if (prevIndex >= newData.length - itemsToShow) return 0;
       return prevIndex + 1;
     });
   };
@@ -36,7 +43,7 @@ const BestSelling = ({ data }) => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => {
       // If we are at the start, go to the very end
-      if (prevIndex === 0) return data.length - itemsToShow;
+      if (prevIndex === 0) return newData.length - itemsToShow;
       return prevIndex - 1;
     });
   };
@@ -50,10 +57,10 @@ const BestSelling = ({ data }) => {
     // Cleanup interval on unmount or when user interacts
     return () => clearInterval(interval);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentIndex, itemsToShow, data.length]);
+  }, [currentIndex, itemsToShow, newData.length]);
 
-  // Safety check if data is missing
-  if (!data || data.length === 0) return null;
+  // Safety check if newData is missing
+  if (!newData || newData.length === 0) return null;
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
@@ -80,15 +87,9 @@ const BestSelling = ({ data }) => {
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}
           >
-            {data.map((item, index) => (
-              <div 
-                key={item.product_id || index} 
-                className="shrink-0 px-2 box-border"
-                style={{ width: `${100 / itemsToShow}%` }}
-              >
-                {/* Pass the item to your existing card component */}
-                <BestSellingCard items={item} />
-              </div>
+            {newData.map((item) => (
+              <div key={item.product_id} className="shrink-0 px-2 box-border" style={{ width: `${100 / itemsToShow}%` }}
+              > <BestSellingCard items={item} /> </div> 
             ))}
           </div>
         </div>
@@ -106,7 +107,7 @@ const BestSelling = ({ data }) => {
       {/* Optional: Dots Indicator */}
       <div className="flex justify-center mt-6 gap-2">
          {/* Only show a dot for every possible 'page' or simple group */}
-         {Array.from({ length: Math.ceil(data.length - itemsToShow + 1) }).map((_, idx) => (
+         {Array.from({ length: Math.ceil(newData.length - itemsToShow + 1) }).map((_, idx) => (
            <button
              key={idx}
              onClick={() => setCurrentIndex(idx)}
