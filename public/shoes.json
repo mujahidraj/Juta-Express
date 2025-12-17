@@ -530,7 +530,7 @@
       "discounted": 110.00,
       "currency": "USD"
     },
-    "available_sizes": ["EU 36", "EU 37", "EU 38", "EU 39", "EU 40", "EU 41", "EU 42"],
+    "available_sizes": [ "EU 39", "EU 40", "EU 41", "EU 42"],
     "available_colors": ["Mocha", "Black", "Stone"],
     "stock_status": "In Stock",
     "sku": "BK-AZ-011",

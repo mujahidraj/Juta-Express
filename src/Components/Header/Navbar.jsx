@@ -41,7 +41,7 @@ const Navbar = () => {
           <li className='text-base font-semibold'><NavLink>Home</NavLink></li>
           <li className='text-base font-semibold'><NavLink>New Arrivals</NavLink></li>
           <li className='text-base font-semibold'><NavLink>Best Selling</NavLink></li>
-          <li className='text-base font-semibold'><NavLink>Trending</NavLink></li>
+          <li className='text-base font-semibold'><NavLink>Category</NavLink></li>
 
         </ul>
       </div>

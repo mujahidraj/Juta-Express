@@ -5,7 +5,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
-    errorElement : <></>
+    errorElement : <></>,
+    loader : ()=>fetch('shoes.json'),
+    hydrateFallbackElement : <span className="loading loading-bars loading-xl"></span>
+
   },
   
 ]);

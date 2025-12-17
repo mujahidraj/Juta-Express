@@ -1,11 +1,21 @@
-import React from 'react';
 import Navbar from '../../Components/Header/Navbar';
 import Hero from '../../Components/Header/Hero';
+import BestSelling from '../../Components/BestSelling/BestSelling';
+import { Children, createContext } from 'react';
+import { useLoaderData } from 'react-router';
+
+const DataContext = createContext()
 
 const HomeLayout = () => {
+
+  const data = useLoaderData()
+
+  
+
+
   return (
     <div>
-      <header className='sticky top-0 left-0 right-0 '>
+      <header className='sticky top-0 z-1000 left-0 right-0 '>
         <section className=''>
           <Navbar></Navbar>
         </section>
@@ -14,6 +24,9 @@ const HomeLayout = () => {
         <section className='hero mx-auto'>
           <Hero></Hero>
         </section>
+          <section className='w-11/12 mx-auto my-10'>
+            <BestSelling data={data}></BestSelling>
+          </section>
       </main>
       <footer></footer>
     </div>
