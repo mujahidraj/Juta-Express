@@ -12,14 +12,13 @@ const Hero = () => {
           <Player
           autoplay
           loop
-          src="https://lottie.host/8740ae73-12df-467d-b878-727fe8a04dab/YmrEhnwj2C.json" className='md:h-125 md:w-125 h-70 w-70'
+          src="https://lottie.host/8808d876-22d6-4b3c-af56-ab903c0be43d/kaV1Tt5G42.json" className='md:h-125 md:w-125 h-70 w-70'
         >
         </Player>
         <div className='md:px-20 py-5 px-3'>
-          <h1 className="md:text-5xl text-xl font-bold">Meet you desire with Juta Express!</h1>
-          <p className="md:py-6 py-2">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          <h1 className="md:text-5xl text-xl font-bold">Step up your style with exclusive footwear</h1>
+          <p className="md:py-6 text-lg py-2">
+           Exclusive footwear | Delivery All Over Bangladesh | WhatsApp/Call: <span className='font-bold'>+8801796059406</span> | Contact us to Order | Email: <span className='font-bold'>jutaexpress@gmail.com</span>
           </p>
           
         </div>
