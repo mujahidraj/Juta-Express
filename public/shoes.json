@@ -1,0 +1,2222 @@
+[
+  {
+    "product_id": "SHOE-001",
+    "product_name": "Nike Air Zoom Pegasus 39",
+    "brand_name": "Nike",
+    "category": ["Men", "Sports", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-video-link",
+    "price": {
+      "regular": 130.00,
+      "discounted": 110.50,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Red", "Black", "White"],
+    "stock_status": "In Stock",
+    "sku": "NK-AZP39-001",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Engineered Mesh",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "260g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold, air dry",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 2 get 10% off"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "John D.",
+        "text": "Best running shoes I've ever owned. Very bouncy.",
+        "date": "2023-10-15",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year Manufacturer Warranty",
+    "quantity_available": 150
+  },
+  {
+    "product_id": "SHOE-002",
+    "product_name": "Adidas Ultraboost Light",
+    "brand_name": "Adidas",
+    "category": ["Women", "Sports", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "",
+    "price": {
+      "regular": 190.00,
+      "discounted": 180.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8"],
+    "available_colors": ["Cloud White", "Core Black"],
+    "stock_status": "Low Stock",
+    "sku": "AD-UB-002",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Primeknit+ Textile",
+      "sole": "Continental Rubber",
+      "lining": "Synthetic"
+    },
+    "weight": "240g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe clean only",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Sarah L.",
+        "text": "Incredibly light, but runs a bit tight.",
+        "date": "2023-11-01",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": false,
+    "warranty": "6 Months",
+    "quantity_available": 12
+  },
+  {
+    "product_id": "SHOE-003",
+    "product_name": "Timberland Premium 6-Inch Boot",
+    "brand_name": "Timberland",
+    "category": ["Men", "Boot", "Leather", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 198.00,
+      "discounted": 198.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Wheat", "Black"],
+    "stock_status": "In Stock",
+    "sku": "TB-10061-003",
+    "shoe_type": "Boot",
+    "material": {
+      "upper": "Nubuck Leather",
+      "sole": "Rubber Lug",
+      "lining": "PrimaLoft Insulation"
+    },
+    "weight": "800g",
+    "heel_type": "Block Heel",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Dominican Republic",
+    "care_instructions": "Use leather cleaner",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down 1 full size",
+    "bundle_offers": ["Free cleaning kit"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      {
+        "user": "Mike R.",
+        "text": "Classic boots. They last forever.",
+        "date": "2023-09-20",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 500
+  },
+  {
+    "product_id": "SHOE-004",
+    "product_name": "Vans Old Skool",
+    "brand_name": "Vans",
+    "category": ["Men", "Women", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 70.00,
+      "discounted": 65.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 4", "US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Black/White", "Checkerboard", "Navy"],
+    "stock_status": "In Stock",
+    "sku": "VN-OS-004",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Canvas/Suede",
+      "sole": "Waffle Rubber",
+      "lining": "Canvas"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Hand wash only",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 2 pairs for $120"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "Alex T.",
+        "text": "Great everyday shoe, goes with everything.",
+        "date": "2023-12-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 300
+  },
+  {
+    "product_id": "SHOE-005",
+    "product_name": "Jimmy Choo Romy 85",
+    "brand_name": "Jimmy Choo",
+    "category": ["Women", "High Heels", "Formal", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 750.00,
+      "discounted": 750.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 36", "EU 37", "EU 38", "EU 39"],
+    "available_colors": ["Black", "Nude", "Glitter"],
+    "stock_status": "Low Stock",
+    "sku": "JC-R85-005",
+    "shoe_type": "Pump",
+    "material": {
+      "upper": "Patent Leather",
+      "sole": "Leather",
+      "lining": "Leather"
+    },
+    "weight": "200g",
+    "heel_type": "Stiletto",
+    "closure_type": "Slip-on",
+    "country_of_origin": "Italy",
+    "care_instructions": "Professional cleaning only",
+    "size_system": "EU",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "Size up for wide feet",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Emily P.",
+        "text": "Stunning shoes, perfect for weddings.",
+        "date": "2023-08-14",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "1-2 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "2 Years",
+    "quantity_available": 15
+  },
+  {
+    "product_id": "SHOE-006",
+    "product_name": "Converse Chuck Taylor All Star",
+    "brand_name": "Converse",
+    "category": ["Men", "Women", "Casual", "High Neck", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 65.00,
+      "discounted": 60.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 4", "US 5", "US 6", "US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["White", "Black", "Red"],
+    "stock_status": "In Stock",
+    "sku": "CV-CTAS-006",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Canvas",
+      "sole": "Rubber",
+      "lining": "Canvas"
+    },
+    "weight": "350g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "India",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Runs large, size down 0.5",
+    "bundle_offers": ["Student Discount"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 1000
+  },
+  {
+    "product_id": "SHOE-007",
+    "product_name": "Clarks Desert Boot",
+    "brand_name": "Clarks",
+    "category": ["Men", "Boot", "Formal", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1614252369475-531f39165f78?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 150.00,
+      "discounted": 120.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Beeswax", "Sand Suede"],
+    "stock_status": "In Stock",
+    "sku": "CL-DB-007",
+    "shoe_type": "Chukka Boot",
+    "material": {
+      "upper": "Suede/Leather",
+      "sole": "Crepe",
+      "lining": "Leather"
+    },
+    "weight": "450g",
+    "heel_type": "Low Block",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Use suede brush",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      {
+        "user": "David K.",
+        "text": "Very comfortable once broken in.",
+        "date": "2023-11-20",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "6 Months",
+    "quantity_available": 60
+  },
+  {
+    "product_id": "SHOE-008",
+    "product_name": "Crocs Classic Clog",
+    "brand_name": "Crocs",
+    "category": ["Men", "Women", "Kids", "Sandal", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 50.00,
+      "discounted": 45.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 4", "US 5", "US 6", "US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Black", "White", "Pink", "Green", "Blue"],
+    "stock_status": "In Stock",
+    "sku": "CR-CC-008",
+    "shoe_type": "Clog",
+    "material": {
+      "upper": "Croslite",
+      "sole": "Croslite",
+      "lining": "Unlined"
+    },
+    "weight": "150g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on (Strap)",
+    "country_of_origin": "China",
+    "care_instructions": "Wash with soap and water",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down if half size",
+    "bundle_offers": ["Buy 3 Jibbitz for $10"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "MomOf3",
+        "text": "Kids love them, indestructible.",
+        "date": "2023-07-05",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-3 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "90 Days",
+    "quantity_available": 800
+  },
+  {
+    "product_id": "SHOE-009",
+    "product_name": "Salomon Speedcross 5",
+    "brand_name": "Salomon",
+    "category": ["Men", "Sports", "Hiking", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1605348532760-6753d2c43329?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 140.00,
+      "discounted": 140.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Black/Black", "Grape/Red"],
+    "stock_status": "Low Stock",
+    "sku": "SL-SC5-009",
+    "shoe_type": "Trail Running",
+    "material": {
+      "upper": "Anti-debris Mesh",
+      "sole": "Contagrip TA",
+      "lining": "Textile"
+    },
+    "weight": "320g",
+    "heel_type": "Flat",
+    "closure_type": "Quicklace",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Rinse with water",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "2 Years",
+    "quantity_available": 25
+  },
+  {
+    "product_id": "SHOE-010",
+    "product_name": "Dr. Martens 1460",
+    "brand_name": "Dr. Martens",
+    "category": ["Men", "Women", "Boot", "Leather", "Casual", "High Neck"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 170.00,
+      "discounted": 150.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Black Smooth", "Cherry Red"],
+    "stock_status": "In Stock",
+    "sku": "DM-1460-010",
+    "shoe_type": "Combat Boot",
+    "material": {
+      "upper": "Leather",
+      "sole": "AirWair Rubber",
+      "lining": "Leather/Textile"
+    },
+    "weight": "700g",
+    "heel_type": "Block Heel",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Thailand",
+    "care_instructions": "Apply Wonder Balsam",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Runs large, size down",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "PunkRocker",
+        "text": "Painful to break in, but worth it.",
+        "date": "2023-05-12",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 120
+  },
+  {
+    "product_id": "SHOE-011",
+    "product_name": "Birkenstock Arizona",
+    "brand_name": "Birkenstock",
+    "category": ["Men", "Women", "Sandal", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1630595539567-5c20253457a4?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 110.00,
+      "discounted": 110.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 36", "EU 37", "EU 38", "EU 39", "EU 40", "EU 41", "EU 42"],
+    "available_colors": ["Mocha", "Black", "Stone"],
+    "stock_status": "In Stock",
+    "sku": "BK-AZ-011",
+    "shoe_type": "Sandal",
+    "material": {
+      "upper": "Birko-Flor/Suede",
+      "sole": "EVA",
+      "lining": "Cork"
+    },
+    "weight": "250g",
+    "heel_type": "Flat",
+    "closure_type": "Buckle",
+    "country_of_origin": "Germany",
+    "care_instructions": "Avoid extreme heat",
+    "size_system": "EU",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": false,
+    "warranty": "1 Year",
+    "quantity_available": 200
+  },
+  {
+    "product_id": "SHOE-012",
+    "product_name": "Asics Gel-Kayano 29",
+    "brand_name": "Asics",
+    "category": ["Men", "Sports", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 160.00,
+      "discounted": 130.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Blue/Orange", "Black/Silver"],
+    "stock_status": "Out of Stock",
+    "sku": "AS-GK29-012",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Mesh",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "300g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 0
+  },
+  {
+    "product_id": "SHOE-013",
+    "product_name": "Hunter Original Tall Rain Boot",
+    "brand_name": "Hunter",
+    "category": ["Women", "Rain Boot", "High Neck", "Boot"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 160.00,
+      "discounted": 145.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Hunter Green", "Black", "Red"],
+    "stock_status": "In Stock",
+    "sku": "HN-OT-013",
+    "shoe_type": "Wellington",
+    "material": {
+      "upper": "Vulcanized Rubber",
+      "sole": "Rubber",
+      "lining": "Polyester"
+    },
+    "weight": "900g",
+    "heel_type": "Low Block",
+    "closure_type": "Slip-on",
+    "country_of_origin": "UK",
+    "care_instructions": "Use Hunter Buffer",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.4,
+    "customer_reviews": [
+      {
+        "user": "RainyDay",
+        "text": "Keeps feet dry but calf area is tight.",
+        "date": "2023-04-10",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "2 Years",
+    "quantity_available": 60
+  },
+  {
+    "product_id": "SHOE-014",
+    "product_name": "New Balance 574 Core",
+    "brand_name": "New Balance",
+    "category": ["Men", "Casual", "Sneaker", "Sports"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 85.00,
+      "discounted": 85.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Grey", "Navy", "Black"],
+    "stock_status": "In Stock",
+    "sku": "NB-574-014",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Suede/Mesh",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "310g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Indonesia",
+    "care_instructions": "Spot clean only",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 350
+  },
+  {
+    "product_id": "SHOE-015",
+    "product_name": "Gucci Ace Sneaker",
+    "brand_name": "Gucci",
+    "category": ["Men", "Women", "Casual", "Leather", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 790.00,
+      "discounted": 790.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 38", "EU 39", "EU 40", "EU 41", "EU 42"],
+    "available_colors": ["White/Green/Red"],
+    "stock_status": "Low Stock",
+    "sku": "GC-ACE-015",
+    "shoe_type": "Luxury Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber",
+      "lining": "Leather"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Italy",
+    "care_instructions": "Professional clean",
+    "size_system": "EU",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Size down 1 size",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "1-3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "2 Years",
+    "quantity_available": 8
+  },
+  {
+    "product_id": "SHOE-016",
+    "product_name": "Skechers Go Walk Joy",
+    "brand_name": "Skechers",
+    "category": ["Women", "Walking", "Casual", "Slip-on"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 60.00,
+      "discounted": 45.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Black", "Taupe"],
+    "stock_status": "In Stock",
+    "sku": "SK-GWJ-016",
+    "shoe_type": "Walking Shoe",
+    "material": {
+      "upper": "Mesh",
+      "sole": "Synthetic",
+      "lining": "Fabric"
+    },
+    "weight": "180g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on",
+    "country_of_origin": "China",
+    "care_instructions": "Machine washable",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "NurseMary",
+        "text": "Best for 12 hour shifts.",
+        "date": "2023-10-02",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "3 Months",
+    "quantity_available": 200
+  },
+  {
+    "product_id": "SHOE-017",
+    "product_name": "Caterpillar Second Shift Steel Toe",
+    "brand_name": "Caterpillar",
+    "category": ["Men", "Safety Shoe", "Boot", "Leather", "High Neck"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1542838686-37da4a9fd1b3?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 115.00,
+      "discounted": 105.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12", "US 13"],
+    "available_colors": ["Honey", "Dark Brown"],
+    "stock_status": "In Stock",
+    "sku": "CAT-SS-017",
+    "shoe_type": "Work Boot",
+    "material": {
+      "upper": "Full Grain Leather",
+      "sole": "Rubber",
+      "lining": "Nylon Mesh"
+    },
+    "weight": "1100g",
+    "heel_type": "Block Heel",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Bangladesh",
+    "care_instructions": "Oil leather regularly",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "6 Months",
+    "quantity_available": 100
+  },
+  {
+    "product_id": "SHOE-018",
+    "product_name": "Christian Louboutin So Kate",
+    "brand_name": "Christian Louboutin",
+    "category": ["Women", "High Heels", "Formal", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1588117260148-447885091843?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 795.00,
+      "discounted": 795.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 37", "EU 38", "EU 39"],
+    "available_colors": ["Black", "Red", "Nude"],
+    "stock_status": "In Stock",
+    "sku": "CL-SK-018",
+    "shoe_type": "Stiletto",
+    "material": {
+      "upper": "Patent Leather",
+      "sole": "Leather (Red)",
+      "lining": "Leather"
+    },
+    "weight": "190g",
+    "heel_type": "High Heel (120mm)",
+    "closure_type": "Slip-on",
+    "country_of_origin": "Italy",
+    "care_instructions": "Protect red sole",
+    "size_system": "EU",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "Size up 0.5 to 1 size",
+    "bundle_offers": [],
+    "customer_ratings": 4.3,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year",
+    "quantity_available": 10
+  },
+  {
+    "product_id": "SHOE-019",
+    "product_name": "Under Armour Curry Flow 9",
+    "brand_name": "Under Armour",
+    "category": ["Men", "Sports", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1579338559194-a162d841790d?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 160.00,
+      "discounted": 140.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Blue/Yellow", "Black/White"],
+    "stock_status": "In Stock",
+    "sku": "UA-CF9-019",
+    "shoe_type": "Basketball",
+    "material": {
+      "upper": "UA Warp",
+      "sole": "UA Flow",
+      "lining": "Textile"
+    },
+    "weight": "340g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Air dry",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 75
+  },
+  {
+    "product_id": "SHOE-020",
+    "product_name": "Reebok Club C 85",
+    "brand_name": "Reebok",
+    "category": ["Women", "Casual", "Sneaker", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 75.00,
+      "discounted": 65.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["White", "Vintage Cream"],
+    "stock_status": "In Stock",
+    "sku": "RB-CC85-020",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Soft Leather",
+      "sole": "Rubber",
+      "lining": "Terry Cloth"
+    },
+    "weight": "330g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 200
+  },
+  {
+    "product_id": "SHOE-021",
+    "product_name": "Keen Newport H2",
+    "brand_name": "Keen",
+    "category": ["Men", "Sandal", "Sports", "Hiking"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 110.00,
+      "discounted": 95.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Navy", "Black", "Brown"],
+    "stock_status": "In Stock",
+    "sku": "KN-NH2-021",
+    "shoe_type": "Water Sandal",
+    "material": {
+      "upper": "Polyester Webbing",
+      "sole": "Rubber",
+      "lining": "Hydrophobic Mesh"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Bungee Lace",
+    "country_of_origin": "China",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 90
+  },
+  {
+    "product_id": "SHOE-022",
+    "product_name": "Steve Madden Carrson",
+    "brand_name": "Steve Madden",
+    "category": ["Women", "High Heels", "Sandal", "Formal"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 99.00,
+      "discounted": 69.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Black Suede", "Tan"],
+    "stock_status": "In Stock",
+    "sku": "SM-CAR-022",
+    "shoe_type": "Block Heel Sandal",
+    "material": {
+      "upper": "Suede",
+      "sole": "Man-made",
+      "lining": "Synthetic"
+    },
+    "weight": "250g",
+    "heel_type": "Block Heel (4 inch)",
+    "closure_type": "Buckle",
+    "country_of_origin": "China",
+    "care_instructions": "Avoid water",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 140
+  },
+  {
+    "product_id": "SHOE-023",
+    "product_name": "Nike Air Force 1 '07",
+    "brand_name": "Nike",
+    "category": ["Men", "Women", "Casual", "Sneaker", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 110.00,
+      "discounted": 110.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12", "US 13"],
+    "available_colors": ["White", "Black"],
+    "stock_status": "Low Stock",
+    "sku": "NK-AF1-023",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "450g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      {
+        "user": "SneakerHead",
+        "text": "The classic. Can't go wrong.",
+        "date": "2023-11-10",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 40
+  },
+  {
+    "product_id": "SHOE-024",
+    "product_name": "UGG Classic Short II",
+    "brand_name": "UGG",
+    "category": ["Women", "Boot", "Winter", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1618585675438-e4b2d398679b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 170.00,
+      "discounted": 150.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Chestnut", "Black", "Grey"],
+    "stock_status": "In Stock",
+    "sku": "UG-CS2-024",
+    "shoe_type": "Winter Boot",
+    "material": {
+      "upper": "Twinface Sheepskin",
+      "sole": "Treadlite by UGG",
+      "lining": "Sheepskin"
+    },
+    "weight": "350g",
+    "heel_type": "Flat",
+    "closure_type": "Pull-on",
+    "country_of_origin": "China",
+    "care_instructions": "Dry clean only",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Free care kit"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 300
+  },
+  {
+    "product_id": "SHOE-025",
+    "product_name": "Balenciaga Triple S",
+    "brand_name": "Balenciaga",
+    "category": ["Men", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1597401309836-3914979d300e?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 1100.00,
+      "discounted": 1100.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 40", "EU 41", "EU 42", "EU 43"],
+    "available_colors": ["Grey/White", "Black"],
+    "stock_status": "Low Stock",
+    "sku": "BL-TS-025",
+    "shoe_type": "Chunky Sneaker",
+    "material": {
+      "upper": "Mesh/Nubuck",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "850g",
+    "heel_type": "Platform",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe with soft cloth",
+    "size_system": "EU",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down 1 size",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "1-2 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "2 Years",
+    "quantity_available": 5
+  },
+  {
+    "product_id": "SHOE-026",
+    "product_name": "Brooks Ghost 15",
+    "brand_name": "Brooks",
+    "category": ["Women", "Sports", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 140.00,
+      "discounted": 140.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Black/Pink", "Grey/Blue"],
+    "stock_status": "In Stock",
+    "sku": "BR-G15-026",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Engineered Air Mesh",
+      "sole": "Rubber",
+      "lining": "Fabric"
+    },
+    "weight": "250g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "90 Days",
+    "quantity_available": 100
+  },
+  {
+    "product_id": "SHOE-027",
+    "product_name": "Havaianas Top Sandal",
+    "brand_name": "Havaianas",
+    "category": ["Men", "Women", "Sandal", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 18.00,
+      "discounted": 15.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["BR 37/38", "BR 39/40", "BR 41/42"],
+    "available_colors": ["Black", "Blue", "White"],
+    "stock_status": "In Stock",
+    "sku": "HV-TOP-027",
+    "shoe_type": "Flip Flop",
+    "material": {
+      "upper": "Rubber",
+      "sole": "Rubber",
+      "lining": "Unlined"
+    },
+    "weight": "100g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on",
+    "country_of_origin": "Brazil",
+    "care_instructions": "Wash with water",
+    "size_system": "BR",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 3 for $40"],
+    "customer_ratings": 4.5,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 1000
+  },
+  {
+    "product_id": "SHOE-028",
+    "product_name": "Allen Edmonds Park Avenue",
+    "brand_name": "Allen Edmonds",
+    "category": ["Men", "Formal", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 395.00,
+      "discounted": 395.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Black", "Walnut"],
+    "stock_status": "In Stock",
+    "sku": "AE-PA-028",
+    "shoe_type": "Oxford",
+    "material": {
+      "upper": "Calfskin Leather",
+      "sole": "Leather",
+      "lining": "Leather"
+    },
+    "weight": "450g",
+    "heel_type": "Block Heel",
+    "closure_type": "Lace-up",
+    "country_of_origin": "USA",
+    "care_instructions": "Polish regularly",
+    "size_system": "US",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Recrafting Avail",
+    "quantity_available": 50
+  },
+  {
+    "product_id": "SHOE-029",
+    "product_name": "Puma Suede Classic",
+    "brand_name": "Puma",
+    "category": ["Men", "Women", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 70.00,
+      "discounted": 55.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Red/White", "Black/White"],
+    "stock_status": "In Stock",
+    "sku": "PM-SC-029",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Suede",
+      "sole": "Rubber",
+      "lining": "Synthetic"
+    },
+    "weight": "380g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Indonesia",
+    "care_instructions": "Suede cleaner",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 180
+  },
+  {
+    "product_id": "SHOE-030",
+    "product_name": "Teva Original Universal",
+    "brand_name": "Teva",
+    "category": ["Women", "Men", "Sandal", "Casual"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 55.00,
+      "discounted": 55.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Geometric", "Black"],
+    "stock_status": "In Stock",
+    "sku": "TV-OU-030",
+    "shoe_type": "Sandal",
+    "material": {
+      "upper": "Polyester Webbing",
+      "sole": "Rubber",
+      "lining": "Unlined"
+    },
+    "weight": "200g",
+    "heel_type": "Flat",
+    "closure_type": "Velcro",
+    "country_of_origin": "China",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 250
+  },
+  {
+    "product_id": "SHOE-031",
+    "product_name": "Cole Haan Zerogrand Wingtip",
+    "brand_name": "Cole Haan",
+    "category": ["Men", "Formal", "Casual", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1620891549027-9426c9536f66?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 180.00,
+      "discounted": 120.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["British Tan", "Black"],
+    "stock_status": "In Stock",
+    "sku": "CH-ZG-031",
+    "shoe_type": "Oxford Sneaker",
+    "material": {
+      "upper": "Leather/Knit",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "280g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 110
+  },
+  {
+    "product_id": "SHOE-032",
+    "product_name": "Nike Jordan 1 Mid",
+    "brand_name": "Nike",
+    "category": ["Men", "Casual", "Sneaker", "Sports", "High Neck"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1615125997645-8f6424df6c5b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 125.00,
+      "discounted": 125.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Chicago", "Bred", "Royal"],
+    "stock_status": "Out of Stock",
+    "sku": "NK-J1M-032",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "420g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 0
+  },
+  {
+    "product_id": "SHOE-033",
+    "product_name": "Fila Disruptor II",
+    "brand_name": "Fila",
+    "category": ["Women", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1550399564-968560341793?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 65.00,
+      "discounted": 50.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8"],
+    "available_colors": ["White", "Pink"],
+    "stock_status": "In Stock",
+    "sku": "FL-D2-033",
+    "shoe_type": "Chunky Sneaker",
+    "material": {
+      "upper": "Synthetic Leather",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "400g",
+    "heel_type": "Platform",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.2,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "3 Months",
+    "quantity_available": 80
+  },
+  {
+    "product_id": "SHOE-034",
+    "product_name": "Adidas Stan Smith",
+    "brand_name": "Adidas",
+    "category": ["Men", "Women", "Casual", "Sneaker", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1588361861040-ac9b1018f6d5?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 100.00,
+      "discounted": 85.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["White/Green", "White/Navy"],
+    "stock_status": "In Stock",
+    "sku": "AD-SS-034",
+    "shoe_type": "Tennis Sneaker",
+    "material": {
+      "upper": "Synthetic (Recycled)",
+      "sole": "Rubber",
+      "lining": "Synthetic"
+    },
+    "weight": "350g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "India",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "6 Months",
+    "quantity_available": 150
+  },
+  {
+    "product_id": "SHOE-035",
+    "product_name": "Red Wing Iron Ranger",
+    "brand_name": "Red Wing",
+    "category": ["Men", "Boot", "Leather", "Casual", "High Neck"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1612019924231-18e470876d7f?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 350.00,
+      "discounted": 350.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Amber Harness", "Black Harness"],
+    "stock_status": "Low Stock",
+    "sku": "RW-IR-035",
+    "shoe_type": "Heritage Boot",
+    "material": {
+      "upper": "Full Grain Leather",
+      "sole": "Vibram 430 Mini-lug",
+      "lining": "Leather"
+    },
+    "weight": "850g",
+    "heel_type": "Block Heel",
+    "closure_type": "Lace-up",
+    "country_of_origin": "USA",
+    "care_instructions": "Oil leather annually",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down 0.5 to 1 size",
+    "bundle_offers": ["Free socks"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Recraftable",
+    "quantity_available": 20
+  },
+  {
+    "product_id": "SHOE-036",
+    "product_name": "Hoka Clifton 9",
+    "brand_name": "Hoka",
+    "category": ["Men", "Running", "Sports"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1590558133529-67d1d2932230?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 145.00,
+      "discounted": 145.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Orange", "Blue"],
+    "stock_status": "In Stock",
+    "sku": "HK-C9-036",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Knit",
+      "sole": "EVA Foam",
+      "lining": "Textile"
+    },
+    "weight": "250g",
+    "heel_type": "Max Cushion",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Air dry only",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 100
+  },
+  {
+    "product_id": "SHOE-037",
+    "product_name": "Yeezy Boost 350 V2",
+    "brand_name": "Adidas",
+    "category": ["Men", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1598460613867-a06803738914?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 230.00,
+      "discounted": 230.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Zebra", "Onyx"],
+    "stock_status": "Out of Stock",
+    "sku": "AD-YZ-037",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Primeknit",
+      "sole": "Boost",
+      "lining": "Synthetic"
+    },
+    "weight": "300g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-10 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": false,
+    "warranty": "None",
+    "quantity_available": 0
+  },
+  {
+    "product_id": "SHOE-038",
+    "product_name": "Toms Alpargata",
+    "brand_name": "Toms",
+    "category": ["Women", "Casual", "Slip-on"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1506824967341-d1f86801878d?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 50.00,
+      "discounted": 40.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8"],
+    "available_colors": ["Red Canvas", "Black Canvas"],
+    "stock_status": "In Stock",
+    "sku": "TM-AL-038",
+    "shoe_type": "Slip-on",
+    "material": {
+      "upper": "Canvas",
+      "sole": "Rubber/Fiber",
+      "lining": "Cotton"
+    },
+    "weight": "150g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on",
+    "country_of_origin": "China",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "True to size, stretches",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 160
+  },
+  {
+    "product_id": "SHOE-039",
+    "product_name": "Onitsuka Tiger Mexico 66",
+    "brand_name": "Onitsuka Tiger",
+    "category": ["Men", "Women", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1592965451991-c9779df3dfd0?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 100.00,
+      "discounted": 90.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Yellow/Black", "White/Blue"],
+    "stock_status": "In Stock",
+    "sku": "OT-M66-039",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "280g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Indonesia",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 90
+  },
+  {
+    "product_id": "SHOE-040",
+    "product_name": "Merrell Moab 3",
+    "brand_name": "Merrell",
+    "category": ["Men", "Hiking", "Sports", "Boot"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1533031022906-8d197626707a?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 120.00,
+      "discounted": 110.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Walnut", "Granite"],
+    "stock_status": "In Stock",
+    "sku": "MR-M3-040",
+    "shoe_type": "Hiking Shoe",
+    "material": {
+      "upper": "Pig Suede/Mesh",
+      "sole": "Vibram TC5+",
+      "lining": "Mesh"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Brush dirt off",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 100
+  },
+  {
+    "product_id": "SHOE-041",
+    "product_name": "Saucony Jazz Original",
+    "brand_name": "Saucony",
+    "category": ["Men", "Women", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1620023640245-c4193582496a?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 80.00,
+      "discounted": 60.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Navy/Silver", "Grey"],
+    "stock_status": "In Stock",
+    "sku": "SC-JO-041",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Nylon/Suede",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "300g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Spot clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 85
+  },
+  {
+    "product_id": "SHOE-042",
+    "product_name": "Stuart Weitzman 5050",
+    "brand_name": "Stuart Weitzman",
+    "category": ["Women", "Boot", "High Neck", "Leather", "Formal"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1620038936081-427909c27771?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 750.00,
+      "discounted": 700.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 6", "US 7", "US 8", "US 9"],
+    "available_colors": ["Black Nappa"],
+    "stock_status": "Low Stock",
+    "sku": "SW-5050-042",
+    "shoe_type": "Over-the-knee Boot",
+    "material": {
+      "upper": "Leather/Microstretch",
+      "sole": "Rubber",
+      "lining": "Leather"
+    },
+    "weight": "450g",
+    "heel_type": "Flat",
+    "closure_type": "Pull-on",
+    "country_of_origin": "Spain",
+    "care_instructions": "Professional leather clean",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Size down 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year",
+    "quantity_available": 12
+  },
+  {
+    "product_id": "SHOE-043",
+    "product_name": "Nike Dunk Low",
+    "brand_name": "Nike",
+    "category": ["Men", "Casual", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1610427320078-2d8805cd7383?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 110.00,
+      "discounted": 110.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Panda", "Grey"],
+    "stock_status": "Out of Stock",
+    "sku": "NK-DL-043",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber",
+      "lining": "Textile"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 0
+  },
+  {
+    "product_id": "SHOE-044",
+    "product_name": "Birkenstock Boston",
+    "brand_name": "Birkenstock",
+    "category": ["Men", "Women", "Casual", "Slip-on", "Sandal"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1630595539567-5c20253457a4?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 150.00,
+      "discounted": 150.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 38", "EU 39", "EU 40", "EU 41", "EU 42"],
+    "available_colors": ["Taupe", "Mink"],
+    "stock_status": "Low Stock",
+    "sku": "BK-BS-044",
+    "shoe_type": "Clog",
+    "material": {
+      "upper": "Suede",
+      "sole": "EVA",
+      "lining": "Suede"
+    },
+    "weight": "300g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on (Buckle)",
+    "country_of_origin": "Germany",
+    "care_instructions": "Use suede brush",
+    "size_system": "EU",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": false,
+    "warranty": "1 Year",
+    "quantity_available": 15
+  },
+  {
+    "product_id": "SHOE-045",
+    "product_name": "Mizuno Wave Rider 26",
+    "brand_name": "Mizuno",
+    "category": ["Men", "Sports", "Running"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 140.00,
+      "discounted": 125.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Blue/White", "Neon Green"],
+    "stock_status": "In Stock",
+    "sku": "MZ-WR26-045",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Jacquard Mesh",
+      "sole": "X10 Rubber",
+      "lining": "Textile"
+    },
+    "weight": "290g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Air dry",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [],
+    "verified_purchase": false,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "6 Months",
+    "quantity_available": 80
+  },
+  {
+    "product_id": "SHOE-046",
+    "product_name": "L.L.Bean Bean Boot",
+    "brand_name": "L.L.Bean",
+    "category": ["Men", "Women", "Boot", "Rain Boot", "High Neck"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1512413914633-b5043f4041ea?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 149.00,
+      "discounted": 149.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Tan/Navy"],
+    "stock_status": "In Stock",
+    "sku": "LB-BB-046",
+    "shoe_type": "Duck Boot",
+    "material": {
+      "upper": "Leather",
+      "sole": "Rubber Chain-tread",
+      "lining": "Thinsulate"
+    },
+    "weight": "900g",
+    "heel_type": "Low Block",
+    "closure_type": "Lace-up",
+    "country_of_origin": "USA",
+    "care_instructions": "Hose off",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Runs large, size down",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 200
+  },
+  {
+    "product_id": "SHOE-047",
+    "product_name": "Vans Slip-On",
+    "brand_name": "Vans",
+    "category": ["Men", "Women", "Casual", "Slip-on", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1627632626155-7589f89311b5?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 60.00,
+      "discounted": 60.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
+    "available_colors": ["Checkerboard", "Black"],
+    "stock_status": "In Stock",
+    "sku": "VN-SO-047",
+    "shoe_type": "Slip-on",
+    "material": {
+      "upper": "Canvas",
+      "sole": "Waffle Rubber",
+      "lining": "Canvas"
+    },
+    "weight": "350g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 500
+  },
+  {
+    "product_id": "SHOE-048",
+    "product_name": "Adidas Samba OG",
+    "brand_name": "Adidas",
+    "category": ["Men", "Casual", "Sneaker", "Leather"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 100.00,
+      "discounted": 100.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["White/Black", "Black/White"],
+    "stock_status": "Low Stock",
+    "sku": "AD-SB-048",
+    "shoe_type": "Soccer Sneaker",
+    "material": {
+      "upper": "Leather",
+      "sole": "Gum Rubber",
+      "lining": "Synthetic"
+    },
+    "weight": "380g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 25
+  },
+  {
+    "product_id": "SHOE-049",
+    "product_name": "Manolo Blahnik Hangisi",
+    "brand_name": "Manolo Blahnik",
+    "category": ["Women", "High Heels", "Formal"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 1125.00,
+      "discounted": 1125.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["EU 36", "EU 37", "EU 38"],
+    "available_colors": ["Blue Satin", "Black Satin"],
+    "stock_status": "In Stock",
+    "sku": "MB-HG-049",
+    "shoe_type": "Pump",
+    "material": {
+      "upper": "Viscose/Silk",
+      "sole": "Leather",
+      "lining": "Leather"
+    },
+    "weight": "200g",
+    "heel_type": "High Heel",
+    "closure_type": "Slip-on",
+    "country_of_origin": "Italy",
+    "care_instructions": "Delicate",
+    "size_system": "EU",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "Size up 0.5",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "1-3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year",
+    "quantity_available": 5
+  },
+  {
+    "product_id": "SHOE-050",
+    "product_name": "Nike Air Max 97",
+    "brand_name": "Nike",
+    "category": ["Men", "Women", "Sports", "Sneaker"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1629198728471-1250264b38d7?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 175.00,
+      "discounted": 160.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Silver Bullet", "Black/White"],
+    "stock_status": "In Stock",
+    "sku": "NK-AM97-050",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Synthetic/Mesh",
+      "sole": "Rubber (Air Unit)",
+      "lining": "Textile"
+    },
+    "weight": "420g",
+    "heel_type": "Cushioned",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "1 Year",
+    "quantity_available": 110
+  },
+  {
+    "product_id": "SHOE-051",
+    "product_name": "Crocs Echo Clog",
+    "brand_name": "Crocs",
+    "category": ["Men", "Women", "Casual", "Sandal"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1545259742-b4fd8fea67e4?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": null,
+    "price": {
+      "regular": 70.00,
+      "discounted": 65.00,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11"],
+    "available_colors": ["Bone", "Black"],
+    "stock_status": "In Stock",
+    "sku": "CR-EC-051",
+    "shoe_type": "Clog",
+    "material": {
+      "upper": "Croslite",
+      "sole": "Croslite",
+      "lining": "LiteRide"
+    },
+    "weight": "200g",
+    "heel_type": "Flat",
+    "closure_type": "Slip-on (Strap)",
+    "country_of_origin": "China",
+    "care_instructions": "Rinse with water",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Size down",
+    "bundle_offers": [],
+    "customer_ratings": 4.6,
+    "customer_reviews": [],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Paid",
+    "cod_available": true,
+    "warranty": "90 Days",
+    "quantity_available": 300
+  }
+]
