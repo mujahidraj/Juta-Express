@@ -56,20 +56,20 @@ const BestSelling = ({ data }) => {
     <div className="w-full max-w-7xl mx-auto px-4 py-15">
       <div className="mb-15 text-center">
 
-  <span className="mb-2 inline-block rounded-full bg-orange-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-orange-600">
-    #1 Customer Favorites
-  </span>
-  <h2 className="mb-4 text-4xl font-black uppercase text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 md:text-5xl">
-    Our Best Selling
-  </h2>
-  <p className="mx-auto max-w-2xl text-lg text-gray-500">
-    Don't just take our word for it. Explore the top-rated gear that thousands of athletes trust for their daily grind.
-  </p>
-</div>
+        <span className="mb-2 inline-block rounded-full bg-orange-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-orange-600">
+          #1 Customer Favorites
+        </span>
+        <h2 className="mb-4 text-4xl font-black uppercase text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 md:text-5xl">
+          Our Best Selling
+        </h2>
+        <p className="mx-auto max-w-2xl text-lg text-gray-500">
+          Don't just take our word for it. Explore the top-rated gear that thousands of athletes trust for their daily grind.
+        </p>
+      </div>
       {
         <SingleBest data={newData[0]}></SingleBest>
       }
-      <div className="relative group">
+      <div className="relative mt-17 group">
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white p-2 rounded-full shadow-lg text-gray-800 hover:bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-gray-200"

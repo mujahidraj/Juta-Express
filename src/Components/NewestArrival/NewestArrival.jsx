@@ -69,7 +69,7 @@ const NewestArrival = ({ data }) => {
       {
         <SingleNew data={newData[0]}></SingleNew>
       }
-      <div className="relative group">
+      <div className="relative mt-7 group">
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white p-2 rounded-full shadow-lg text-gray-800 hover:bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-gray-200"
