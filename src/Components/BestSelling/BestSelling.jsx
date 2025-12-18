@@ -53,8 +53,8 @@ const BestSelling = ({ data }) => {
   if (!newData || newData.length === 0) return null;
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-10">
-      <div className="mb-12 text-center">
+    <div className="w-full max-w-7xl mx-auto px-4 py-15">
+      <div className="mb-15 text-center">
 
   <span className="mb-2 inline-block rounded-full bg-orange-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-orange-600">
     #1 Customer Favorites

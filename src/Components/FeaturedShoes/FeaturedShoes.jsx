@@ -5,7 +5,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const FeaturedShoes = ({ data }) => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex md:mt-20 flex-col'>
       <div className="mb-12 text-center">
         <span className="mb-2 inline-block rounded-full bg-purple-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-purple-600">
           Editor's Pick
