@@ -1,10 +1,8 @@
 import React from 'react';
 
 const FeaturedShoesCard = ({ item }) => {
-  // 1. Safety check: prevent crashing if data is missing
   if (!item) return null;
 
-  // 2. Destructure the necessary data from the prop
   const {
     product_name,
     brand_name,
@@ -16,89 +14,94 @@ const FeaturedShoesCard = ({ item }) => {
     stock_status,
   } = item;
 
-  // 3. Helper: Calculate discount percentage
+  // Calculate discount for the badge
   const discountPercentage = Math.round(
     ((price.regular - price.discounted) / price.regular) * 100
   );
 
   return (
-    <div className="group relative max-w-sm rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="group relative h-112.5 w-full max-w-sm overflow-hidden rounded-3xl bg-gray-900 shadow-lg transition-all hover:shadow-2xl">
       
-      {/* --- Image Section --- */}
-      <div className="relative h-64 overflow-hidden rounded-t-2xl bg-gray-100">
-        <img
-          src={product_images[0]}
-          alt={product_name}
-          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-        />
+      {/* 1. Full Background Image with Zoom Effect */}
+      <img
+        src={product_images[0]}
+        alt={product_name}
+        className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+      />
 
-        {/* Badges (Positioned Absolute) */}
-        <div className="absolute left-3 top-3 flex flex-col gap-2">
-          {is_best_seller && (
-            <span className="rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-black shadow-sm">
-              Best Seller
-            </span>
-          )}
-          {is_new_arrival && (
-            <span className="rounded-full bg-blue-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-sm">
-              New
-            </span>
-          )}
-          {discountPercentage > 0 && (
-            <span className="rounded-full bg-red-500 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-sm">
-              -{discountPercentage}%
-            </span>
-          )}
-        </div>
+      {/* 2. Dark Gradient Overlay (for text readability) */}
+      <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
 
-        {/* Wishlist Button (Optional UI element) */}
-        <button className="absolute right-3 top-3 rounded-full bg-white p-2 text-gray-500 shadow-sm transition-colors hover:text-red-500">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </button>
+      {/* 3. Top Badges (Absolute Position) */}
+      <div className="absolute left-4 top-4 flex flex-col gap-2">
+        {is_new_arrival && (
+          <span className="w-fit rounded-full bg-blue-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md">
+            New Arrival
+          </span>
+        )}
+        {is_best_seller && (
+          <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black shadow-sm backdrop-blur-md">
+            Best Seller
+          </span>
+        )}
+        {discountPercentage > 0 && (
+          <span className="w-fit rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md">
+            -{discountPercentage}%
+          </span>
+        )}
       </div>
 
-      {/* --- Content Section --- */}
-      <div className="p-5">
-        
-        {/* Brand & Rating Row */}
-        <div className="mb-2 flex items-center justify-between">
-          <span className="text-sm font-semibold uppercase text-gray-400">
-            {brand_name}
-          </span>
-          <div className="flex items-center gap-1">
-            <svg className="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-            <span className="text-sm font-bold text-gray-700">{customer_ratings}</span>
-          </div>
-        </div>
+      {/* 4. Top Right: Rating Pill */}
+      <div className="absolute right-4 top-4 flex items-center gap-1 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-md">
+        <span className="text-yellow-400">★</span>
+        <span>{customer_ratings}</span>
+      </div>
 
-        {/* Product Title */}
-        <h3 className="mb-1 text-lg font-bold leading-tight text-gray-900 line-clamp-1">
+      {/* 5. Bottom Content Area */}
+      <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
+        
+        {/* Brand */}
+        <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-gray-300 opacity-80">
+          {brand_name}
+        </p>
+        
+        {/* Title */}
+        <h3 className="mb-3 text-2xl font-bold leading-tight text-white">
           {product_name}
         </h3>
 
-        {/* Stock Status (Subtle) */}
-        <p className={`text-xs mb-4 ${stock_status === 'In Stock' ? 'text-green-600' : 'text-red-500'}`}>
-          {stock_status}
-        </p>
-
         {/* Price & Action Row */}
         <div className="flex items-end justify-between">
+          
+          {/* Prices */}
           <div className="flex flex-col">
             <span className="text-sm text-gray-400 line-through">
               ${price.regular.toFixed(2)}
             </span>
-            <span className="text-2xl font-bold text-gray-900">
-              ${price.discounted.toFixed(2)}
-            </span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-bold text-white">
+                ${price.discounted.toFixed(2)}
+              </span>
+              {stock_status !== 'In Stock' && (
+                <span className="text-xs text-red-400">({stock_status})</span>
+              )}
+            </div>
           </div>
 
-          <button className="rounded-lg bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
-            Add to Cart
+          {/* Add to Cart Button (Expands on Hover) */}
+          <button className="group/btn flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white text-black transition-all duration-300 hover:w-32 hover:bg-yellow-400">
+            <div className="flex items-center gap-2 px-4">
+              {/* Icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              {/* Text (Hidden by default, shown on hover) */}
+              <span className="whitespace-nowrap text-sm font-bold opacity-0 transition-opacity duration-200 group-hover/btn:opacity-100">
+                Buy Now
+              </span>
+            </div>
           </button>
+          
         </div>
       </div>
     </div>

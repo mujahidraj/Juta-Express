@@ -15,7 +15,7 @@ const FeaturedShoes = ({ data }) => {
       </div>
 
 
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto gap-10'>
         {
           data.slice(0, 20).map(item => item.is_featured && <FeaturedShoesCard key={item.product_id} item={item}></FeaturedShoesCard>)
         }

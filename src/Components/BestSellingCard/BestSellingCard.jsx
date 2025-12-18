@@ -89,39 +89,41 @@ const BestSellingCard = ({ items }) => {
             </span>
           )}
         </div>
-        <div className="mb-4">
-          <p className="text-xs text-gray-500 mb-1.5">Color: <span className='text-gray-900 font-medium'>{selectedColor}</span></p>
-          <div className="flex gap-2">
-            {items.available_colors.map((color) => (
-              <button
-                key={color}
-                onClick={() => setSelectedColor(color)}
-                className={`w-6 h-6 rounded-full border-2 focus:outline-none transition-all ${selectedColor === color ? 'border-gray-900 scale-110' : 'border-transparent hover:scale-110'
-                  }`}
-              >
-                <div className={`w-full h-full rounded-full border border-black/10 ${getColorClass(color)}`}></div>
-              </button>
-            ))}
+        <div className='flex flex-row justify-between'>
+          <div className="mb-4">
+            <p className="text-xs text-gray-500 mb-1.5">Color: <span className='text-gray-900 font-medium'>{selectedColor}</span></p>
+            <div className="flex gap-2">
+              {items.available_colors.map((color) => (
+                <button
+                  key={color}
+                  onClick={() => setSelectedColor(color)}
+                  className={`w-6 h-6 rounded-full border-2 focus:outline-none transition-all ${selectedColor === color ? 'border-gray-900 scale-110' : 'border-transparent hover:scale-110'
+                    }`}
+                >
+                  <div className={`w-full h-full rounded-full border border-black/10 ${getColorClass(color)}`}></div>
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="mb-5">
-          <div className="flex justify-between items-center mb-1.5">
-            <p className="text-xs text-gray-500">Size ({items.size_system})</p>
-            <span className="text-[10px] text-blue-600 cursor-pointer hover:underline">Size Guide</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {items.available_sizes.map((size) => (
-              <button
-                key={size}
-                onClick={() => setSelectedSize(size)}
-                className={`px-2 py-1 text-xs border rounded transition-colors ${selectedSize === size
+          <div className="mb-5">
+            <div className="flex justify-between items-center mb-1.5">
+              <p className="text-xs text-gray-500">Size ({items.size_system})</p>
+              <span className="text-[10px] text-blue-600 cursor-pointer hover:underline">Size Guide</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {items.available_sizes.map((size) => (
+                <button
+                  key={size}
+                  onClick={() => setSelectedSize(size)}
+                  className={`px-2 py-1 text-xs border rounded transition-colors ${selectedSize === size
                     ? 'bg-gray-900 text-white border-gray-900'
                     : 'text-gray-600 border-gray-200 hover:border-gray-400'
-                  }`}
-              >
-                {size.replace('US ', '')}
-              </button>
-            ))}
+                    }`}
+                >
+                  {size.replace('US ', '')}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-3 text-[10px] text-gray-500 mb-5 pb-4 border-b border-gray-100">
