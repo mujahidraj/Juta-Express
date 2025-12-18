@@ -1,11 +1,11 @@
 import { Check, Heart, ShoppingCart, Star, Truck } from 'lucide-react';
 import React, { useState } from 'react';
 
-const BestSellingCard = ({ items }) => {
+const NewestArrivalCard = ({items}) => {
   
 
   const [selectedSize, setSelectedSize] = useState(null);
-  const [selectedColor, setSelectedColor] = useState(items.available_colors[0]);
+  const [selectedColor, setSelectedColor] = useState(items?.available_colors[0]);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const getColorClass = (color) => {
     const map = {
@@ -17,7 +17,7 @@ const BestSellingCard = ({ items }) => {
     return map[color] || 'bg-gray-500';
   };
   const discountPercent = Math.round(
-    ((items.price.regular - items.price.discounted) / items.price.regular) * 100
+    ((items?.price.regular - items?.price.discounted) / items?.price.regular) * 100
   );
 
 
@@ -25,12 +25,12 @@ const BestSellingCard = ({ items }) => {
     <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
       <div className="relative  bg-gray-100 overflow-hidden">
         <div className="absolute top-3 left-3 z-10 flex flex-col gap-2">
-          {items.is_best_seller && (
+          {items?.is_best_seller && (
             <span className="px-2 py-1 text-xs font-bold text-white bg-yellow-500 rounded-md shadow-sm">
               Best Seller
             </span>
           )}
-          {items.is_trending && (
+          {items?.is_trending && (
             <span className="px-2 py-1 text-xs font-bold text-white bg-purple-600 rounded-md shadow-sm">
               Trending
             </span>
@@ -45,10 +45,10 @@ const BestSellingCard = ({ items }) => {
           <Heart size={18} />
         </button>
         <img
-          src={items.product_images[currentImgIndex]}
-          alt={items.product_name}
+          src={items?.product_images[currentImgIndex]}
+          alt={items?.product_name}
           className="w-full h-60 object-cover object-center group-hover:scale-105 transition-transform duration-500"
-          onMouseEnter={() => items.product_images[1] && setCurrentImgIndex(1)}
+          onMouseEnter={() => items?.product_images[1] && setCurrentImgIndex(1)}
           onMouseLeave={() => setCurrentImgIndex(0)}
         />
         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-linear-to-t from-black/50 to-transparent">
@@ -146,4 +146,4 @@ const BestSellingCard = ({ items }) => {
   );
 };
 
-export default BestSellingCard;
+export default NewestArrivalCard;

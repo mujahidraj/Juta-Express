@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import BestSellingCard from "../BestSellingCard/BestSellingCard";
+import NewestArrivalCard from '../NewestArrivalCard/NewestArrivalCard';
 
-const BestSelling = ({ data }) => {
+const NewestArrival = ({data}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
-  const newData = data.filter(items=> items.is_best_seller===true)
+  const newData = data.filter(items=> items.is_new_arrival===true)
+
   
 
   useEffect(() => {
@@ -53,7 +54,7 @@ const BestSelling = ({ data }) => {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
-      <h2 className="text-3xl font-bold text-center mb-3">Our Best Selling</h2>
+      <h2 className="text-3xl font-bold text-center mb-3">Newest Arrival</h2>
       <h2 className="mb-10 text-xl text-center text-gray-600 max-w-2xl mx-auto">
         Grab our best selling product before sold out and get the opportunity to become our best customer award
       </h2>
@@ -70,9 +71,9 @@ const BestSelling = ({ data }) => {
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}
           >
-            {newData.map((item) => (
-              <div key={item.product_id} className="shrink-0 px-2 box-border" style={{ width: `${100 / itemsToShow}%` }}
-              > <BestSellingCard items={item} /> </div> 
+            {newData.map((items) => (
+              <div key={items.product_id} className="shrink-0 px-2 box-border" style={{ width: `${100 / itemsToShow}%` }}
+              > <NewestArrivalCard items={items}></NewestArrivalCard> </div> 
             ))}
           </div>
         </div>
@@ -98,4 +99,4 @@ const BestSelling = ({ data }) => {
   );
 };
 
-export default BestSelling;
+export default NewestArrival;
