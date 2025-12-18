@@ -1,3 +1,5 @@
+import React from 'react';
+import { useLoaderData } from 'react-router';
 import Navbar from '../../Components/Header/Navbar';
 import Hero from '../../Components/Header/Hero';
 import BestSelling from '../../Components/BestSelling/BestSelling';
@@ -9,29 +11,25 @@ import Categories from '../../Components/Categories/Categories';
 import Service from '../../Components/Service/Service';
 import Footer from '../../Components/Footer/Footer';
 
+const Home = () => {
 
-const HomeLayout = () => {
-
-  
-
-  
-
+  const data = useLoaderData()
 
   return (
     <div>
-      <header className='sticky top-0 z-1000 left-0 right-0 '>
-        <section className=''>
-          <Navbar></Navbar>
+      <section className='hero mx-auto'>
+          <Hero></Hero>
         </section>
-      </header>
-      <main>
-        <Outlet></Outlet>
-      </main>
-      <footer>
-        <Footer></Footer>
-      </footer>
+          <section className='w-11/12 mx-auto my-10'>
+          <Categories data={data}></Categories>
+          <FeaturedShoes data={data}></FeaturedShoes>
+            <BestSelling data={data}></BestSelling>
+            <NewestArrival data={data}></NewestArrival>
+            <Service></Service>
+            
+          </section>
     </div>
   );
 };
 
-export default HomeLayout;
+export default Home;
