@@ -6,6 +6,8 @@ import { useLoaderData } from 'react-router';
 import NewestArrival from '../../Components/NewestArrival/NewestArrival';
 import FeaturedShoes from '../../Components/FeaturedShoes/FeaturedShoes';
 import Categories from '../../Components/Categories/Categories';
+import Service from '../../Components/Service/Service';
+import Footer from '../../Components/Footer/Footer';
 
 const DataContext = createContext()
 
@@ -32,9 +34,13 @@ const HomeLayout = () => {
           <FeaturedShoes data={data}></FeaturedShoes>
             <BestSelling data={data}></BestSelling>
             <NewestArrival data={data}></NewestArrival>
+            <Service></Service>
+            
           </section>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 };

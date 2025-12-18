@@ -19,8 +19,6 @@ const BestSellingCard = ({ items }) => {
   const discountPercent = Math.round(
     ((items.price.regular - items.price.discounted) / items.price.regular) * 100
   );
-
-
   return (
     <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
       <div className="relative  bg-gray-100 overflow-hidden">
