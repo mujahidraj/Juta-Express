@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router'; 
-import { FiLogIn, FiMenu, FiShoppingBag } from "react-icons/fi";
+import { FiLogIn, FiSearch } from "react-icons/fi";
 import logo from '../../assets/logo.png'
 import userIcon from '../../assets/userIcon.png'
 import cart from '../../assets/cart.png'
@@ -14,7 +14,6 @@ const Navbar = () => {
     }`;
 
   return (
-
     <div className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-xl shadow-sm">
       
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
@@ -27,33 +26,47 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> 
               </svg>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content z-1 mt-3 w-52 rounded-xl bg-white p-2 shadow-xl ring-1 ring-black/5">
+            <ul tabIndex={0} className="menu menu-sm dropdown-content z-1 mt-3 w-64 rounded-xl bg-white p-4 shadow-xl ring-1 ring-black/5 gap-2">
+              <li className="mb-2">
+                <div className="relative flex items-center px-0 hover:bg-transparent">
+                    <FiSearch className="absolute left-3 text-gray-400" />
+                    <input type="text" placeholder="Search..." className="input input-sm input-bordered w-full rounded-full pl-9 focus:border-amber-500 focus:outline-none" />
+                </div>
+              </li>
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/new-arrival">New Arrival</NavLink></li>
               <li><NavLink to="/best-selling">Best Selling</NavLink></li>
-              <li><NavLink to="/category">Category</NavLink></li>
+              <li><NavLink to="/category">Collection</NavLink></li>
             </ul>
           </div>
 
-          <Link to="/" className="flex items-center gap-2 group">
-            <img className="h-10 w-auto transition-transform duration-300 group-hover:scale-110" src={logo} alt="Juta Express" />
-            <div className="flex flex-col">
-              <h2 className="text-lg font-black uppercase leading-none tracking-tight text-gray-900">
-                Juta<span className="text-amber-600">Express</span>
-              </h2>
-              
-            </div>
+          <Link to="/" className="flex flex-col items-center justify-center gap-0 group">
+            <img className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-110" src={logo} alt="Juta Express" />
+            <h2 className="text-[10px] font-black uppercase leading-none tracking-tight text-gray-900 mt-1">
+              Juta<span className="text-amber-600">Express</span>
+            </h2>
           </Link>
+
         </div>
-        <div className="hidden lg:flex items-center gap-8">
+
+        <div className="hidden xl:flex items-center gap-8">
           <NavLink to="/" className={navLinkStyle}>Home</NavLink>
           <NavLink to="/new-arrival" className={navLinkStyle}>New Arrivals</NavLink>
           <NavLink to="/best-selling" className={navLinkStyle}>Best Selling</NavLink>
-          <NavLink to="/category" className={navLinkStyle}>Category</NavLink>
+          <NavLink to="/category" className={navLinkStyle}>Collection</NavLink>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 md:gap-5">
        
+          <div className="hidden  lg:block relative group">
+             <input 
+                type="text" 
+                placeholder="Search..." 
+                className="w-48 rounded-full  bg-gray-100 py-1.5 pl-8 pr-4 text-xs font-medium focus:bg-white focus:ring-1 focus:ring-amber-500 focus:outline-none transition-colors border border-amber-400 focus:border-gray-200"
+             />
+             <FiSearch className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 h-3.5 w-3.5 group-focus-within:text-amber-600" />
+          </div>
+
           <div className="indicator cursor-pointer transition-transform hover:scale-105">
             <span className="indicator-item badge badge-secondary badge-xs">3</span> 
             <img className="h-6 w-6 object-contain opacity-80 hover:opacity-100" src={cart} alt="Cart" />
@@ -69,7 +82,6 @@ const Navbar = () => {
             </div>
           </div>
 
-         
           <button className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 hover:shadow-lg">
             <span className="hidden sm:inline">Login</span>
             <FiLogIn size={18} />
