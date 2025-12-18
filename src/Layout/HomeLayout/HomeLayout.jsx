@@ -4,6 +4,7 @@ import BestSelling from '../../Components/BestSelling/BestSelling';
 import { Children, createContext } from 'react';
 import { useLoaderData } from 'react-router';
 import NewestArrival from '../../Components/NewestArrival/NewestArrival';
+import FeaturedShoes from '../../Components/FeaturedShoes/FeaturedShoes';
 
 const DataContext = createContext()
 
@@ -26,6 +27,7 @@ const HomeLayout = () => {
           <Hero></Hero>
         </section>
           <section className='w-11/12 mx-auto my-10'>
+          <FeaturedShoes data={data}></FeaturedShoes>
             <BestSelling data={data}></BestSelling>
             <NewestArrival data={data}></NewestArrival>
           </section>
