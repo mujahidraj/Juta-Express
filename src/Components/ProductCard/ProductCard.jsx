@@ -1,19 +1,18 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
-import { Check, Heart, ShoppingCart, Star, Truck } from 'lucide-react';
-
+import { Check, Heart, ShoppingCart, Star, Truck, Share2 } from 'lucide-react'; 
 import { useCart } from '../../Contexts/CartProvider/CartProvider';
 import { useWishlist } from '../../Contexts/WishListProvider/WishListProvider';
+import Swal from 'sweetalert2';
 import { Link } from 'react-router';
-
 
 const ProductCard = ({ items }) => {
   if (!items) return null;
 
   const { addToCart } = useCart(); 
-  const { toggleWishlist, isInWishlist } = useWishlist(); // <--- USE WISHLIST
+  const { toggleWishlist, isInWishlist } = useWishlist(); 
 
-  // Check if this specific item is in the wishlist
+  // Check if item is already saved
   const isWishlisted = isInWishlist(items.product_id);
 
   const [selectedSize, setSelectedSize] = useState(null);
@@ -32,22 +31,82 @@ const ProductCard = ({ items }) => {
     ((items.price.regular - items.price.discounted) / items.price.regular) * 100
   );
 
+  // --- HANDLERS ---
+
   const handleAddToCart = (e) => {
     e.preventDefault(); 
     e.stopPropagation(); 
+    
+    // 1. Validation Check with SweetAlert
     if (!selectedSize) {
-      alert('Please select a size first!');
+      Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Size Required',
+        text: 'Please select a size before adding to cart.',
+        showConfirmButton: false,
+        timer: 2000,
+        toast: true,
+        background: '#fff',
+        color: '#000'
+      });
       return;
     }
+
+    // 2. Add to Cart
     addToCart(items, selectedSize, selectedColor);
-    alert(`${items.product_name} added to cart!`);
+    
+    // 3. Success SweetAlert
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Added to Cart',
+      text: `${items.product_name} (${selectedSize}) added.`,
+      showConfirmButton: false,
+      timer: 2000,
+      toast: true,
+      background: '#fff',
+      color: '#000'
+    });
   };
 
-  // --- WISHLIST HANDLER ---
   const handleWishlist = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    toggleWishlist(items); // Add or Remove
+    toggleWishlist(items); 
+    
+    
+     Swal.fire({
+      position: 'top-end',
+      icon: isWishlisted ? 'info' : 'success',
+      title: isWishlisted ? 'Removed from Wishlist' : 'Added to Wishlist',
+      showConfirmButton: false,
+      timer: 1500,
+      toast: true
+    });
+    
+  };
+
+  const handleShare = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const productUrl = `${window.location.origin}/products/${items.product_id}`;
+    
+    navigator.clipboard.writeText(productUrl).then(() => {
+        // Share Success SweetAlert
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Link Copied!',
+          text: 'Product link copied to clipboard.',
+          showConfirmButton: false,
+          timer: 2000,
+          toast: true,
+          background: '#fff',
+          color: '#000'
+        }); 
+    });
   };
 
   const handleColorSelect = (e, color) => {
@@ -64,24 +123,41 @@ const ProductCard = ({ items }) => {
 
   return (
     <div className="group relative w-full max-w-sm overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+      
       <Link to={`/products/${items.product_id}`} className="absolute inset-0 z-10" />
 
       <div className="relative h-72 w-full overflow-hidden bg-gray-100">
+        
+        {/* Badges */}
         <div className="absolute left-3 top-3 z-20 flex flex-col gap-2 pointer-events-none">
           {items.is_best_seller && <span className="w-fit rounded-full bg-orange-500 px-3 py-1 text-[10px] font-bold text-white shadow-sm">Best Seller</span>}
           {items.is_trending && <span className="w-fit rounded-full bg-purple-600 px-3 py-1 text-[10px] font-bold text-white shadow-sm">Trending</span>}
           {discountPercent > 0 && <span className="w-fit rounded-full bg-red-500 px-3 py-1 text-[10px] font-bold text-white shadow-sm">-{discountPercent}%</span>}
         </div>
 
-        {/* --- DYNAMIC WISHLIST BUTTON --- */}
-        <button 
-          onClick={handleWishlist}
-          className={`absolute right-3 top-3 z-20 flex h-8 w-8 items-center justify-center rounded-full backdrop-blur-sm transition-colors 
-            ${isWishlisted ? 'bg-red-50 text-red-500' : 'bg-white/80 text-gray-400 hover:bg-red-50 hover:text-red-500'}`}
-        >
-          {/* Fill the heart if wishlisted */}
-          <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
-        </button>
+        {/* Action Buttons */}
+        <div className="absolute right-3 top-3 z-20 flex flex-col gap-2">
+            
+            <button 
+              onClick={handleWishlist}
+              className={`flex h-8 w-8 items-center justify-center rounded-full backdrop-blur-sm transition-colors shadow-sm
+                ${isWishlisted 
+                    ? 'bg-red-50 text-red-500' 
+                    : 'bg-white/80 text-gray-400 hover:bg-red-50 hover:text-red-500'
+                }`}
+              title={isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
+            >
+              <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
+            </button>
+
+            <button 
+              onClick={handleShare}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-gray-400 shadow-sm backdrop-blur-sm transition-colors hover:bg-blue-50 hover:text-blue-500"
+              title="Share Product"
+            >
+              <Share2 size={16} />
+            </button>
+        </div>
 
         <img
           src={items.product_images[currentImgIndex]}
@@ -117,6 +193,7 @@ const ProductCard = ({ items }) => {
         </div>
 
         <div className="relative z-20 flex flex-col gap-5">
+            
             <div className="flex flex-col gap-4 border-b border-gray-100 pb-4">
                 <div className="flex flex-col gap-2">
                     <p className="text-xs text-gray-500">Color: <span className='text-gray-900 font-medium'>{selectedColor}</span></p>

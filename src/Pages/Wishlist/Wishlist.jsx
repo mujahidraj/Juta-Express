@@ -1,12 +1,35 @@
 import React from 'react';
-
 import { Heart, ShoppingBag, Trash2, ArrowRight, PackageOpen, AlertCircle } from 'lucide-react';
 import { useWishlist } from '../../Contexts/WishListProvider/WishListProvider';
 import { Link } from 'react-router';
-
+import Swal from 'sweetalert2'; // 1. Added Import
 
 const Wishlist = () => {
   const { wishlistItems, removeFromWishlist } = useWishlist();
+
+  // 2. Added SweetAlert Handler
+  const handleRemove = (id) => {
+    Swal.fire({
+      title: 'Remove from Wishlist?',
+      text: "Are you sure you want to remove this item?",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, remove it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        removeFromWishlist(id);
+        Swal.fire({
+          title: 'Removed!',
+          text: 'Item has been removed.',
+          icon: 'success',
+          timer: 1500,
+          showConfirmButton: false
+        });
+      }
+    });
+  };
 
   // --- EMPTY STATE ---
   if (wishlistItems.length === 0) {
@@ -67,7 +90,8 @@ const Wishlist = () => {
                 <button 
                     onClick={(e) => {
                         e.preventDefault();
-                        removeFromWishlist(item.product_id);
+                        // 3. Updated to use handleRemove
+                        handleRemove(item.product_id);
                     }}
                     className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-gray-400 shadow-sm backdrop-blur-md transition-colors hover:bg-red-50 hover:text-red-500"
                     title="Remove"

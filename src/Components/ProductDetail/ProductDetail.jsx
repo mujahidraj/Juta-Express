@@ -2,11 +2,21 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Heart, Share2, Truck, RefreshCw, ShieldCheck, Loader2 } from 'lucide-react';
 
+// --- IMPORT CONTEXTS ---
+import { useCart } from '../../Contexts/CartProvider/CartProvider';
+
 import RelatedProductCard from '../../Components/RelatedProductCard/RelatedProductCard';
+import { useWishlist } from '../../Contexts/WishListProvider/WishListProvider';
 import { Link, useLoaderData, useParams } from 'react-router';
+import Swal from 'sweetalert2';
 
 const ProductDetail = () => {
   const loaderData = useLoaderData();
+  
+  // --- CONTEXT HOOKS ---
+  const { addToCart } = useCart();
+  const { toggleWishlist, isInWishlist } = useWishlist();
+
   const [allProducts, setAllProducts] = useState(Array.isArray(loaderData) ? loaderData : []);
   const [loading, setLoading] = useState(!loaderData || loaderData.length === 0);
   
@@ -42,6 +52,9 @@ const ProductDetail = () => {
   const [selectedColor, setSelectedColor] = useState(null);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
+  // Check if current product is in wishlist
+  const isWishlisted = product ? isInWishlist(product.product_id) : false;
+
   useEffect(() => {
     if (product) {
       setSelectedColor(product.available_colors?.[0]);
@@ -50,6 +63,52 @@ const ProductDetail = () => {
       window.scrollTo(0, 0);
     }
   }, [product, targetId]);
+
+  // --- HANDLERS ---
+
+  const handleAddToCart = () => {
+    if (!selectedSize) {
+      Swal.fire({
+           position: 'top-end',
+           icon: 'error',
+           title: 'Choose Size',
+           text: `${product.product_name} Chose the size first.`,
+           showConfirmButton: false,
+           timer: 1500,
+           toast: true ,
+         }); 
+      return;
+    }
+    addToCart(product, selectedSize, selectedColor);
+     Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Product Added',
+          text: `${product.product_name} added to cart.`,
+          showConfirmButton: false,
+          timer: 1500,
+          toast: true ,
+        }); 
+  };
+
+  const handleWishlist = () => {
+    toggleWishlist(product);
+  };
+
+  const handleShare = () => {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+       Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Link Copied',
+            text: `${product.product_name} product link copied.`,
+            showConfirmButton: false,
+            timer: 1500,
+            toast: true ,
+          }); 
+    });
+  };
 
   if (loading) return <div className="flex h-screen items-center justify-center"><Loader2 className="animate-spin" /></div>;
   
@@ -89,7 +148,7 @@ const ProductDetail = () => {
         <div className="mx-auto flex max-w-7xl items-center gap-2 px-4 py-4 text-xs text-gray-500 sm:px-6 lg:px-8">
           <Link to="/" className="hover:text-amber-600">Homepage</Link>
           <span>/</span>
-          <Link to="/all-products" className="hover:text-amber-600">Shop</Link>
+          <Link to="/collections" className="hover:text-amber-600">Shop</Link>
           <span>/</span>
           <span className="font-medium text-gray-900">{product.category?.[0]}</span>
           <span>/</span>
@@ -107,14 +166,29 @@ const ProductDetail = () => {
                 alt={product.product_name} 
                 className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105"
               />
+              
+              {/* --- ACTION BUTTONS --- */}
               <div className="absolute right-4 top-4 flex flex-col gap-3">
-                 <button className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition-all hover:text-red-500 hover:shadow-lg">
+                 <button 
+                    onClick={handleShare}
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition-all hover:text-blue-500 hover:shadow-lg"
+                    title="Share"
+                 >
                     <Share2 size={18} />
                  </button>
-                 <button className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition-all hover:text-red-500 hover:shadow-lg">
-                    <Heart size={18} />
+                 <button 
+                    onClick={handleWishlist}
+                    className={`flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md transition-all hover:shadow-lg
+                        ${isWishlisted ? 'text-red-500' : 'text-gray-900 hover:text-red-500'}`}
+                    title={isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
+                 >
+                    <Heart size={18} fill={isWishlisted ? "currentColor" : "none"} />
                  </button>
+                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition-all hover:text-green-500 hover:shadow-lg" title="Delivery Info">
+                     <Truck size={18} />
+                     </div>
               </div>
+
               <div className="absolute left-4 top-4 flex flex-col gap-2">
                 {product.is_best_seller && <span className="w-fit rounded-md bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wider text-black shadow-sm">Best Seller</span>}
                 {discountPercent > 0 && <span className="w-fit rounded-md bg-red-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-sm">-{discountPercent}%</span>}
@@ -212,7 +286,11 @@ const ProductDetail = () => {
                )}
 
                <div className="flex flex-col gap-4 sm:flex-row">
-                  <button className="flex-1 rounded-full bg-gray-900 py-4 text-base font-bold text-white shadow-lg transition-transform hover:-translate-y-1 hover:bg-black active:scale-95">
+                  {/* --- ADD TO CART BUTTON (WIRED UP) --- */}
+                  <button 
+                    onClick={handleAddToCart}
+                    className="flex-1 rounded-full bg-gray-900 py-4 text-base font-bold text-white shadow-lg transition-transform hover:-translate-y-1 hover:bg-black active:scale-95"
+                  >
                      Add To Cart
                   </button>
                   <button className="flex-1 rounded-full border border-gray-300 bg-white py-4 text-base font-bold text-gray-900 transition-colors hover:border-gray-900 hover:bg-gray-50">
@@ -235,7 +313,7 @@ const ProductDetail = () => {
           </div>
         </div>
 
-        {/* --- REVIEWS SECTION (UPDATED) --- */}
+        {/* --- REVIEWS SECTION --- */}
         <section className="mt-20 border-t border-gray-100 pt-16">
            <h2 className="text-2xl font-black text-gray-900 mb-8">Customer Reviews</h2>
            <div className="grid gap-10 lg:grid-cols-3">
@@ -268,21 +346,16 @@ const ProductDetail = () => {
                     <div key={idx} className="border-b border-gray-100 pb-6 last:border-0">
                        <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-2">
-                             {/* Initials Avatar */}
                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-xs font-bold text-gray-500">
                                 {review.user ? review.user.charAt(0).toUpperCase() : 'U'}
                              </div>
-                             {/* User Name */}
                              <span className="font-bold text-sm">{review.user}</span>
                           </div>
-                          {/* Date */}
                           <span className="text-xs text-gray-400">{review.date}</span>
                        </div>
-                       {/* Rating Stars */}
                        <div className="flex text-amber-400 mb-2">
                           {[...Array(review.rating || 0)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
                        </div>
-                       {/* Review Text */}
                        <p className="text-sm text-gray-600">{review.text}</p>
                     </div>
                  ))}
@@ -294,7 +367,7 @@ const ProductDetail = () => {
         <section className="mt-24">
            <div className="mb-10 flex items-center justify-between">
               <h2 className="text-2xl font-black text-gray-900 sm:text-3xl">Related Products</h2>
-              <Link to="/all-products" className="text-sm font-bold text-amber-600 hover:underline">View Collection</Link>
+              <Link to="/collections" className="text-sm font-bold text-amber-600 hover:underline">View Collection</Link>
            </div>
            
            {relatedProducts.length > 0 ? (

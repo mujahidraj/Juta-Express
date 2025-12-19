@@ -2,6 +2,7 @@ import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Phone, Mail, ArrowRight, ShoppingBag } from 'lucide-react';
 import heroImage from '../../assets/Untitled design.png'; // Ensure path is correct
+import { Link } from 'react-router';
 
 const Hero = () => {
   return (
@@ -52,7 +53,7 @@ const Hero = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] uppercase tracking-wider text-gray-400">WhatsApp</p>
-                  <p className="text-sm font-bold text-white">+880 1796-059406</p>
+                  <a href="tel:+8801796059406" className="text-sm font-bold text-white">+880 1796-059406</a>
                 </div>
               </div>
 
@@ -62,17 +63,17 @@ const Hero = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] uppercase tracking-wider text-gray-400">Email Us</p>
-                  <p className="text-sm font-bold text-white">jutaexpress@gmail.com</p>
+                  <a href="mailto:jutaexpress@gmail.com" className="text-sm font-bold text-white">jutaexpress@gmail.com</a>
                 </div>
               </div>
             </div>
 
             {/* CTA Button */}
-            <button className="group flex items-center gap-2 rounded-full bg-linear-to-r from-amber-500 to-orange-600 px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-amber-500/20 transition-all hover:scale-105 hover:shadow-amber-500/40 active:scale-95">
+            <Link to="/collections" className="group flex items-center gap-2 rounded-full bg-linear-to-r from-amber-500 to-orange-600 px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-amber-500/20 transition-all hover:scale-105 hover:shadow-amber-500/40 active:scale-95">
               <ShoppingBag size={18} />
               Shop Now
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
           </div>
 
           {/* B. Lottie Animation Section (Right) */}

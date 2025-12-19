@@ -41,7 +41,7 @@ const FeaturedShoes = ({ data }) => {
 
         {/* Right: Button */}
         <Link 
-          to="/category" 
+          to="/collections" 
           className="group flex shrink-0 items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-base font-bold uppercase text-black transition-all hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
         >
           Explore More Shoes

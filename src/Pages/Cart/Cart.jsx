@@ -1,20 +1,47 @@
 import React from 'react';
-
 import { Trash2, Plus, Minus, ArrowRight, ShoppingBag, ArrowLeft, ShieldCheck, CreditCard, Truck } from 'lucide-react';
-import { Link } from 'react-router';
 import { useCart } from '../../Contexts/CartProvider/CartProvider';
+import Swal from 'sweetalert2'; // 1. Import SweetAlert2
+import { Link } from 'react-router';
 
 const Cart = () => {
-  // 1. GET REAL DATA FROM CONTEXT
   const { cartItems, updateQuantity, removeFromCart } = useCart();
 
-  // 2. CALCULATIONS (Based on real items)
+  // Calculations
   const subtotal = cartItems.reduce((acc, item) => acc + (item.price.discounted * item.quantity), 0);
   const shippingCost = subtotal > 200 ? 0 : 15.00;
   const tax = subtotal * 0.05;
   const total = subtotal + shippingCost + tax;
 
-  // 3. EMPTY STATE
+  // --- 2. SWEETALERT REMOVE HANDLER ---
+  const handleRemoveItem = (id, size, color) => {
+    Swal.fire({
+      title: 'Remove Item?',
+      text: "Are you sure you want to remove this from your cart?",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33', // Red for delete
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, remove it!',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Perform the removal
+        removeFromCart(id, size, color);
+        
+        // Show success toast
+        Swal.fire({
+          title: 'Removed!',
+          text: 'Item has been removed.',
+          icon: 'success',
+          timer: 1500,
+          showConfirmButton: false
+        });
+      }
+    });
+  };
+
+  // Empty State
   if (cartItems.length === 0) {
     return (
       <div className="flex min-h-[80vh] flex-col items-center justify-center bg-white px-4 text-center">
@@ -46,25 +73,30 @@ const Cart = () => {
             <div className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-black/5">
               <ul className="divide-y divide-gray-100">
                 {cartItems.map((item) => (
-                  // We use a composite key because the same product ID can exist with different sizes/colors
                   <li key={`${item.product_id}-${item.size}-${item.color}`} className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center">
                     
-                    {/* Image */}
-                    <div className="relative aspect-square w-full shrink-0 overflow-hidden rounded-2xl bg-gray-100 sm:w-32 border border-gray-100">
+                    {/* Clickable Image */}
+                    <Link 
+                      to={`/products/${item.product_id}`}
+                      className="relative aspect-square w-full shrink-0 overflow-hidden rounded-2xl bg-gray-100 sm:w-32 border border-gray-100 group"
+                    >
                       <img 
-                        // Use the specific image we saved, or fallback to the first one in the array
                         src={item.image || item.product_images[0]} 
                         alt={item.product_name} 
-                        className="h-full w-full object-cover object-center"
+                        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                       />
-                    </div>
+                    </Link>
 
                     {/* Details */}
                     <div className="flex flex-1 flex-col justify-between sm:flex-row sm:items-center">
                       <div className="space-y-1 pr-4">
-                         <div className="flex items-center gap-2">
-                            <h3 className="text-lg font-bold text-gray-900">{item.product_name}</h3>
-                         </div>
+                         {/* Clickable Title */}
+                         <Link to={`/products/${item.product_id}`} className="group flex items-center gap-2 w-fit">
+                            <h3 className="text-lg font-bold text-gray-900 transition-colors group-hover:text-amber-600 group-hover:underline">
+                                {item.product_name}
+                            </h3>
+                         </Link>
+
                          <p className="text-sm text-gray-500">
                            Color: <span className="font-medium text-gray-900">{item.color}</span> • Size: <span className="font-medium text-gray-900">{item.size}</span>
                          </p>
@@ -79,7 +111,6 @@ const Cart = () => {
                          {/* Quantity Stepper */}
                          <div className="flex items-center rounded-xl border border-gray-200 bg-gray-50">
                             <button 
-                              // Call Context Function: decrease by 1
                               onClick={() => updateQuantity(item.product_id, item.size, item.color, -1)}
                               disabled={item.quantity <= 1}
                               className="p-2.5 text-gray-500 hover:text-amber-600 disabled:opacity-30 transition-colors"
@@ -90,7 +121,6 @@ const Cart = () => {
                                 {item.quantity}
                             </span>
                             <button 
-                               // Call Context Function: increase by 1
                                onClick={() => updateQuantity(item.product_id, item.size, item.color, 1)}
                                className="p-2.5 text-gray-500 hover:text-amber-600 disabled:opacity-30 transition-colors"
                             >
@@ -103,9 +133,10 @@ const Cart = () => {
                             <p className="text-lg font-bold text-gray-900">
                                ${(item.price.discounted * item.quantity).toFixed(2)}
                             </p>
+                            
+                            {/* --- 3. UPDATED REMOVE BUTTON --- */}
                             <button 
-                               // Call Context Function: Remove specific item
-                               onClick={() => removeFromCart(item.product_id, item.size, item.color)}
+                               onClick={() => handleRemoveItem(item.product_id, item.size, item.color)}
                                className="mt-1 flex items-center gap-1 text-xs font-bold text-red-500 hover:text-red-700 transition-colors"
                             >
                                <Trash2 size={12} /> Remove
