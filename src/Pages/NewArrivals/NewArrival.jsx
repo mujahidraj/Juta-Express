@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 import { Sparkles, ArrowRight, Clock, ArrowUpDown } from 'lucide-react';
-import NewestArrivalCard from '../../Components/NewestArrivalCard/NewestArrivalCard';
+;
 import FilterBar from '../../Components/FilterBar/FilterBar'; // Import your reusable component
 import { Link, useLoaderData } from 'react-router';
+import ProductCard from '../../Components/ProductCard/ProductCard';
 
 const NewArrival = () => {
   const data = useLoaderData();
@@ -90,7 +91,7 @@ const NewArrival = () => {
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {filteredData.map((item) => (
               <div key={item.id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
-                <NewestArrivalCard items={item} />
+                <ProductCard items={item} />
               </div>
             ))}
           </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import BestSellingCard from "../BestSellingCard/BestSellingCard";
 import SingleBest from '../SingleBest/SingleBest';
+import ProductCard from '../ProductCard/ProductCard';
 
 const BestSelling = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,7 +84,7 @@ const BestSelling = ({ data }) => {
           >
             {newData.map((item) => (
               <div key={item.product_id} className="shrink-0 px-2 box-border" style={{ width: `${100 / itemsToShow}%` }}
-              > <BestSellingCard items={item} /> </div>
+              > <ProductCard items={item} /> </div>
             ))}
           </div>
         </div>

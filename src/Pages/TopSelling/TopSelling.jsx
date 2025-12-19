@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Flame, Trophy, ArrowUpDown } from 'lucide-react';
-import BestSellingCard from '../../Components/BestSellingCard/BestSellingCard';
 import FilterBar from '../../Components/FilterBar/FilterBar';
 import { useLoaderData } from 'react-router';
+import ProductCard from '../../Components/ProductCard/ProductCard';
 
 const TopSelling = () => {
   const data = useLoaderData();
@@ -80,7 +80,7 @@ const TopSelling = () => {
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {filteredData.map((item) => (
               <div key={item.id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
-                <BestSellingCard items={item} />
+                <ProductCard items={item} />
               </div>
             ))}
           </div>

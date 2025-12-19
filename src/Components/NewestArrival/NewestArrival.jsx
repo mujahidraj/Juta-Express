@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import NewestArrivalCard from '../NewestArrivalCard/NewestArrivalCard';
 import SingleNew from '../SingleNew/SingleNew';
+import ProductCard from '../ProductCard/ProductCard';
 
 const NewestArrival = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,7 +84,7 @@ const NewestArrival = ({ data }) => {
           >
             {newData.map((items) => (
               <div key={items.product_id} className="shrink-0 px-2 box-border" style={{ width: `${100 / itemsToShow}%` }}
-              > <NewestArrivalCard items={items}></NewestArrivalCard> </div>
+              > <ProductCard items={items}></ProductCard> </div>
             ))}
           </div>
         </div>

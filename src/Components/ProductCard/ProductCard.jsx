@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Check, Heart, ShoppingCart, Star, Truck } from 'lucide-react';
 import { Link } from 'react-router';
 
-const NewestArrivalCard = ({ items }) => {
+const ProductCard = ({ items }) => {
   // Safety check
   if (!items) return null;
 
@@ -66,7 +66,7 @@ const NewestArrivalCard = ({ items }) => {
     <div className="group relative w-full max-w-sm overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
       
       {/* 1. THE OVERLAY LINK (Z-Index 10 covers the card background) */}
-      <Link 
+      <Link
         to={`/products/${items.product_id}`} 
         className="absolute inset-0 z-10"
         aria-label={`View details for ${items.product_name}`}
@@ -75,10 +75,10 @@ const NewestArrivalCard = ({ items }) => {
       {/* 2. Image Section */}
       <div className="relative h-72 w-full overflow-hidden bg-gray-100">
         
-        {/* Badges (Visual Only) */}
+        {/* Badges (Visual Only - z-20 but pointer-events-none so clicks pass through) */}
         <div className="absolute left-3 top-3 z-20 flex flex-col gap-2 pointer-events-none">
           {items.is_best_seller && (
-            <span className="w-fit rounded-full bg-yellow-500 px-3 py-1 text-[10px] font-bold text-white shadow-sm">
+            <span className="w-fit rounded-full bg-orange-500 px-3 py-1 text-[10px] font-bold text-white shadow-sm">
               Best Seller
             </span>
           )}
@@ -107,7 +107,6 @@ const NewestArrivalCard = ({ items }) => {
           src={items.product_images[currentImgIndex]}
           alt={items.product_name}
           className="h-full w-full object-cover object-center transition-transform duration-700 will-change-transform group-hover:scale-105"
-          // Mouse events for image swap (Optional: might conflict with touch on mobile, but okay for desktop)
           onMouseEnter={() => items.product_images[1] && setCurrentImgIndex(1)}
           onMouseLeave={() => setCurrentImgIndex(0)}
         />
@@ -188,7 +187,7 @@ const NewestArrivalCard = ({ items }) => {
                         <button className="text-[10px] text-blue-600 hover:underline">Size Guide</button>
                     </div>
                     <div className="flex flex-wrap gap-2">
-                        {items.available_sizes.map((size) => (
+                        {items.available_sizes.slice(0, 5).map((size) => (
                         <button
                             key={size}
                             onClick={(e) => handleSizeSelect(e, size)}
@@ -200,6 +199,9 @@ const NewestArrivalCard = ({ items }) => {
                             {size.replace('US ', '')}
                         </button>
                         ))}
+                        {items.available_sizes.length > 5 && (
+                             <span className="flex h-6 items-center text-[10px] text-gray-400">+</span>
+                        )}
                     </div>
                 </div>
             </div>
@@ -219,7 +221,8 @@ const NewestArrivalCard = ({ items }) => {
             {/* Add to Cart Button */}
             <button
                 onClick={handleAddToCart}
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 shadow-lg shadow-gray-900/20"
+                disabled={items.stock_status !== 'In Stock'}
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 shadow-lg shadow-gray-900/20 disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
                 <ShoppingCart size={18} />
                 <span>Add to Cart</span>
@@ -231,4 +234,4 @@ const NewestArrivalCard = ({ items }) => {
   );
 };
 
-export default NewestArrivalCard;
+export default ProductCard;
