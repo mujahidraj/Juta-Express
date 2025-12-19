@@ -9,6 +9,7 @@ import LoadingScreen from "../Pages/LoadingScreen/LoadingScreen";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import TopSelling from "../Pages/TopSelling/TopSelling";
 import Collection from "../Pages/Collection/Collection";
+import ProductDetail from "../Components/ProductDetail/ProductDetail";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,13 @@ const router = createBrowserRouter([
         loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <Collection></Collection>
+      },
+      {
+        path: 'products/:id',
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <ProductDetail></ProductDetail>
+
       }
     ]
   },

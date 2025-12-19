@@ -19,11 +19,13 @@ const FeaturedShoes = ({ data }) => {
       </div>
 
 
+      
       <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto gap-10'>
         {
           data.slice(0, 20).map(item => item.is_featured && <FeaturedShoesCard key={item.product_id} item={item}></FeaturedShoesCard>)
         }
       </div>
+     
       <div className="my-16 px-4">
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 rounded-3xl bg-gray-900 px-8 py-12 shadow-2xl md:flex-row md:px-16">
         

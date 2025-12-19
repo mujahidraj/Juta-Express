@@ -1,9 +1,12 @@
 import React from 'react';
+import { ShoppingBag, Star } from 'lucide-react'; 
+import { Link } from 'react-router';
 
 const FeaturedShoesCard = ({ item }) => {
   if (!item) return null;
 
   const {
+    product_id,
     product_name,
     brand_name,
     product_images,
@@ -13,73 +16,91 @@ const FeaturedShoesCard = ({ item }) => {
     is_new_arrival,
     stock_status,
   } = item;
+
   const discountPercentage = Math.round(
     ((price.regular - price.discounted) / price.regular) * 100
   );
 
+  const handleAddToCart = (e) => {
+    e.preventDefault(); 
+    e.stopPropagation(); 
+    
+    console.log(`Added product ${product_id} to cart`); 
+    alert(`${product_name} added to cart!`); 
+  };
+
   return (
-    <div className="group relative h-112.5 w-full max-w-sm overflow-hidden rounded-3xl bg-gray-900 shadow-lg transition-all hover:shadow-2xl">
-      <img
-        src={product_images[0]}
-        alt={product_name}
-        className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-      />
-      <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
-      <div className="absolute left-4 top-4 flex flex-col gap-2">
-        {is_new_arrival && (
-          <span className="w-fit rounded-full bg-blue-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md">
-            New Arrival
-          </span>
-        )}
-        {is_best_seller && (
-          <span className="w-fit rounded-full bg-yellow-400 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black shadow-sm backdrop-blur-md">
-            Best Seller
-          </span>
-        )}
-        {discountPercentage > 0 && (
-          <span className="w-fit rounded-full bg-red-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm backdrop-blur-md">
-            -{discountPercentage}%
-          </span>
-        )}
-      </div>
-      <div className="absolute right-4 top-4 flex items-center gap-1 rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-md">
-        <span className="text-yellow-400">★</span>
-        <span>{customer_ratings}</span>
-      </div>
-      <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
-        <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-gray-300 opacity-80">
-          {brand_name}
-        </p>
-        <h3 className="mb-3 text-2xl font-bold leading-tight text-white">
-          {product_name}
-        </h3>
-        <div className="flex items-end justify-between">
-          <div className="flex flex-col">
-            <span className="text-sm text-gray-400 line-through">
-              ${price.regular.toFixed(2)}
+    <div className="group relative h-112.5 w-full max-w-sm overflow-hidden rounded-3xl bg-gray-900 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+      <Link to={`/products/${product_id}`} className="block h-full w-full">
+        
+        <div className="relative h-full w-full overflow-hidden">
+          <img
+            src={product_images[0]}
+            alt={product_name}
+            className="h-full w-full object-cover object-center transition-transform duration-700 will-change-transform group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
+        </div>
+        <div className="absolute left-4 top-4 flex flex-col gap-2">
+          {is_new_arrival && (
+            <span className="w-fit rounded-full bg-blue-600/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
+              New
             </span>
-            <div className="flex items-baseline gap-2">
+          )}
+          {is_best_seller && (
+            <span className="w-fit rounded-full bg-amber-400/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black backdrop-blur-md">
+              Best Seller
+            </span>
+          )}
+          {discountPercentage > 0 && (
+            <span className="w-fit rounded-full bg-red-600/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
+              -{discountPercentage}%
+            </span>
+          )}
+        </div>
+        <div className="absolute right-4 top-4 flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur-md border border-white/10">
+          <Star size={12} className="fill-yellow-400 text-yellow-400" />
+          <span>{customer_ratings}</span>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full p-6 pb-8 transition-transform duration-300">
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-gray-400">
+            {brand_name}
+          </p>
+          <h3 className="mb-2 max-w-[70%] text-2xl font-black leading-tight text-white">
+            {product_name}
+          </h3>
+          
+          <div className="flex flex-col">
+            {discountPercentage > 0 && (
+              <span className="text-sm font-medium text-gray-400 line-through">
+                ${price.regular.toFixed(2)}
+              </span>
+            )}
+            <div className="flex items-center gap-3">
               <span className="text-2xl font-bold text-white">
                 ${price.discounted.toFixed(2)}
               </span>
               {stock_status !== 'In Stock' && (
-                <span className="text-xs text-red-400">({stock_status})</span>
+                <span className="rounded-md bg-red-500/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-red-400">
+                  {stock_status}
+                </span>
               )}
             </div>
           </div>
-          <button className="group/btn flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white text-black transition-all duration-300 hover:w-32 hover:bg-yellow-400">
-            <div className="flex items-center gap-2 px-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-              </svg>
-              <span className="whitespace-nowrap text-sm font-bold opacity-0 transition-opacity duration-200 group-hover/btn:opacity-100">
-                Buy Now
-              </span>
-            </div>
-          </button>
-
         </div>
-      </div>
+      </Link>
+      <button 
+        onClick={handleAddToCart}
+        className="group/btn absolute bottom-6 right-6 z-20 flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white text-black shadow-lg shadow-black/20 transition-all duration-300 hover:w-36 hover:bg-amber-400 active:scale-95"
+      >
+        <div className="flex items-center justify-center gap-2 px-4">
+          <ShoppingBag size={20} className="shrink-0" />
+          <span className="whitespace-nowrap text-sm font-bold opacity-0 transition-all duration-300 group-hover/btn:translate-x-0 group-hover/btn:opacity-100 hidden group-hover/btn:block">
+            Add to Cart
+          </span>
+        </div>
+      </button>
+
     </div>
   );
 };
