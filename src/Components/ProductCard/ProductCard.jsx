@@ -5,14 +5,12 @@ import { Check, Heart, ShoppingCart, Star, Truck } from 'lucide-react';
 import { Link } from 'react-router';
 
 const ProductCard = ({ items }) => {
-  // Safety check
   if (!items) return null;
 
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(items.available_colors?.[0]);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
-  // Helper to map color names to Tailwind classes
   const getColorClass = (color) => {
     const map = {
       'Red': 'bg-red-500',
@@ -66,6 +64,7 @@ const ProductCard = ({ items }) => {
     <div className="group relative w-full max-w-sm overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
       
       {/* 1. THE OVERLAY LINK (Z-Index 10 covers the card background) */}
+      
       <Link
         to={`/products/${items.product_id}`} 
         className="absolute inset-0 z-10"

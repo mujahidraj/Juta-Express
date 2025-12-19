@@ -48,14 +48,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'products/:id',
-        loader: () => fetch('shoes.json'),
+        loader: () => fetch('/shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <ProductDetail></ProductDetail>
 
       },
       {
         path: 'category/:categoryName', 
-        loader: () => fetch('/shoes.json'),
+        loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <CategorizedProduct></CategorizedProduct>
       }

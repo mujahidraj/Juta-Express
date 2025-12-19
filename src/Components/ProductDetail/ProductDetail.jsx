@@ -62,7 +62,6 @@ const ProductDetail = () => {
     );
   }
 
-  // Using the logic from your provided code snippet (checking index 0)
   const relatedProducts = allProducts
     .filter(item => 
       item.category?.[0] === product.category?.[0] && 

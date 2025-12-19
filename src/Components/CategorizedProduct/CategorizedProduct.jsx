@@ -1,15 +1,17 @@
-
+import React from 'react'; // Added React import
 import { LayoutGrid, ArrowLeft } from 'lucide-react';
-import ProductCard from '../ProductCard/ProductCard';
+import ProductCard from '../../Components/ProductCard/ProductCard'; // Check path
 import { Link, useLoaderData, useParams } from 'react-router';
+'react-router-dom'
 
 const CategorizedProduct = () => {
   const allData = useLoaderData();
-  const { categoryName } = useParams(); // Gets "Running", "Men", etc. from URL
+  const { categoryName } = useParams();
 
-  // Filter Logic: Check if the product's category array includes the URL param
-  const filteredProducts = allData.filter(product => 
-    product.category.includes(categoryName)
+  // Filter Logic
+  // Ensure we handle cases where category might not exist on a product
+  const filteredProducts = (allData || []).filter(product => 
+    product.category && product.category.includes(categoryName)
   );
 
   return (
@@ -50,7 +52,10 @@ const CategorizedProduct = () => {
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {filteredProducts.map((item) => (
-              <div key={item.product_id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div key={item.product_id || item.id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
+                {/* Pass the whole item. 
+                   Ensure ProductCard uses `items.product_id` for its Link 
+                */}
                 <ProductCard items={item} />
               </div>
             ))}
