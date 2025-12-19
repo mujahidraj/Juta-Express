@@ -1,17 +1,29 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router'; 
+import React, { useState } from 'react';
+'react-router-dom'
 import { FiLogIn, FiSearch } from "react-icons/fi";
-import logo from '../../assets/logo.png'
-import userIcon from '../../assets/userIcon.png'
-import cart from '../../assets/cart.png'
+import logo from '../../assets/logo.png';
+import userIcon from '../../assets/userIcon.png';
+import cart from '../../assets/cart.png';
+import { Link, NavLink, useNavigate } from 'react-router';
 
 const Navbar = () => {
   const userName = "Moizuddin Mohammad Mujahid Rashid";
-  
+  const navigate = useNavigate(); 
+  const [searchTerm, setSearchTerm] = useState("");
+
   const navLinkStyle = ({ isActive }) => 
     `text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:text-amber-600 ${
       isActive ? "text-amber-600" : "text-gray-700"
     }`;
+
+  const handleSearch = (e) => {
+    if (e.key === 'Enter' && searchTerm.trim()) {
+      navigate(`/collections?search=${encodeURIComponent(searchTerm.trim())}`);
+      setSearchTerm("");
+      const elem = document.activeElement;
+      if (elem) elem.blur();
+    }
+  };
 
   return (
     <div className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-xl shadow-sm">
@@ -30,7 +42,14 @@ const Navbar = () => {
               <li className="mb-2">
                 <div className="relative flex items-center px-0 hover:bg-transparent">
                     <FiSearch className="absolute left-3 text-gray-400" />
-                    <input type="text" placeholder="Search..." className="input input-sm input-bordered w-full rounded-full pl-9 focus:border-amber-500 focus:outline-none" />
+                    <input 
+                      type="text" 
+                      placeholder="Search..." 
+                      className="input input-sm input-bordered w-full rounded-full pl-9 focus:border-amber-500 focus:outline-none" 
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      onKeyDown={handleSearch}
+                    />
                 </div>
               </li>
               <li><NavLink to="/">Home</NavLink></li>
@@ -58,11 +77,14 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3 md:gap-5">
        
-          <div className="hidden  lg:block relative group">
+          <div className="hidden lg:block relative group">
              <input 
                 type="text" 
                 placeholder="Search..." 
-                className="w-48 rounded-full  bg-gray-100 py-1.5 pl-8 pr-4 text-xs font-medium focus:bg-white focus:ring-1 focus:ring-amber-500 focus:outline-none transition-colors border border-amber-400 focus:border-gray-200"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={handleSearch}
+                className="w-48 rounded-full bg-gray-100 py-1.5 pl-8 pr-4 text-xs font-medium focus:bg-white focus:ring-1 focus:ring-amber-500 focus:outline-none transition-colors border border-amber-400 focus:border-gray-200"
              />
              <FiSearch className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 h-3.5 w-3.5 group-focus-within:text-amber-600" />
           </div>
