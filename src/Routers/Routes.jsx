@@ -7,6 +7,7 @@ import Home from "../Pages/Home/Home";
 import Categories from "../Components/Categories/Categories";
 import LoadingScreen from "../Pages/LoadingScreen/LoadingScreen";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import TopSelling from "../Pages/TopSelling/TopSelling";
 
 
 const router = createBrowserRouter([
@@ -14,30 +15,34 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomeLayout></HomeLayout>,
     errorElement: <ErrorPage></ErrorPage>,
-    hydrateFallbackElement : <span className="loading loading-bars loading-xl"></span>,
-    children : [
+    hydrateFallbackElement: <span className="loading loading-bars loading-xl"></span>,
+    children: [
       {
-        path : '/',
-        index : true,
-        loader : ()=>fetch('shoes.json'),
-        hydrateFallbackElement : <LoadingScreen></LoadingScreen>,
-        element : <Home></Home>,
-        
+        path: '/',
+        index: true,
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <Home></Home>,
+
       },
       {
-        path : '/new-arrival',
-        element : <NewArrival></NewArrival>
+        path: '/new-arrival',
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <NewArrival></NewArrival>
       },
       {
-        path : '/best-selling',
-        element : <div>I am best selling</div>
+        path: '/best-selling',
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <TopSelling></TopSelling>
       },
       {
-        path : '/category',
-        element : <div> i am all</div>
+        path: '/category',
+        element: <div> i am all</div>
       }
     ]
   },
-  
+
 ]);
 export default router;
