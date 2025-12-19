@@ -36,7 +36,7 @@ const Navbar = () => {
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/new-arrival">New Arrival</NavLink></li>
               <li><NavLink to="/best-selling">Best Selling</NavLink></li>
-              <li><NavLink to="/category">Collection</NavLink></li>
+              <li><NavLink to="/collections">Collection</NavLink></li>
             </ul>
           </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           <NavLink to="/" className={navLinkStyle}>Home</NavLink>
           <NavLink to="/new-arrival" className={navLinkStyle}>New Arrivals</NavLink>
           <NavLink to="/best-selling" className={navLinkStyle}>Best Selling</NavLink>
-          <NavLink to="/category" className={navLinkStyle}>Collection</NavLink>
+          <NavLink to="/collections" className={navLinkStyle}>Collection</NavLink>
         </div>
 
         <div className="flex items-center gap-3 md:gap-5">

@@ -8,6 +8,7 @@ import Categories from "../Components/Categories/Categories";
 import LoadingScreen from "../Pages/LoadingScreen/LoadingScreen";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import TopSelling from "../Pages/TopSelling/TopSelling";
+import Collection from "../Pages/Collection/Collection";
 
 
 const router = createBrowserRouter([
@@ -38,8 +39,10 @@ const router = createBrowserRouter([
         element: <TopSelling></TopSelling>
       },
       {
-        path: '/category',
-        element: <div> i am all</div>
+        path: '/collections',
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <Collection></Collection>
       }
     ]
   },
