@@ -3,7 +3,7 @@ import { FiLogIn, FiSearch } from "react-icons/fi";
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/userIcon.png';
 import cart from '../../assets/cart.png';
-import { useCart } from '../../Contexts/CartProvider/CartProvider'; // <--- Import Context
+import { useCart } from '../../Contexts/CartProvider/CartProvider';
 import { Link, NavLink, useNavigate } from 'react-router';
 
 const Navbar = () => {
@@ -11,10 +11,8 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
 
-  // 1. Get the cart count function
   const { getCartCount } = useCart();
-  
-  // 2. Calculate current count
+
   const cartCount = getCartCount();
 
   const navLinkStyle = ({ isActive }) =>
@@ -93,13 +91,9 @@ const Navbar = () => {
             />
             <FiSearch className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 h-3.5 w-3.5 group-focus-within:text-amber-600" />
           </div>
-
-          {/* --- UPDATED CART ICON --- */}
           <Link to="/cart" className="relative flex items-center gap-2 rounded-full bg-gray-100 px-3 py-2 text-sm font-bold text-gray-700 transition-all hover:bg-amber-500 hover:text-white">
             <img className="h-5 w-5 object-contain" src={cart} alt="Cart" />
             <span className="hidden sm:inline">Cart</span>
-            
-            {/* Show badge only if items exist */}
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white shadow-lg animate-bounce">
                 {cartCount}

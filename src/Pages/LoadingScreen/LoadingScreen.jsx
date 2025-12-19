@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/logo.png'; 
+import logo from '../../assets/logo.png';
 
 const LoadingScreen = () => {
   const [loadingText, setLoadingText] = useState("Lacing up your kicks...");
@@ -15,7 +15,7 @@ const LoadingScreen = () => {
     const interval = setInterval(() => {
       i = (i + 1) % texts.length;
       setLoadingText(texts[i]);
-    }, 100); 
+    }, 100);
 
     return () => clearInterval(interval);
   }, []);
@@ -24,12 +24,12 @@ const LoadingScreen = () => {
     <div className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-white">
 
       <div className="relative mb-8">
-  
+
         <div className="absolute inset-0 animate-ping rounded-full bg-amber-100 opacity-75"></div>
-        <img 
-          src={logo} 
-          alt="Loading..." 
-          className="relative h-16 w-auto object-contain animate-bounce" 
+        <img
+          src={logo}
+          alt="Loading..."
+          className="relative h-16 w-auto object-contain animate-bounce"
         />
       </div>
       <h2 className="mb-6 text-2xl font-black uppercase tracking-tight text-gray-900">

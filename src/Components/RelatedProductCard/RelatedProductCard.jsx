@@ -6,8 +6,8 @@ const RelatedProductCard = ({ item }) => {
   if (!item) return null;
 
   return (
-    <Link 
-      to={`/products/${item.product_id || item.id}`} 
+    <Link
+      to={`/products/${item.product_id || item.id}`}
       className="group block rounded-xl border border-transparent p-2 transition-all hover:border-gray-100 hover:shadow-sm"
     >
       <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-100">
@@ -21,7 +21,7 @@ const RelatedProductCard = ({ item }) => {
         <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
           {item.brand_name}
         </p>
-        
+
         <h3 className="truncate text-sm font-bold text-gray-900 group-hover:text-amber-600">
           {item.product_name}
         </h3>

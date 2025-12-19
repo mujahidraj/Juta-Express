@@ -44,40 +44,28 @@ const Service = () => {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="container mx-auto max-w-7xl">
-        
-        {/* --- Header Style Matches "Newest Arrival" --- */}
         <div className="mb-16 text-center">
-          {/* Small Badge */}
           <span className="mb-2 inline-block rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-indigo-600">
             Our Promise
           </span>
-          
-          {/* Gradient Title (Blue/Indigo for Trust) */}
           <h2 className="mb-4 text-4xl font-black uppercase text-transparent bg-clip-text bg-linear-to-r from-red-600 to-indigo-600 md:text-5xl">
             Why Shop With Us?
           </h2>
-          
-          {/* Description */}
           <p className="mx-auto max-w-2xl text-lg text-gray-500">
             We don't just sell shoes; we deliver an experience. Here is why thousands of customers trust us with their style.
           </p>
         </div>
-        {/* --------------------------------------------- */}
 
-
-        {/* The Box-by-Box Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((item) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className={`group relative overflow-hidden rounded-3xl bg-white p-8 border-2 border-transparent transition-all duration-300 hover:-translate-y-2 ${item.borderColor} ${item.shadow} hover:shadow-2xl`}
             >
-              {/* Giant Background Number */}
               <span className="absolute -right-4 -top-4 text-9xl font-black text-gray-100 opacity-50 select-none transition-transform duration-500 group-hover:scale-110 group-hover:text-gray-50">
                 {item.id}
               </span>
 
-              {/* Content Wrapper */}
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl ${item.color} transition-transform duration-300 group-hover:rotate-6`}>
                   {item.icon}

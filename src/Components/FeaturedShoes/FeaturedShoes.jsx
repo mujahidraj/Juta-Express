@@ -19,37 +19,34 @@ const FeaturedShoes = ({ data }) => {
       </div>
 
 
-      
+
       <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto gap-10'>
         {
           data.slice(0, 20).map(item => item.is_featured && <FeaturedShoesCard key={item.product_id} item={item}></FeaturedShoesCard>)
         }
       </div>
-     
-      <div className="my-16 px-4">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 rounded-3xl bg-gray-900 px-8 py-12 shadow-2xl md:flex-row md:px-16">
-        
-        {/* Left: Text Content */}
-        <div className="max-w-2xl text-center md:text-left">
-          <h2 className="mb-3 text-3xl font-black uppercase leading-tight text-white md:text-4xl">
-            Still haven't found <span className="text-amber-500">your style?</span>
-          </h2>
-          <p className="text-lg text-gray-400">
-            Don't settle for ordinary. Browse our full catalog of 500+ exclusive sneakers and find the pair that speaks to you.
-          </p>
-        </div>
 
-        {/* Right: Button */}
-        <Link 
-          to="/collections" 
-          className="group flex shrink-0 items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-base font-bold uppercase text-black transition-all hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
-        >
-          Explore More Shoes
-          <FiArrowRight className="transition-transform group-hover:translate-x-1" />
-        </Link>
-        
+      <div className="my-16 px-4">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 rounded-3xl bg-gray-900 px-8 py-12 shadow-2xl md:flex-row md:px-16">
+          <div className="max-w-2xl text-center md:text-left">
+            <h2 className="mb-3 text-3xl font-black uppercase leading-tight text-white md:text-4xl">
+              Still haven't found <span className="text-amber-500">your style?</span>
+            </h2>
+            <p className="text-lg text-gray-400">
+              Don't settle for ordinary. Browse our full catalog of 500+ exclusive sneakers and find the pair that speaks to you.
+            </p>
+          </div>
+
+          <Link
+            to="/collections"
+            className="group flex shrink-0 items-center gap-2 rounded-full bg-amber-500 px-8 py-4 text-base font-bold uppercase text-black transition-all hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
+          >
+            Explore More Shoes
+            <FiArrowRight className="transition-transform group-hover:translate-x-1" />
+          </Link>
+
+        </div>
       </div>
-    </div>
     </div>
   );
 };

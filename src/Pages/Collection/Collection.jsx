@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { LayoutGrid, ArrowUpDown } from 'lucide-react';
 import FilterBar from '../../Components/FilterBar/FilterBar';
 import ProductCard from '../../Components/ProductCard/ProductCard';
@@ -7,7 +7,7 @@ import { useLoaderData, useSearchParams } from 'react-router';
 const Collection = () => {
 
   const data = useLoaderData();
-  
+
   const [searchParams] = useSearchParams();
   const initialSearch = searchParams.get('search') || '';
 
@@ -23,17 +23,17 @@ const Collection = () => {
   }, [searchParams]);
   const filteredData = (data || [])
     .filter(item => {
-      const name = item.product_name || item.name || ''; 
-      const cat = item.category || ''; 
-      const itemSizes = item.available_sizes || item.size || []; 
+      const name = item.product_name || item.name || '';
+      const cat = item.category || '';
+      const itemSizes = item.available_sizes || item.size || [];
 
       const matchesSearch = name.toLowerCase().includes(searchQuery.toLowerCase());
       let matchesCategory = true;
       if (category !== 'all') {
         if (Array.isArray(cat)) {
-           matchesCategory = cat.includes(category);
+          matchesCategory = cat.includes(category);
         } else {
-           matchesCategory = cat.toLowerCase() === category.toLowerCase();
+          matchesCategory = cat.toLowerCase() === category.toLowerCase();
         }
       }
       const matchesSize = size === 'all' || (itemSizes.includes && itemSizes.includes(size));
@@ -44,7 +44,7 @@ const Collection = () => {
       if (sortBy === 'price_asc') return a.price.discounted - b.price.discounted;
       if (sortBy === 'price_desc') return b.price.discounted - a.price.discounted;
       if (sortBy === 'rating') return b.customer_ratings - a.customer_ratings;
-      return 0; 
+      return 0;
     });
 
   const clearFilters = () => {
@@ -69,32 +69,32 @@ const Collection = () => {
           <div className="mx-auto mt-4 h-1.5 w-24 rounded-full bg-linear-to-r from-amber-400 to-orange-500"></div>
 
           <p className="mt-6 text-lg text-gray-500">
-             {searchQuery ? (
-               <span>Showing results for <strong className="text-gray-900">"{searchQuery}"</strong></span>
-             ) : (
-               "Discover our premium range of footwear. Designed for comfort, crafted for style."
-             )}
+            {searchQuery ? (
+              <span>Showing results for <strong className="text-gray-900">"{searchQuery}"</strong></span>
+            ) : (
+              "Discover our premium range of footwear. Designed for comfort, crafted for style."
+            )}
           </p>
         </div>
       </section>
 
       <main className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
-        
-        <FilterBar 
-          data={data} 
-          
+
+        <FilterBar
+          data={data}
+
           searchQuery={searchQuery}
           category={category}
           size={size}
           sortBy={sortBy}
           resultCount={filteredData.length}
-          
+
           onSearchChange={setSearchQuery}
           onCategoryChange={setCategory}
           onSizeChange={setSize}
           onSortChange={setSortBy}
           onClearFilters={clearFilters}
-          themeColor="amber" 
+          themeColor="amber"
         />
 
         {filteredData.length > 0 ? (
@@ -107,24 +107,24 @@ const Collection = () => {
           </div>
         ) : (
           <div className="flex min-h-100 flex-col items-center justify-center rounded-2xl bg-gray-50 p-8 text-center border-2 border-dashed border-gray-200">
-             <div className="mb-4 rounded-full bg-gray-100 p-4">
-               <ArrowUpDown className="text-gray-400" size={32} />
-             </div>
-             <h3 className="text-lg font-bold text-gray-900">No products found</h3>
-             <p className="text-gray-500">
-               {searchQuery ? `No matches for "${searchQuery}"` : "Try changing your filters."}
-             </p>
-             <button onClick={clearFilters} className="mt-4 text-sm font-bold text-amber-600 hover:underline">
-               Clear all filters
-             </button>
+            <div className="mb-4 rounded-full bg-gray-100 p-4">
+              <ArrowUpDown className="text-gray-400" size={32} />
+            </div>
+            <h3 className="text-lg font-bold text-gray-900">No products found</h3>
+            <p className="text-gray-500">
+              {searchQuery ? `No matches for "${searchQuery}"` : "Try changing your filters."}
+            </p>
+            <button onClick={clearFilters} className="mt-4 text-sm font-bold text-amber-600 hover:underline">
+              Clear all filters
+            </button>
           </div>
         )}
 
         {filteredData.length > 0 && (
           <div className="mt-16 flex justify-center">
-              <button className="rounded-full border border-gray-300 bg-white px-8 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 transition-all hover:border-amber-500 hover:bg-amber-500 hover:text-white hover:shadow-lg hover:shadow-amber-500/25">
-                  Load More Products
-              </button>
+            <button className="rounded-full border border-gray-300 bg-white px-8 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 transition-all hover:border-amber-500 hover:bg-amber-500 hover:text-white hover:shadow-lg hover:shadow-amber-500/25">
+              Load More Products
+            </button>
           </div>
         )}
 

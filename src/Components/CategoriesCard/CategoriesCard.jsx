@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 
 const CategoriesCard = ({ name, image }) => {
   return (
-    // Link points to /category/Name (e.g., /category/Running)
     <Link to={`/category/${name}`} className="group relative h-48 w-full cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-md block">
       <img
         src={image}
@@ -19,7 +18,7 @@ const CategoriesCard = ({ name, image }) => {
           {name}
         </h3>
       </div>
-      
+
     </Link>
   );
 };

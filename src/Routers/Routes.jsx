@@ -56,24 +56,24 @@ const router = createBrowserRouter([
 
       },
       {
-        path: 'category/:categoryName', 
+        path: 'category/:categoryName',
         loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <CategorizedProduct></CategorizedProduct>
       },
       {
         path: '/cart',
-        element : <Cart></Cart>
+        element: <Cart></Cart>
       },
       {
-    path : '/wishlist',
-    loader: () => fetch('shoes.json'),
-    hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
-    element : <Wishlist></Wishlist>
-  }
+        path: '/wishlist',
+        loader: () => fetch('shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <Wishlist></Wishlist>
+      }
     ]
   },
-  
+
 
 ]);
 export default router;

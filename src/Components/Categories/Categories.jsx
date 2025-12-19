@@ -23,7 +23,7 @@ const Categories = ({ data }) => {
 
   return (
     <section className="bg-white my-10 py-10">
-      
+
       <div className="container  mx-auto px-4">
         <div className="my-10 text-center">
           <span className="mb-2 inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-600">
