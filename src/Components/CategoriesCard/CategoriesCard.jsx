@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 
 const CategoriesCard = ({ name, image }) => {
   return (
-    <div className="group relative h-48 w-full cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-md">
+    // Link points to /category/Name (e.g., /category/Running)
+    <Link to={`/category/${name}`} className="group relative h-48 w-full cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-md block">
       <img
         src={image}
         alt={name}
@@ -17,7 +20,7 @@ const CategoriesCard = ({ name, image }) => {
         </h3>
       </div>
       
-    </div>
+    </Link>
   );
 };
 

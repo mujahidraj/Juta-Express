@@ -1,42 +1,53 @@
 import React, { useState } from 'react';
-
 import { Sparkles, ArrowRight, Clock, ArrowUpDown } from 'lucide-react';
-;
-import FilterBar from '../../Components/FilterBar/FilterBar'; // Import your reusable component
-import { Link, useLoaderData } from 'react-router';
+import FilterBar from '../../Components/FilterBar/FilterBar';
 import ProductCard from '../../Components/ProductCard/ProductCard';
+import { Link, useLoaderData } from 'react-router';
 
 const NewArrival = () => {
   const data = useLoaderData();
 
-  // 1. Filter States
+  // 1. Base Data: Filter for New Arrivals FIRST
+  // We pass THIS to the FilterBar so the dropdowns only show relevant options
+  const newArrivalsBase = (data || []).filter(item => item.is_new_arrival);
+
+  // 2. Filter States
   const [searchQuery, setSearchQuery] = useState('');
   const [category, setCategory] = useState('all');
   const [size, setSize] = useState('all');
   const [sortBy, setSortBy] = useState('newest');
 
-  // 2. Logic: Filter Data (New Arrivals Only + User Filters)
-  const filteredData = (data || [])
-    .filter(item => item.is_new_arrival) // STRICTLY show only New Arrivals
+  // 3. Logic: Apply User Filters to the New Arrivals Base
+  const filteredData = newArrivalsBase
     .filter(item => {
-      // Safe access
-      const name = item.name || '';
-      const cat = item.category || '';
-      const itemSizes = item.size || []; 
+      // Safe access to properties (Handle different field names)
+      const name = item.product_name || item.name || '';
+      const cat = item.category || ''; // Can be string or array
+      const itemSizes = item.available_sizes || item.size || []; 
 
       // Search Filter
       const matchesSearch = name.toLowerCase().includes(searchQuery.toLowerCase());
-      // Category Filter
-      const matchesCategory = category === 'all' || cat.toLowerCase() === category.toLowerCase();
+      
+      // Category Filter (Handles both Array ["Men", "Running"] and String "Running")
+      let matchesCategory = true;
+      if (category !== 'all') {
+        if (Array.isArray(cat)) {
+           matchesCategory = cat.includes(category);
+        } else {
+           matchesCategory = cat.toLowerCase() === category.toLowerCase();
+        }
+      }
+
       // Size Filter
       const matchesSize = size === 'all' || (itemSizes.includes && itemSizes.includes(size));
 
       return matchesSearch && matchesCategory && matchesSize;
     })
     .sort((a, b) => {
-      if (sortBy === 'price_asc') return a.price - b.price;
-      if (sortBy === 'price_desc') return b.price - a.price;
-      if (sortBy === 'rating') return b.rating - a.rating;
+      // Sort Logic
+      if (sortBy === 'price_asc') return a.price.discounted - b.price.discounted;
+      if (sortBy === 'price_desc') return b.price.discounted - a.price.discounted;
+      if (sortBy === 'rating') return b.customer_ratings - a.customer_ratings;
       return 0; // Default
     });
 
@@ -73,12 +84,16 @@ const NewArrival = () => {
 
       <main className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         
+        {/* Dynamic Filter Bar */}
         <FilterBar 
+          data={newArrivalsBase} // <--- IMPORTANT: Pass the base list of new arrivals here
+          
           searchQuery={searchQuery}
           category={category}
           size={size}
           sortBy={sortBy}
           resultCount={filteredData.length}
+          
           onSearchChange={setSearchQuery}
           onCategoryChange={setCategory}
           onSizeChange={setSize}
@@ -90,12 +105,13 @@ const NewArrival = () => {
         {filteredData.length > 0 ? (
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {filteredData.map((item) => (
-              <div key={item.id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div key={item.product_id || item.id} className="transition-opacity duration-300 ease-in-out hover:opacity-100">
                 <ProductCard items={item} />
               </div>
             ))}
           </div>
         ) : (
+          /* Empty State */
           <div className="flex min-h-100 flex-col items-center justify-center rounded-2xl bg-gray-50 p-8 text-center border-2 border-dashed border-gray-200">
              <div className="mb-4 rounded-full bg-amber-100 p-4">
                <Clock className="text-amber-500" size={32} />
@@ -110,7 +126,7 @@ const NewArrival = () => {
 
         <div className="mt-16 flex justify-center">
             <Link 
-              to="/all-products" 
+              to="/collections" 
               className="group flex items-center gap-2 rounded-full border border-gray-300 bg-white px-8 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 transition-all hover:border-amber-500 hover:bg-amber-500 hover:text-white hover:shadow-lg hover:shadow-amber-500/25"
             >
                 View Full Collection

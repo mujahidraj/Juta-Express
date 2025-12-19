@@ -10,6 +10,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import TopSelling from "../Pages/TopSelling/TopSelling";
 import Collection from "../Pages/Collection/Collection";
 import ProductDetail from "../Components/ProductDetail/ProductDetail";
+import CategorizedProduct from "../Components/CategorizedProduct/CategorizedProduct";
 
 
 const router = createBrowserRouter([
@@ -51,6 +52,12 @@ const router = createBrowserRouter([
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <ProductDetail></ProductDetail>
 
+      },
+      {
+        path: 'category/:categoryName', 
+        loader: () => fetch('/shoes.json'),
+        hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
+        element: <CategorizedProduct></CategorizedProduct>
       }
     ]
   },

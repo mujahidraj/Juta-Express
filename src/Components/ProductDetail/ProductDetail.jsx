@@ -37,6 +37,7 @@ const ProductDetail = () => {
   const product = allProducts.find(p => {
     return String(p.product_id) === String(targetId) || String(p.id) === String(targetId);
   });
+  
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -61,9 +62,10 @@ const ProductDetail = () => {
     );
   }
 
+  // Using the logic from your provided code snippet (checking index 0)
   const relatedProducts = allProducts
     .filter(item => 
-      item.category[0] === product.category[0] && 
+      item.category?.[0] === product.category?.[0] && 
       String(item.id || item.product_id) !== String(product.id || product.product_id)
     )
     .slice(0, 5);
@@ -90,7 +92,7 @@ const ProductDetail = () => {
           <span>/</span>
           <Link to="/all-products" className="hover:text-amber-600">Shop</Link>
           <span>/</span>
-          <span className="font-medium text-gray-900">{product.category[0]}</span>
+          <span className="font-medium text-gray-900">{product.category?.[0]}</span>
           <span>/</span>
           <span className="truncate font-medium text-gray-900">{product.product_name}</span>
         </div>
@@ -234,6 +236,7 @@ const ProductDetail = () => {
           </div>
         </div>
 
+        {/* --- REVIEWS SECTION (UPDATED) --- */}
         <section className="mt-20 border-t border-gray-100 pt-16">
            <h2 className="text-2xl font-black text-gray-900 mb-8">Customer Reviews</h2>
            <div className="grid gap-10 lg:grid-cols-3">
@@ -260,20 +263,28 @@ const ProductDetail = () => {
                  </div>
               </div>
 
+              {/* Dynamic Customer Comments */}
               <div className="col-span-1 lg:col-span-2 space-y-6">
                  {product.customer_reviews?.slice(0, 3).map((review, idx) => (
                     <div key={idx} className="border-b border-gray-100 pb-6 last:border-0">
                        <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-2">
-                             <div className="h-8 w-8 rounded-full bg-gray-200"></div>
-                             <span className="font-bold text-sm">User {review.user_id}</span>
+                             {/* Initials Avatar */}
+                             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-xs font-bold text-gray-500">
+                                {review.user ? review.user.charAt(0).toUpperCase() : 'U'}
+                             </div>
+                             {/* User Name */}
+                             <span className="font-bold text-sm">{review.user}</span>
                           </div>
-                          <span className="text-xs text-gray-400">2 days ago</span>
+                          {/* Date */}
+                          <span className="text-xs text-gray-400">{review.date}</span>
                        </div>
+                       {/* Rating Stars */}
                        <div className="flex text-amber-400 mb-2">
-                          {[...Array(review.rating)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
+                          {[...Array(review.rating || 0)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
                        </div>
-                       <p className="text-sm text-gray-600">{review.comment}</p>
+                       {/* Review Text */}
+                       <p className="text-sm text-gray-600">{review.text}</p>
                     </div>
                  ))}
                  <button className="text-sm font-bold text-gray-900 underline">View All Reviews</button>
@@ -297,7 +308,7 @@ const ProductDetail = () => {
               </div>
            ) : (
               <div className="rounded-xl bg-gray-50 p-10 text-center text-gray-500">
-                 No related products found in the "{product.category[0]}" category.
+                 No related products found in the "{product.category?.[0]}" category.
               </div>
            )}
         </section>
