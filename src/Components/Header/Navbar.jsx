@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FiLogIn, FiSearch } from "react-icons/fi";
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/userIcon.png';
@@ -6,9 +6,14 @@ import cart from '../../assets/cart.png';
 import { useCart } from '../../Contexts/CartProvider/CartProvider';
 import { Link, NavLink, useNavigate } from 'react-router';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
-  const userName = "Moizuddin Mohammad Mujahid Rashid";
+
+  const {user, logOutUser} = useContext(AuthContext)
+  const userName = user?.displayName || "Guest";
+  const userPhoto = user?.photoURL || userIcon;
+
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -29,6 +34,22 @@ const Navbar = () => {
     }
   };
 
+  const   handleLogedOut = () => { 
+    logOutUser()
+    .then(()=>{
+      Swal.fire({
+            icon: 'success',
+            title: 'Logged Out!',
+            text: `You have been successfully logged out.`,
+            confirmButtonColor: '#d97706',
+          });
+      navigate('/login')
+    })
+    .catch((error)=>{
+      console.log(error);
+    })
+  }
+  
   return (
     <div className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-xl shadow-sm">
 
@@ -103,7 +124,7 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden items-center gap-2 rounded-full bg-gray-100 py-1 pl-1 pr-4 lg:flex border border-gray-200">
-            <img className="h-8 w-8 rounded-full border border-white bg-white object-cover shadow-sm" src={userIcon} alt="User" />
+            <img className="h-8 w-8 rounded-full border border-white bg-white object-cover shadow-sm" src={userPhoto} alt="User" />
             <div className="flex flex-col text-xs">
               <span className="font-semibold text-gray-700">
                 {userName.length > 15 ? `${userName.slice(0, 15)}...` : userName}
@@ -112,10 +133,16 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Link to="/login" className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 hover:shadow-lg">
+          {
+            user ? (
+              <button onClick={handleLogedOut} to="/login" className="btn btn-sm btn-ghost btn-circle">
+                <FiLogIn className="h-5 w-5 text-gray-700" />
+              </button>
+            ) : (<Link to="/login" className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 hover:shadow-lg">
             <span className="hidden sm:inline">Login</span>
             <FiLogIn size={18} />
-          </Link>
+          </Link>)
+          }
 
         </div>
 

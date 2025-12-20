@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { Eye, EyeOff, Mail, Lock, ArrowRight, LogIn } from 'lucide-react';
 import Swal from 'sweetalert2';
 import logo from '../../assets/logo.png'; 
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
 
 const Login = () => {
+
+  const {loginUser , googleSignUp ,setUser} = use(AuthContext)
+
+  const navigate =useNavigate()
+    const location = useLocation()
+
+
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
@@ -15,27 +23,55 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
     
-    Swal.fire({
-      icon: 'success',
-      title: 'Welcome Back!',
-      text: 'You have successfully logged in.',
-      confirmButtonColor: '#d97706', // Amber-600
-      timer: 1500
-    });
+
+    loginUser(formData.email, formData.password)
+      .then(() => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Welcome Back!',
+          text: 'You have successfully logged in.',
+        });
+        navigate(`${location.state ? location.state : '/'}`);
+
+
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: error.code,
+        });
+      });
+
+    
   };
 
   const handleSocialLogin = (provider) => {
-    Swal.fire({
-        icon: 'info',
-        title: `${provider} Login`,
-        text: 'Connecting to social provider...',
-        confirmButtonColor: '#000'
-    });
-  };
+    googleSignUp().then((result)=>{
+         const loggedUser = result.user;
+         Swal.fire({
+         icon: 'info',
+         title: `${provider} Login`,
+         text: 'Google Login Seccuessful!',
+         confirmButtonColor: '#000'
+       });
+       navigate('/')
+         setUser(loggedUser)}
+       
+       ).catch((error)=>{
+         Swal.fire({
+           icon: 'error',
+           title: 'Social Login Failed',
+           text: error.message,
+         });
+  })
+  }   
 
   return (
     // FULL SCREEN WRAPPER - NO SCROLLBAR
@@ -53,7 +89,7 @@ const Login = () => {
       </div>
 
       {/* --- CARD CONTAINER --- */}
-      <div className="relative z-10 w-full max-w-md bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl p-8 mx-4 border border-white/20 animate-fade-in-up">
+      <div className="relative z-10 w-full max-w-md bg-white/95 backdrop-blur-xl  shadow-2xl p-8 mx-4 border border-white/20 animate-fade-in-up">
         
         {/* --- HEADER: LOGO & BRAND --- */}
         <div className="flex flex-col items-center mb-8">
@@ -96,7 +132,7 @@ const Login = () => {
                 
                 {/* Forgot Password Link */}
                 <div className="flex justify-end mt-2">
-                    <Link to="/forgot-password" class="text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline">
+                    <Link to="/forgot-password" className="text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline">
                         Forgot Password?
                     </Link>
                 </div>
@@ -130,6 +166,10 @@ const Login = () => {
             <p className="text-center text-xs text-gray-500 mt-2">
                 Don't have an account? <Link to="/register" className="font-bold text-amber-600 hover:text-amber-700 hover:underline">Sign Up</Link>
             </p>
+            <Link to="/" className=" text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-1">
+                <ArrowRight className="rotate-180 h-4 w-4" />
+                <span className="text-sm font-medium">Countine as guest</span>
+            </Link>
         </div>
 
       </div>
