@@ -46,7 +46,13 @@ const Navbar = () => {
       navigate('/login')
     })
     .catch((error)=>{
-      console.log(error);
+     const err = error.message;
+     Swal.fire({
+      icon: 'error',
+      title: 'Logout Failed',
+      text: err,
+      confirmButtonColor: '#d97706',
+    });
     })
   }
   

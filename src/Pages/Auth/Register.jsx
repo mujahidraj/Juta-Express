@@ -40,7 +40,15 @@ const Register = () => {
           .then(() => {
             setUser({ ...loggedUser, displayName: formData.name, photoURL: formData.photoUrl });
           })
-          .catch((err) => console.log(err));
+          .catch((err) => 
+            Swal.fire({
+              icon: 'error',
+              title: 'Profile Update Failed',
+              text: err.message,
+              confirmButtonColor: '#d97706',
+            })
+          );
+
         userVerification()
           .then(() => {
             let timerInterval;

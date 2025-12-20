@@ -7,7 +7,7 @@ const PrivateRouter = ({children}) => {
   const {user } = use(AuthContext)
   const location = useLocation()
   const navigate = useNavigate()
-  console.log(location.pathname);
+  
   
   if (user && user.emailVerified === false) {
     Swal.fire({
