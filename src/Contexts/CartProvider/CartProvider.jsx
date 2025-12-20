@@ -60,9 +60,8 @@ export const CartProvider = ({ children }) => {
     }));
   };
 
-  // --- NEW FUNCTION: Clears the cart state ---
   const clearCart = () => {
-    setCartItems([]); // This resets state, and the useEffect above will sync it to localStorage automatically
+    setCartItems([]); 
   };
 
   const getCartCount = () => {
@@ -76,7 +75,7 @@ export const CartProvider = ({ children }) => {
         removeFromCart, 
         updateQuantity, 
         getCartCount,
-        clearCart // <--- Added here so Checkout page can access it
+        clearCart 
     }}>
       {children}
     </CartContext.Provider>

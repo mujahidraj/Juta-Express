@@ -1,15 +1,13 @@
-import React, { use, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Eye, EyeOff, User, Mail, Link as LinkIcon, Lock, ArrowRight, Camera } from 'lucide-react';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
 import logo from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router';
-import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
 
 const Register = () => {
-
-  const { createUser, userUpdate, setUser, user ,googleSignUp} = use(AuthContext)
-
-  const navigate = useNavigate()
+  const { createUser, userUpdate, setUser, googleSignUp, userVerification } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -22,79 +20,99 @@ const Register = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-
-    // 2. Check Password
     if (!passwordRegex.test(formData.password)) {
       Swal.fire({
         icon: 'error',
         title: 'Weak Password',
-        text: 'Password must be at least 8 characters, including 1 uppercase, 1 lowercase, 1 number, and 1 special char (@$!%*?&).',
+        text: 'Password must be at least 8 chars, include 1 uppercase, 1 lowercase, 1 number, and 1 special char.',
         confirmButtonColor: '#d97706',
       });
-      return; // Stop the function here
+      return;
     }
-
     createUser(formData.email, formData.password)
-      .then(() => {
-        Swal.fire({
-          icon: 'success',
-          title: 'Account Created!',
-          text: `Welcome to JutaExpress, ${formData.name}!`,
-          confirmButtonColor: '#d97706',
-        });
-
+      .then((result) => {
+        const loggedUser = result.user;
         userUpdate({ displayName: formData.name, photoURL: formData.photoUrl })
           .then(() => {
-            setUser({ ...user, displayName: formData.name, photoURL: formData.photoUrl })
-            navigate('/')
+            setUser({ ...loggedUser, displayName: formData.name, photoURL: formData.photoUrl });
           })
+          .catch((err) => console.log(err));
+        userVerification()
+          .then(() => {
+            let timerInterval;
+
+            Swal.fire({
+              title: 'Verify Your Email',
+              html: `We sent a link to <b>${formData.email}</b>.<br/>Please check your inbox and click the link.<br/><br/><b>Waiting for verification...</b>`,
+              icon: 'info',
+              showConfirmButton: false,
+              allowOutsideClick: false,
+              didOpen: () => {
+                Swal.showLoading();
+                timerInterval = setInterval(() => {
+                  loggedUser.reload().then(() => {
+                    if (loggedUser.emailVerified) {
+                      clearInterval(timerInterval);
+                      Swal.close();
+
+                      Swal.fire({
+                        icon: 'success',
+                        title: 'Email Verified!',
+                        text: 'Redirecting to Home...',
+                        timer: 1500,
+                        showConfirmButton: false
+                      }).then(() => {
+                        navigate('/');
+                      });
+                    }
+                  });
+                }, 3000);
+              },
+              willClose: () => {
+                clearInterval(timerInterval);
+              }
+            });
+          });
       })
-      .catch(error => {
+      .catch((error) => {
         Swal.fire({
           icon: 'error',
-          title: 'Login Failed',
-          text: error.code,
+          title: 'Registration Failed',
+          text: error.message,
+          confirmButtonColor: '#d97706',
         });
-
-      })
-
-
+      });
   };
 
   const handleSocialLogin = (provider) => {
-    
-    googleSignUp().then((result)=>{
-      const loggedUser = result.user;
-      Swal.fire({
-      icon: 'info',
-      title: `${provider} Login`,
-      text: 'Google Login Seccuessful!',
-      confirmButtonColor: '#000'
-    });
-    navigate('/')
-      setUser(loggedUser)}
-    
-    ).catch((error)=>{
-      Swal.fire({
-        icon: 'error',
-        title: 'Social Login Failed',
-        text: error.message,
+    googleSignUp()
+      .then((result) => {
+        const loggedUser = result.user;
+        setUser(loggedUser);
+        Swal.fire({
+          icon: 'success',
+          title: `${provider} Login Successful`,
+          text: `Welcome back!`,
+          timer: 1500,
+          showConfirmButton: false
+        });
+        navigate('/');
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Social Login Failed',
+          text: error.message,
+        });
       });
-    });
-
-    
   };
 
   return (
-    // FULL SCREEN WRAPPER - NO SCROLLBAR
     <div className="h-screen w-full relative flex items-center justify-center overflow-hidden font-sans text-gray-900 bg-gray-900">
-
-      {/* --- BACKGROUND IMAGE --- */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1600&q=80"
@@ -104,12 +122,14 @@ const Register = () => {
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/20"></div>
       </div>
 
-      {/* --- CARD CONTAINER --- */}
-      <div className="relative z-10 w-full max-w-4xl bg-white/95 backdrop-blur-xl shadow-2xl p-8 mx-4 border border-white/20">
 
-        {/* --- HEADER: LOGO & BRAND --- */}
-        <div className="flex flex-col items-center mb-6">
-          <div className="flex items-center gap-2 mb-1">
+
+
+
+      <div className="relative z-10 w-full max-w-4xl bg-white/95 backdrop-blur-xl  shadow-2xl p-8 mx-4 border border-white/20 animate-fade-in-up">
+
+        <Link to="/" className="flex justify-center my-2 gap-2 group">
+          <div className="flex items-center gap-2 mb-2">
             <img
               className="h-10 w-auto object-contain"
               src={logo}
@@ -120,61 +140,56 @@ const Register = () => {
               Juta<span className="text-amber-600">Express</span>
             </h2>
           </div>
-          <p className="text-sm text-gray-500">Create your account to start shopping</p>
+        </Link>
+
+        <div className="flex flex-col items-center mb-6">
+          <h2 className="text-3xl font-black tracking-tight text-gray-900">Create Account</h2>
+          <p className="text-sm text-gray-500 mt-1">Join the community of trendsetters.</p>
         </div>
 
         <form onSubmit={handleSubmit}>
 
-          {/* --- 2-COLUMN GRID LAYOUT (Left: Name/Photo, Right: Email/Pass) --- */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
-            {/* LEFT SIDE */}
             <div className="space-y-4">
-              {/* Name */}
               <div className="relative group">
                 <User className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
                 <input name="name" type="text" required placeholder="Full Name" value={formData.name} onChange={handleChange}
-                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50" />
+                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50/50 focus:bg-white" />
               </div>
 
-              {/* Photo URL */}
               <div className="relative group">
                 <LinkIcon className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
                 <input name="photoUrl" type="url" required placeholder="Photo URL" value={formData.photoUrl} onChange={handleChange}
-                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50" />
+                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50/50 focus:bg-white" />
               </div>
 
-              {/* Photo Preview (Small) */}
               <div className="flex items-center gap-3 p-2 bg-gray-50 rounded-xl border border-dashed border-gray-300">
                 <div className="h-10 w-10 shrink-0 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center">
                   {formData.photoUrl ? (
                     <img src={formData.photoUrl} alt="" className="h-full w-full object-cover" onError={(e) => e.target.src = "https://via.placeholder.com/150"} />
                   ) : <Camera size={16} className="text-gray-400" />}
                 </div>
-                <span className="text-xs text-gray-400">Photo preview will appear here</span>
+                <span className="text-xs text-gray-400">Photo preview</span>
               </div>
             </div>
 
-            {/* RIGHT SIDE */}
             <div className="space-y-4">
-              {/* Email */}
               <div className="relative group">
                 <Mail className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
                 <input name="email" type="email" required placeholder="Email Address" value={formData.email} onChange={handleChange}
-                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50" />
+                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50/50 focus:bg-white" />
               </div>
 
-              {/* Password */}
               <div className="relative group">
                 <Lock className="absolute left-3 top-3 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
                 <input name="password" type={showPassword ? "text" : "password"} required placeholder="Password" value={formData.password} onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50" />
-                <button type="button" className="absolute right-3 top-3 text-gray-400 hover:text-gray-600" onClick={() => setShowPassword(!showPassword)}>
+                  className="block w-full pl-10 pr-10 py-2.5 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50/50 focus:bg-white" />
+                <button type="button" className="absolute right-3 top-3 text-gray-400 hover:text-gray-600 transition-colors" onClick={() => setShowPassword(!showPassword)}>
                   {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                 </button>
               </div>
 
-              {/* Submit Button */}
               <button type="submit" className="w-full flex items-center justify-center py-3 bg-gray-900 text-white text-sm font-bold rounded-xl hover:bg-amber-600 transition-all shadow-lg shadow-gray-900/20 active:scale-95">
                 Create Account <ArrowRight className="ml-2 h-4 w-4" />
               </button>
@@ -182,7 +197,6 @@ const Register = () => {
           </div>
         </form>
 
-        {/* --- FOOTER SECTION --- */}
         <div className="flex flex-col items-center gap-4">
 
           <div className="relative w-full">

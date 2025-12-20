@@ -7,7 +7,7 @@ import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
 
 const Login = () => {
 
-  const { loginUser, googleSignUp, setUser } = use(AuthContext)
+  const { loginUser, googleSignUp, setUser ,forgetPassword} = use(AuthContext)
 
   const navigate = useNavigate()
   const location = useLocation()
@@ -56,6 +56,26 @@ const Login = () => {
 
   };
 
+
+  const handleForgetPassword = () => {
+    forgetPassword(formData.email)
+      .then(() => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Email Sent!',
+          text: 'Check your email for password reset instructions.',
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Failed to Send Email',
+          text: error.message,
+        });
+      });
+  };
+
+
   const handleSocialLogin = (provider) => {
     googleSignUp().then((result) => {
       const loggedUser = result.user;
@@ -79,24 +99,19 @@ const Login = () => {
   }
 
   return (
-    // FULL SCREEN WRAPPER - NO SCROLLBAR
     <div className="h-screen w-full relative flex items-center justify-center overflow-hidden font-sans text-gray-900 bg-gray-900">
 
-      {/* --- BACKGROUND IMAGE (Different one for variety, or reuse) --- */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80"
           alt="Background"
           className="h-full w-full object-cover opacity-60"
         />
-        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/20"></div>
       </div>
 
-      {/* --- CARD CONTAINER --- */}
       <div className="relative z-10 w-full max-w-md bg-white/95 backdrop-blur-xl  shadow-2xl p-8 mx-4 border border-white/20 animate-fade-in-up">
 
-        {/* --- HEADER: LOGO & BRAND --- */}
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center gap-2 mb-2">
             <img
@@ -117,14 +132,12 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
-          {/* Email Input */}
           <div className="relative group">
             <Mail className="absolute left-3 top-3.5 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
             <input name="email" type="email" required placeholder="Email Address" value={formData.email} onChange={handleChange}
               className="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-xl text-sm font-medium focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-gray-50/50 focus:bg-white" />
           </div>
 
-          {/* Password Input */}
           <div>
             <div className="relative group">
               <Lock className="absolute left-3 top-3.5 h-5 w-5 text-gray-400 group-focus-within:text-amber-600 transition-colors" />
@@ -135,21 +148,17 @@ const Login = () => {
               </button>
             </div>
 
-            {/* Forgot Password Link */}
-            <div className="flex justify-end mt-2">
-              <Link to="/forgot-password" className="text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline">
+            <div onClick={handleForgetPassword} className="flex justify-end mt-2">
+              <Link to="/login" className="text-xs font-bold text-amber-600 hover:text-amber-700 hover:underline">
                 Forgot Password?
               </Link>
             </div>
           </div>
 
-          {/* Submit Button */}
           <button type="submit" className="w-full flex items-center justify-center py-3.5 bg-gray-900 text-white text-sm font-bold rounded-xl hover:bg-amber-600 transition-all shadow-lg shadow-gray-900/20 active:scale-95">
             Sign In <ArrowRight className="ml-2 h-4 w-4" />
           </button>
         </form>
-
-        {/* --- FOOTER SECTION --- */}
         <div className="flex flex-col items-center gap-5 mt-8">
 
           <div className="relative w-full">
