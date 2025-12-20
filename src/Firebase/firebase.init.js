@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAXxPJ1KAXSPAojNp2QBziQISv1oI8WHWY",
-  authDomain: "juta-express.firebaseapp.com",
-  projectId: "juta-express",
-  storageBucket: "juta-express.firebasestorage.app",
-  messagingSenderId: "224517648228",
-  appId: "1:224517648228:web:88de28bcf4ea6010325471",
-  measurementId: "G-CHHRCM87QD"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket:import.meta.env.VITE_storageBucket,
+  messagingSenderId:import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
+  measurementId: import.meta.env.VITE_measurementId
 };
 
 // Initialize Firebase
