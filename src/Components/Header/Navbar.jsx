@@ -5,6 +5,7 @@ import userIcon from '../../assets/userIcon.png';
 import cart from '../../assets/cart.png';
 import { useCart } from '../../Contexts/CartProvider/CartProvider';
 import { Link, NavLink, useNavigate } from 'react-router';
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvier';
 
 const Navbar = () => {
   const userName = "Moizuddin Mohammad Mujahid Rashid";
@@ -111,10 +112,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          <button className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 hover:shadow-lg">
+          <Link to="/login" className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 hover:shadow-lg">
             <span className="hidden sm:inline">Login</span>
             <FiLogIn size={18} />
-          </button>
+          </Link>
 
         </div>
 

@@ -6,13 +6,16 @@ import { RouterProvider } from 'react-router'
 import router from './Routers/Routes.jsx'
 import { CartProvider } from './Contexts/CartProvider/CartProvider.jsx'
 import { WishlistProvider } from './Contexts/WishListProvider/WishListProvider.jsx'
+import AuthProvier from './Contexts/AuthProvider/AuthProvier.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CartProvider>
+    <AuthProvier>
+      <CartProvider>
       <WishlistProvider>
         <RouterProvider router={router}></RouterProvider>
       </WishlistProvider>
     </CartProvider>
+    </AuthProvier>
   </StrictMode>,
 )
