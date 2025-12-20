@@ -9,11 +9,14 @@ const Checkout = () => {
   const navigate = useNavigate();
 
   // --- STATE ---
-  const [paymentMethod, setPaymentMethod] = useState('cod'); // Default COD
-  const [mobileProvider, setMobileProvider] = useState(''); // For bKash/Nagad selection
-  const [useMapLink, setUseMapLink] = useState(false); // Toggle for Map Link
+  const [paymentMethod, setPaymentMethod] = useState('cod'); 
+  const [mobileProvider, setMobileProvider] = useState(''); 
+  const [useMapLink, setUseMapLink] = useState(false); 
   const [voucherCode, setVoucherCode] = useState('');
   const [discount, setDiscount] = useState(0);
+  
+  // 1. New State to prevent redirecting to /cart when we clear it
+  const [isProcessingOrder, setIsProcessingOrder] = useState(false);
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -27,21 +30,23 @@ const Checkout = () => {
 
   // --- CALCULATIONS ---
   const subtotal = cartItems.reduce((acc, item) => acc + (item.price.discounted * item.quantity), 0);
-  const shippingCost = subtotal > 500 ? 0 : 30.00; // Updated logic from your Cart
+  const shippingCost = subtotal > 500 ? 0 : 30.00; 
   const tax = subtotal * 0.05;
   const total = subtotal + shippingCost + tax - discount;
 
-  // --- DELIVERY DATES (Dynamic: Today + 3 to 5 days) ---
+  // --- DELIVERY DATES ---
   const today = new Date();
   const dateOptions = { month: 'short', day: 'numeric' };
   const deliveryStart = new Date(today); deliveryStart.setDate(today.getDate() + 3);
   const deliveryEnd = new Date(today); deliveryEnd.setDate(today.getDate() + 5);
   const deliveryDateString = `${deliveryStart.toLocaleDateString('en-US', dateOptions)} - ${deliveryEnd.toLocaleDateString('en-US', dateOptions)}`;
 
-  // Redirect if empty
+  // 2. Updated Redirect Logic: Only redirect if NOT processing an order
   useEffect(() => {
-    if (cartItems.length === 0) navigate('/cart');
-  }, [cartItems, navigate]);
+    if (cartItems.length === 0 && !isProcessingOrder) {
+        navigate('/cart');
+    }
+  }, [cartItems, navigate, isProcessingOrder]);
 
   // --- HANDLERS ---
   const handleChange = (e) => {
@@ -51,7 +56,7 @@ const Checkout = () => {
   const handleApplyVoucher = (e) => {
     e.preventDefault();
     if (voucherCode.toUpperCase() === 'JUTA10') {
-        const disc = subtotal * 0.10; // 10% discount
+        const disc = subtotal * 0.10; 
         setDiscount(disc);
         Swal.fire({
             icon: 'success',
@@ -85,7 +90,6 @@ const Checkout = () => {
         return;
     }
     
-    // Address Validation (Either Text Address OR Map Link is required)
     if (!useMapLink && !formData.address) {
         Swal.fire({ icon: 'warning', title: 'Address Required', text: 'Please enter your street address.', confirmButtonColor: '#d97706' });
         return;
@@ -100,7 +104,7 @@ const Checkout = () => {
         return;
     }
 
-    // Success Simulation
+    // Success Simulation & Redirection
     Swal.fire({
         title: 'Processing Order...',
         html: 'Please wait while we confirm your details.',
@@ -110,11 +114,17 @@ const Checkout = () => {
         Swal.fire({
             icon: 'success',
             title: 'Order Placed!',
-            text: `Delivery estimated: ${deliveryDateString}`,
+            text: `Redirecting to payment gateway...`,
             confirmButtonColor: '#d97706',
         }).then(() => {
+            // 3. Mark as processing so the useEffect doesn't kick us back to /cart
+            setIsProcessingOrder(true);
+            
+            // 4. Clear Cart immediately
             if(clearCart) clearCart();
-            navigate('/');
+            
+            // 5. Navigate to Payment
+            navigate('/payment');
         });
     });
   };

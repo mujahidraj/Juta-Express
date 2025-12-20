@@ -17,6 +17,7 @@ import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
 import Checkout from "../Components/Checkout/Checkout";
 import PrivateRouter from "../Contexts/PrivateRouter/PrivateRouter";
+import Payment from "../Pages/Payment/Payment";
 
 
 const router = createBrowserRouter([
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register></Register>
+  },
+  {
+    path : '/payment',
+    element : <PrivateRouter><Payment></Payment></PrivateRouter>
   }
 
 

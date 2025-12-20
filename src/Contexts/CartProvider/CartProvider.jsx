@@ -7,9 +7,11 @@ export const CartProvider = ({ children }) => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
+
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
+
   const addToCart = (product, size, color) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) =>
@@ -58,12 +60,24 @@ export const CartProvider = ({ children }) => {
     }));
   };
 
+  // --- NEW FUNCTION: Clears the cart state ---
+  const clearCart = () => {
+    setCartItems([]); // This resets state, and the useEffect above will sync it to localStorage automatically
+  };
+
   const getCartCount = () => {
     return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity, getCartCount }}>
+    <CartContext.Provider value={{ 
+        cartItems, 
+        addToCart, 
+        removeFromCart, 
+        updateQuantity, 
+        getCartCount,
+        clearCart // <--- Added here so Checkout page can access it
+    }}>
       {children}
     </CartContext.Provider>
   );
