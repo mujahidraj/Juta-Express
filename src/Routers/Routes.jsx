@@ -15,6 +15,8 @@ import Cart from "../Pages/Cart/Cart";
 import Wishlist from "../Pages/Wishlist/Wishlist";
 import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
+import Checkout from "../Components/Checkout/Checkout";
+import PrivateRouter from "../Contexts/PrivateRouter/PrivateRouter";
 
 
 const router = createBrowserRouter([
@@ -72,6 +74,10 @@ const router = createBrowserRouter([
         loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <Wishlist></Wishlist>
+      },
+      {
+        path : "/checkout",
+        element : <PrivateRouter><Checkout></Checkout></PrivateRouter>
       }
     ]
   },

@@ -180,10 +180,12 @@ const Cart = () => {
                 </div>
               </div>
 
+              <Link to="/checkout">
               <button className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-gray-900 py-4 text-base font-bold text-white shadow-xl shadow-gray-900/20 transition-all hover:bg-black hover:scale-[1.02] active:scale-95">
                 Checkout Now
                 <ArrowRight size={20} />
               </button>
+              </Link>
 
               <div className="mt-6 flex flex-col gap-3 rounded-xl bg-gray-50 p-4">
                 <div className="flex items-center gap-2 text-xs text-gray-500">
