@@ -1,7 +1,7 @@
 import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Phone, Mail, ArrowRight, ShoppingBag } from 'lucide-react';
-import heroImage from '../../assets/Untitled design.png';
+// import heroImage from '../../assets/Untitled design.png';
 import { Link } from 'react-router';
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 h-full w-full">
         <img
           className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-105"
-          src={heroImage}
+          src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?cs=srgb&dl=pexels-jmendezrf-1536619.jpg&fm=jpg"
           alt="Hero Background"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-black/30"></div>
