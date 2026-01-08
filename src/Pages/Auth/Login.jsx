@@ -121,7 +121,7 @@ const Login = () => {
               onError={(e) => { e.target.style.display = 'none' }}
             />
             <h2 className="text-2xl font-black uppercase leading-none tracking-tight text-gray-900">
-              Juta<span className="text-amber-600">Express</span>
+              New<span className="text-amber-600"> Lifestyle</span>
             </h2>
           </div>
           <div className="flex items-center gap-2 text-gray-500">

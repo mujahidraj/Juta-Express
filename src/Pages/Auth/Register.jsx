@@ -145,7 +145,7 @@ const Register = () => {
               onError={(e) => { e.target.style.display = 'none' }}
             />
             <h2 className="text-2xl font-black uppercase leading-none tracking-tight text-gray-900">
-              Juta<span className="text-amber-600">Express</span>
+              New<span className="text-amber-600">Lifestyle</span>
             </h2>
           </div>
         </Link>
