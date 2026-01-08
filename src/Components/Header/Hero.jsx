@@ -26,12 +26,12 @@ const Hero = () => {
             <h1 className="mb-4 text-2xl font-black leading-tight text-white drop-shadow-lg md:text-3xl lg:text-4xl">
               Step up your style with <br className="hidden max-md:block" />
               <span className="bg-linear-to-r from-amber-200 to-amber-500 bg-clip-text text-transparent">
-                Exclusive Footwear
+                Exclusive Fashion Wear
               </span>
             </h1>
 
             <p className="mb-8 max-w-md text-sm leading-relaxed text-gray-200 md:text-base">
-              Experience comfort and class. We deliver exclusive footwear all over Bangladesh directly to your doorstep.
+              Experience comfort and class. We deliver exclusive Fashion items all over Bangladesh directly to your doorstep.
             </p>
 
             <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
@@ -41,7 +41,7 @@ const Hero = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] uppercase tracking-wider text-gray-400">WhatsApp</p>
-                  <a href="tel:+8801796059406" className="text-sm font-bold text-white">+880 1796-059406</a>
+                  <a href="tel:+8801796059406" className="text-sm font-bold text-white">+8801641621584</a>
                 </div>
               </div>
 
@@ -51,7 +51,7 @@ const Hero = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] uppercase tracking-wider text-gray-400">Email Us</p>
-                  <a href="mailto:jutaexpress@gmail.com" className="text-sm font-bold text-white">jutaexpress@gmail.com</a>
+                  <a href="mailto:newlifestylenls2026@gmail.com" className="text-sm font-bold text-white">newlifestylenls2026@gmail.com</a>
                 </div>
               </div>
             </div>

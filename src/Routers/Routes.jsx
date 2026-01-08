@@ -20,6 +20,7 @@ import PrivateRouter from "../Contexts/PrivateRouter/PrivateRouter";
 import Payment from "../Pages/Payment/Payment";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,13 +34,15 @@ const router = createBrowserRouter([
         loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
         element: <Home></Home>,
+        title : 'Home - New Lifestyle'
 
       },
       {
         path: '/new-arrival',
         loader: () => fetch('shoes.json'),
         hydrateFallbackElement: <LoadingScreen></LoadingScreen>,
-        element: <NewArrival></NewArrival>
+        element: <NewArrival></NewArrival>,
+        title : 'Home - New Lifestyle'
       },
       {
         path: '/best-selling',

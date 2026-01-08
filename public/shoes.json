@@ -1,4 +1,3680 @@
-[
+[ 
+  {
+    "product_id": "CLO-016",
+    "product_name": "Ralph Lauren Mesh Knit Polo Shirt",
+    "brand_name": "Polo Ralph Lauren",
+    "category": ["Men", "Apparel", "Tops"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1628911774602-74a0cfee9b0d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-polo-1",
+    "price": {
+      "regular": 110,
+      "discounted": 89.5,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL"],
+    "available_colors": ["White", "Navy", "Royal Blue"],
+    "stock_status": "In Stock",
+    "sku": "PRL-MP-016",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Cotton",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "220g",
+    "heel_type": "N/A",
+    "closure_type": "Two-button Placket",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine washable",
+    "size_system": "US Standard",
+    "fit_type": "Classic Fit",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 3 for $250"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Arthur G.", "text": "The quality of the cotton is unmatched.", "date": "2024-02-10", "rating": 5 },
+      { "user": "Steven H.", "text": "Classic look that never fails.", "date": "2024-03-01", "rating": 5 },
+      { "user": "Liam P.", "text": "Shrinks slightly after first wash.", "date": "2024-03-15", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 140,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-017",
+    "product_name": "TUMI Alpha 3 Compact Lap Top Brief",
+    "brand_name": "TUMI",
+    "category": ["Unisex", "Bags", "Business"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-tumi-1",
+    "price": {
+      "regular": 595,
+      "discounted": 595,
+      "currency": "USD"
+    },
+    "available_sizes": ["One Size"],
+    "available_colors": ["Black Anthracite"],
+    "stock_status": "In Stock",
+    "sku": "TUM-A3-LB-017",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "FXT Ballistic Nylon",
+      "sole": "N/A",
+      "lining": "Polyester"
+    },
+    "weight": "1.4kg",
+    "heel_type": "N/A",
+    "closure_type": "Zipper",
+    "country_of_origin": "Thailand",
+    "care_instructions": "Wipe with TUMI cleaner",
+    "size_system": "Standard",
+    "fit_type": "Shoulder/Hand Carry",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Free monogramming"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Gregory V.", "text": "The durability of the ballistic nylon is incredible.", "date": "2024-01-20", "rating": 5 },
+      { "user": "Nathan D.", "text": "Perfect organization for my cables and laptop.", "date": "2024-02-14", "rating": 5 },
+      { "user": "Sarah J.", "text": "Heavier than expected but looks professional.", "date": "2024-03-05", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "5 Year TUMI Warranty",
+    "quantity_available": 35,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-018",
+    "product_name": "Arc'teryx Atom LT Hoody",
+    "brand_name": "Arc'teryx",
+    "category": ["Men", "Apparel", "Outerwear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1629130832313-162074092b77?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-arc-1",
+    "price": {
+      "regular": 260,
+      "discounted": 260,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL"],
+    "available_colors": ["Black", "Kingfisher", "Relic"],
+    "stock_status": "In Stock",
+    "sku": "ARC-ALH-018",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Tyono 20 Denier Shell",
+      "sole": "N/A",
+      "lining": "Coreloft Compact Insulation"
+    },
+    "weight": "375g",
+    "heel_type": "N/A",
+    "closure_type": "Full Front Zip",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US Standard",
+    "fit_type": "Trim Fit",
+    "model_fit_suggestion": "Runs small, consider sizing up for layering",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Jason K.", "text": "The most versatile jacket I own.", "date": "2024-01-10", "rating": 5 },
+      { "user": "Mike L.", "text": "Warm but breathes extremely well.", "date": "2024-02-05", "rating": 5 },
+      { "user": "Tyler R.", "text": "Pricey, but the tech is worth it.", "date": "2024-03-12", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Practical Product Lifespan",
+    "quantity_available": 60,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "WLT-019",
+    "product_name": "Ridge Carbon Fiber Wallet",
+    "brand_name": "The Ridge",
+    "category": ["Unisex", "Accessories", "Wallets"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-ridge-1",
+    "price": {
+      "regular": 125,
+      "discounted": 105,
+      "currency": "USD"
+    },
+    "available_sizes": ["Slim RFID"],
+    "available_colors": ["3K Weave", "Forged Carbon"],
+    "stock_status": "In Stock",
+    "sku": "RID-CFW-019",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Carbon Fiber",
+      "sole": "N/A",
+      "lining": "Elastic/Aluminum"
+    },
+    "weight": "57g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Expandable",
+    "country_of_origin": "USA",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "Standard",
+    "fit_type": "Front Pocket",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Free screwdriver for adjustments"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      { "user": "Ethan B.", "text": "Finally got rid of my back pain from my old wallet.", "date": "2024-01-25", "rating": 5 },
+      { "user": "Derek S.", "text": "Takes a week to get used to the card fan motion.", "date": "2024-02-18", "rating": 4 },
+      { "user": "Will J.", "text": "Incredible build quality.", "date": "2024-03-09", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 200,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-020",
+    "product_name": "Lululemon Align High-Rise Pant",
+    "brand_name": "Lululemon",
+    "category": ["Women", "Sports", "Apparel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1506629082925-61019623da3d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548330032-90176378e937?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-lulu-1",
+    "price": {
+      "regular": 98,
+      "discounted": 98,
+      "currency": "USD"
+    },
+    "available_sizes": ["0", "2", "4", "6", "8", "10", "12"],
+    "available_colors": ["Black", "Dark Olive", "Red Merlot"],
+    "stock_status": "In Stock",
+    "sku": "LUL-ALP-020",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Nulu Fabric (Nylon/Elastane)",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "250g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Waist",
+    "country_of_origin": "Cambodia",
+    "care_instructions": "Wash with like fabrics",
+    "size_system": "US Standard",
+    "fit_type": "Tight",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Amanda C.", "text": "Feels like butter. The best leggings ever.", "date": "2024-01-15", "rating": 5 },
+      { "user": "Priya K.", "text": "No pilling so far, worth the price.", "date": "2024-02-22", "rating": 5 },
+      { "user": "Lara T.", "text": "A bit thin for cold weather, but perfect for yoga.", "date": "2024-03-08", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Quality Promise",
+    "quantity_available": 180,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "ACC-021",
+    "product_name": "Seiko Men's 5 Sports Automatic Watch",
+    "brand_name": "Seiko",
+    "category": ["Men", "Accessories", "Watches"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1523170335258-f5ed11844a1b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-seiko-1",
+    "price": {
+      "regular": 325,
+      "discounted": 275,
+      "currency": "USD"
+    },
+    "available_sizes": ["42.5mm Case"],
+    "available_colors": ["Black/Silver", "Pepsi Bezel", "Orange"],
+    "stock_status": "In Stock",
+    "sku": "SEI-5SP-021",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Stainless Steel",
+      "sole": "N/A",
+      "lining": "Hardlex Crystal"
+    },
+    "weight": "170g",
+    "heel_type": "N/A",
+    "closure_type": "Deployment Buckle",
+    "country_of_origin": "Japan",
+    "care_instructions": "Rinse with fresh water after salt exposure",
+    "size_system": "Standard",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "Links can be removed for sizing",
+    "bundle_offers": ["Free cleaning kit"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Roberto F.", "text": "Great entry level automatic watch.", "date": "2024-01-30", "rating": 5 },
+      { "user": "Satoshi N.", "text": "Reliable movement and beautiful lume.", "date": "2024-02-12", "rating": 5 },
+      { "user": "Bill O.", "text": "Bezel alignment is slightly off on mine.", "date": "2024-03-03", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "3 Year Limited Warranty",
+    "quantity_available": 45,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-022",
+    "product_name": "Champion Men's Reverse Weave Sweatshirt",
+    "brand_name": "Champion",
+    "category": ["Men", "Apparel", "Essentials"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1588612143468-b39174092497?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-champ-1",
+    "price": {
+      "regular": 65,
+      "discounted": 45,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL"],
+    "available_colors": ["Oxford Grey", "Black", "Navy"],
+    "stock_status": "In Stock",
+    "sku": "CHA-RW-022",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "12oz Heavyweight Fleece",
+      "sole": "N/A",
+      "lining": "Fleece"
+    },
+    "weight": "800g",
+    "heel_type": "N/A",
+    "closure_type": "Pullover",
+    "country_of_origin": "Honduras",
+    "care_instructions": "Wash cold, hang dry recommended",
+    "size_system": "US Standard",
+    "fit_type": "Athletic Fit",
+    "model_fit_suggestion": "Runs slightly large for a baggy look",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      { "user": "Sean C.", "text": "Heavy and built like a tank.", "date": "2024-02-05", "rating": 5 },
+      { "user": "Marcus J.", "text": "Classic fit, looks great with anything.", "date": "2024-02-28", "rating": 5 },
+      { "user": "Kevin B.", "text": "The neck hole is a bit tight.", "date": "2024-03-10", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-023",
+    "product_name": "Carhartt WIP Madison Cord Shirt",
+    "brand_name": "Carhartt WIP",
+    "category": ["Men", "Apparel", "Shirts"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620794341491-76be6eeb6946?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-car-1",
+    "price": {
+      "regular": 115,
+      "discounted": 95,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL"],
+    "available_colors": ["Leather/Cinnamon", "Wall", "Black"],
+    "stock_status": "In Stock",
+    "sku": "WIP-MCS-023",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Cotton Corduroy",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "400g",
+    "heel_type": "N/A",
+    "closure_type": "Buttons",
+    "country_of_origin": "Tunisia",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US Standard",
+    "fit_type": "Relaxed Fit",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Leo S.", "text": "The corduroy is thick and high quality.", "date": "2024-01-18", "rating": 5 },
+      { "user": "Toby W.", "text": "Great color options for fall.", "date": "2024-02-20", "rating": 5 },
+      { "user": "Alex G.", "text": "Sleeves are a bit long.", "date": "2024-03-02", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 75,
+    "is_best_seller": false,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "ACC-024",
+    "product_name": "Oakley Holbrook Sunglasses",
+    "brand_name": "Oakley",
+    "category": ["Unisex", "Accessories", "Eyewear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767390-903390e6fbc1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-oak-1",
+    "price": {
+      "regular": 182,
+      "discounted": 155,
+      "currency": "USD"
+    },
+    "available_sizes": ["Standard"],
+    "available_colors": ["Matte Black/Prizm Grey", "Woodgrain"],
+    "stock_status": "In Stock",
+    "sku": "OAK-HB-024",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "O Matter Frame",
+      "sole": "N/A",
+      "lining": "Plutonite Lenses"
+    },
+    "weight": "28g",
+    "heel_type": "N/A",
+    "closure_type": "N/A",
+    "country_of_origin": "USA",
+    "care_instructions": "Clean with microfibre bag",
+    "size_system": "Standard",
+    "fit_type": "Medium to Large faces",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Chris P.", "text": "The Prizm lenses really make colors pop.", "date": "2024-02-12", "rating": 5 },
+      { "user": "Dave T.", "text": "Lightweight and durable for hiking.", "date": "2024-03-01", "rating": 5 },
+      { "user": "Matt S.", "text": "They feel a bit plasticky compared to metal frames.", "date": "2024-03-11", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "2 Year Limited Warranty",
+    "quantity_available": 110,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "BAG-025",
+    "product_name": "Longchamp Le Pliage Large Tote",
+    "brand_name": "Longchamp",
+    "category": ["Women", "Accessories", "Bags"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-long-1",
+    "price": {
+      "regular": 155,
+      "discounted": 140,
+      "currency": "USD"
+    },
+    "available_sizes": ["Large"],
+    "available_colors": ["Navy", "Black", "Paper"],
+    "stock_status": "In Stock",
+    "sku": "LON-LP-025",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polyamide Canvas",
+      "sole": "N/A",
+      "lining": "Leather Trim"
+    },
+    "weight": "300g",
+    "heel_type": "N/A",
+    "closure_type": "Zipper and Snap",
+    "country_of_origin": "France",
+    "care_instructions": "Wipe with soft cloth",
+    "size_system": "Standard",
+    "fit_type": "Shoulder Tote",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Claire B.", "text": "Folds up small, perfect for travel!", "date": "2024-01-22", "rating": 5 },
+      { "user": "Yvonne D.", "text": "Classic French elegance. Fits everything.", "date": "2024-02-18", "rating": 5 },
+      { "user": "Isabel L.", "text": "The corners wear out after a year of daily use.", "date": "2024-03-05", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Limited Global Warranty",
+    "quantity_available": 90,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-026",
+    "product_name": "Fred Perry Twin Tipped Polo",
+    "brand_name": "Fred Perry",
+    "category": ["Men", "Apparel", "Tops"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1628911774602-74a0cfee9b0d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-fred-1",
+    "price": {
+      "regular": 105,
+      "discounted": 105,
+      "currency": "USD"
+    },
+    "available_sizes": ["38", "40", "42", "44"],
+    "available_colors": ["Black/Champagne", "Navy/Ice"],
+    "stock_status": "In Stock",
+    "sku": "FRE-TTP-026",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Cotton Pique",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "230g",
+    "heel_type": "N/A",
+    "closure_type": "Two-button",
+    "country_of_origin": "UK",
+    "care_instructions": "Wash cold, flat dry",
+    "size_system": "UK Chest",
+    "fit_type": "Slim Fit",
+    "model_fit_suggestion": "Size up for a more relaxed fit",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      { "user": "Liam W.", "text": "The Laurel Wreath is iconic. Great fit.", "date": "2024-01-14", "rating": 5 },
+      { "user": "Noel G.", "text": "Solid quality, stays sharp after many washes.", "date": "2024-02-11", "rating": 5 },
+      { "user": "Ross E.", "text": "Very slim fitting, be careful with sizing.", "date": "2024-03-09", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 55,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "BLT-027",
+    "product_name": "Hermès 32mm Reversible Belt Kit",
+    "brand_name": "Hermès",
+    "category": ["Unisex", "Accessories", "Belts"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb8055571?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-hermes-1",
+    "price": {
+      "regular": 850,
+      "discounted": 850,
+      "currency": "USD"
+    },
+    "available_sizes": ["80", "85", "90", "95", "100"],
+    "available_colors": ["Black/Gold", "Etoupe/Blue"],
+    "stock_status": "Limited Stock",
+    "sku": "HER-RB-027",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Epsom Leather",
+      "sole": "N/A",
+      "lining": "Swift Leather"
+    },
+    "weight": "150g",
+    "heel_type": "N/A",
+    "closure_type": "H Buckle",
+    "country_of_origin": "France",
+    "care_instructions": "Specialist leather cleaning only",
+    "size_system": "Centimeters",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "Measure at the waist where belt sits",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Julian V.", "text": "The ultimate luxury belt. Reversible is a plus.", "date": "2024-01-05", "rating": 5 },
+      { "user": "Marie S.", "text": "Incredible craftsmanship, will last forever.", "date": "2024-02-15", "rating": 5 },
+      { "user": "Paul R.", "text": "Very expensive but you pay for the name and quality.", "date": "2024-03-08", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Craftsmanship Warranty",
+    "quantity_available": 10,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-028",
+    "product_name": "Dickies 874 Work Pant",
+    "brand_name": "Dickies",
+    "category": ["Men", "Apparel", "Bottoms"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1594932224828-b4b059b6f6f9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-dickies-1",
+    "price": {
+      "regular": 35,
+      "discounted": 29,
+      "currency": "USD"
+    },
+    "available_sizes": ["30x30", "32x30", "34x32", "36x32"],
+    "available_colors": ["Black", "Dark Navy", "Khaki"],
+    "stock_status": "In Stock",
+    "sku": "DIC-874-028",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "65% Polyester, 35% Cotton",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "500g",
+    "heel_type": "N/A",
+    "closure_type": "Hook and Eye",
+    "country_of_origin": "Mexico",
+    "care_instructions": "Machine wash warm, tumble dry",
+    "size_system": "US Waist/Inseam",
+    "fit_type": "Original Fit",
+    "model_fit_suggestion": "Order one size up in the waist",
+    "bundle_offers": ["Buy 2 for $50"],
+    "customer_ratings": 4.4,
+    "customer_reviews": [
+      { "user": "Tony H.", "text": "Stiff at first but becomes great over time.", "date": "2024-02-10", "rating": 5 },
+      { "user": "Skate B.", "text": "Best skating pants, impossible to rip.", "date": "2024-02-22", "rating": 5 },
+      { "user": "Jim L.", "text": "Waist runs very small, had to exchange.", "date": "2024-03-05", "rating": 3 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "$5.00",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 1000,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "BAG-029",
+    "product_name": "Aer Day Pack 2",
+    "brand_name": "Aer",
+    "category": ["Unisex", "Bags", "Tech"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-aer-1",
+    "price": {
+      "regular": 140,
+      "discounted": 140,
+      "currency": "USD"
+    },
+    "available_sizes": ["14.8 Liters"],
+    "available_colors": ["Black", "Grey"],
+    "stock_status": "In Stock",
+    "sku": "AER-DP2-029",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "1680D Cordura Ballistic Nylon",
+      "sole": "N/A",
+      "lining": "Water-resistant coating"
+    },
+    "weight": "1.2kg",
+    "heel_type": "N/A",
+    "closure_type": "YKK Zippers",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash with damp cloth",
+    "size_system": "Standard",
+    "fit_type": "Slim Backpack",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Add a Slim Pouch for $30"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Daniel T.", "text": "Stands up on its own! Perfect for office work.", "date": "2024-01-28", "rating": 5 },
+      { "user": "Sarah K.", "text": "Minimalist and very sleek.", "date": "2024-02-14", "rating": 5 },
+      { "user": "Kevin G.", "text": "A bit stiff on the shoulders.", "date": "2024-03-01", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 120,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-030",
+    "product_name": "Stone Island Crinkle Reps NY Jacket",
+    "brand_name": "Stone Island",
+    "category": ["Men", "Apparel", "Outerwear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-stone-1",
+    "price": {
+      "regular": 850,
+      "discounted": 720,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL"],
+    "available_colors": ["Sage Green", "Black", "Navy"],
+    "stock_status": "In Stock",
+    "sku": "SI-CRNY-030",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Polyamide",
+      "sole": "N/A",
+      "lining": "Resin Coating"
+    },
+    "weight": "450g",
+    "heel_type": "N/A",
+    "closure_type": "Two-way Zip",
+    "country_of_origin": "Italy",
+    "care_instructions": "Wash at 30 degrees, remove patch before washing",
+    "size_system": "US Standard",
+    "fit_type": "Regular Fit",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Vincenzo M.", "text": "The dye finish is incredible in person.", "date": "2024-02-01", "rating": 5 },
+      { "user": "Oliver W.", "text": "Excellent wind resistance for spring.", "date": "2024-02-15", "rating": 5 },
+      { "user": "Thomas B.", "text": "The badge is the best part of course.", "date": "2024-03-04", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 25,
+    "is_best_seller": false,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "WLT-031",
+    "product_name": "Secrid Slimwallet Premium Leather",
+    "brand_name": "Secrid",
+    "category": ["Unisex", "Accessories", "Wallets"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1559252475-19efdf32637e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-secrid-1",
+    "price": {
+      "regular": 95,
+      "discounted": 95,
+      "currency": "USD"
+    },
+    "available_sizes": ["Slim"],
+    "available_colors": ["Dutch Martin Whiskey", "Black"],
+    "stock_status": "In Stock",
+    "sku": "SEC-SW-031",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Full Grain Leather",
+      "sole": "N/A",
+      "lining": "Aluminum Cardprotector"
+    },
+    "weight": "72g",
+    "heel_type": "N/A",
+    "closure_type": "Lever mechanism",
+    "country_of_origin": "Netherlands",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "Standard",
+    "fit_type": "N/A",
+    "model_fit_suggestion": "Holds 6 cards in protector",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Hans V.", "text": "The card ejection mechanism is so satisfying.", "date": "2024-01-10", "rating": 5 },
+      { "user": "Lars P.", "text": "Keeps my cards from bending and breaking.", "date": "2024-02-04", "rating": 5 },
+      { "user": "Mia S.", "text": "Not great for holding many coins.", "date": "2024-03-01", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "3 Year Warranty",
+    "quantity_available": 150,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "ACC-032",
+    "product_name": "New Era 59FIFTY Fitted Hat",
+    "brand_name": "New Era",
+    "category": ["Unisex", "Accessories", "Hats"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1588850567047-1845a9ee02f9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-newera-1",
+    "price": {
+      "regular": 42,
+      "discounted": 35,
+      "currency": "USD"
+    },
+    "available_sizes": ["7", "7 1/8", "7 1/4", "7 3/8", "7 1/2", "7 5/8"],
+    "available_colors": ["NY Yankees Navy", "LA Dodgers Blue"],
+    "stock_status": "In Stock",
+    "sku": "NE-5950-032",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Polyester",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "100g",
+    "heel_type": "N/A",
+    "closure_type": "Fitted",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash only",
+    "size_system": "US Hat Size",
+    "fit_type": "Fitted",
+    "model_fit_suggestion": "Measure circumference of head for exact fit",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Aaron J.", "text": "The original and best fitted cap.", "date": "2024-02-15", "rating": 5 },
+      { "user": "Derek C.", "text": "Stitching is perfect every time.", "date": "2024-03-02", "rating": 5 },
+      { "user": "Sam B.", "text": "Sizing can vary slightly between colors.", "date": "2024-03-14", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "$6.00",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 500,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-033",
+    "product_name": "Stüssy Stock Logo Hoodie",
+    "brand_name": "Stüssy",
+    "category": ["Unisex", "Apparel", "Streetwear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-stussy-1",
+    "price": {
+      "regular": 125,
+      "discounted": 125,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL"],
+    "available_colors": ["Grey Ash", "Black", "Pink"],
+    "stock_status": "Out of Stock",
+    "sku": "STU-SLH-033",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Cotton Garment Dyed",
+      "sole": "N/A",
+      "lining": "Fleece"
+    },
+    "weight": "700g",
+    "heel_type": "N/A",
+    "closure_type": "Pullover",
+    "country_of_origin": "USA",
+    "care_instructions": "Wash cold inside out",
+    "size_system": "US Standard",
+    "fit_type": "Relaxed Over-sized",
+    "model_fit_suggestion": "Runs large, size down for a standard fit",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Kyle X.", "text": "Classic streetwear essential. Worth the hype.", "date": "2024-01-20", "rating": 5 },
+      { "user": "Jenna M.", "text": "So cozy, the garment dye looks great.", "date": "2024-02-11", "rating": 5 },
+      { "user": "Brian L.", "text": "Hard to catch in stock!", "date": "2024-03-05", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 0,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-034",
+    "product_name": "Filson Medium Rugged Twill Duffle",
+    "brand_name": "Filson",
+    "category": ["Unisex", "Bags", "Travel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-filson-1",
+    "price": {
+      "regular": 595,
+      "discounted": 595,
+      "currency": "USD"
+    },
+    "available_sizes": ["43 Liters"],
+    "available_colors": ["Tan", "Otter Green"],
+    "stock_status": "In Stock",
+    "sku": "FIL-RTD-034",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Rugged Twill / Bridle Leather",
+      "sole": "N/A",
+      "lining": "Unlined"
+    },
+    "weight": "1.8kg",
+    "heel_type": "N/A",
+    "closure_type": "Brass Zipper / Storm Flap",
+    "country_of_origin": "USA",
+    "care_instructions": "Wipe or brush clean",
+    "size_system": "Standard",
+    "fit_type": "Duffle",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["None"],
+    "customer_ratings": 5.0,
+    "customer_reviews": [
+      { "user": "Henry T.", "text": "Will literally last 50 years. Heavy duty.", "date": "2024-01-15", "rating": 5 },
+      { "user": "Blake S.", "text": "The leather is incredible quality.", "date": "2024-02-25", "rating": 5 },
+      { "user": "Ross G.", "text": "Best investment for travel I've made.", "date": "2024-03-10", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Guarantee",
+    "quantity_available": 20,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-035",
+    "product_name": "L.L.Bean Men's Bean Boots 8\"",
+    "brand_name": "L.L.Bean",
+    "category": ["Men", "Footwear", "Outdoors"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1520639889313-7272175b1c39?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605733513597-a8f8d410fe3c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-bean-1",
+    "price": {
+      "regular": 159,
+      "discounted": 159,
+      "currency": "USD"
+    },
+    "available_sizes": ["US 7", "US 8", "US 9", "US 10", "US 11", "US 12"],
+    "available_colors": ["Tan/Brown"],
+    "stock_status": "In Stock",
+    "sku": "LLB-BB-035",
+    "shoe_type": "Duck Boots",
+    "material": {
+      "upper": "Full Grain Leather",
+      "sole": "Rubber Chain-Tread",
+      "lining": "Unlined"
+    },
+    "weight": "1.2kg",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "USA",
+    "care_instructions": "Wipe with damp cloth, use leather conditioner",
+    "size_system": "US",
+    "fit_type": "Wide",
+    "model_fit_suggestion": "Runs very large, order 1 full size down or 1.5 with light socks",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Maine R.", "text": "The classic rain boot. Waterproof and stylish.", "date": "2024-01-12", "rating": 5 },
+      { "user": "Tom V.", "text": "Listen to the sizing advice! I went down a size and they fit perfectly.", "date": "2024-02-18", "rating": 5 },
+      { "user": "Jeff D.", "text": "A bit heavy for long walks but great for slush.", "date": "2024-03-02", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year Guarantee",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-001",
+    "product_name": "Levi's Men's 511 Slim Fit Jeans",
+    "brand_name": "Levi's",
+    "category": ["Men", "Apparel", "Denim"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=R6S6v7R0WzE",
+    "price": {
+      "regular": 89.50,
+      "discounted": 59.99,
+      "currency": "USD"
+    },
+    "available_sizes": ["28x30", "30x32", "32x32", "34x34", "36x32"],
+    "available_colors": ["Dark Hollow", "Black", "Native Cali"],
+    "stock_status": "In Stock",
+    "sku": "LEV-511-SLM-01",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "99% Cotton, 1% Elastane",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "600g",
+    "heel_type": "N/A",
+    "closure_type": "Zipper Fly",
+    "country_of_origin": "Mexico",
+    "care_instructions": "Wash and dry inside out with like colors",
+    "size_system": "US Waist/Inseam",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 2 get 15% off"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      { "user": "David T.", "text": "Perfect fit, just the right amount of stretch.", "date": "2023-08-12", "rating": 5 },
+      { "user": "Sarah L.", "text": "Bought for my husband, he loves the quality of the denim.", "date": "2023-09-05", "rating": 5 },
+      { "user": "James K.", "text": "A bit tighter in the thighs than expected.", "date": "2023-11-20", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "90 Days Material Warranty",
+    "quantity_available": 200,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-002",
+    "product_name": "Fjällräven Kånken Classic Backpack",
+    "brand_name": "Fjällräven",
+    "category": ["Unisex", "Accessories", "Bags"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=7Xf7fG_7T7w",
+    "price": {
+      "regular": 90,
+      "discounted": 80,
+      "currency": "USD"
+    },
+    "available_sizes": ["16 Liters"],
+    "available_colors": ["Graphite", "Forest Green", "Ox Red"],
+    "stock_status": "In Stock",
+    "sku": "FJR-KNK-CLS-02",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Vinylon F",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "300g",
+    "heel_type": "N/A",
+    "closure_type": "Two-way Zipper",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Soft brush and lukewarm water",
+    "size_system": "Standard",
+    "fit_type": "Ergonomic",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Add a rain cover for $10"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Emma W.", "text": "Iconic design and surprisingly durable.", "date": "2023-10-01", "rating": 5 },
+      { "user": "Liam O.", "text": "Great for work and commuting.", "date": "2023-11-15", "rating": 5 },
+      { "user": "Chloe B.", "text": "Straps are a bit thin if you carry heavy books.", "date": "2023-12-22", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Limited Warranty",
+    "quantity_available": 85,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "WLT-003",
+    "product_name": "Bellroy Hide & Seek Premium Leather Wallet",
+    "brand_name": "Bellroy",
+    "category": ["Men", "Accessories", "Wallets"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1559252475-19efdf32637e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=p1p7Q7L5zSc",
+    "price": {
+      "regular": 99,
+      "discounted": 89,
+      "currency": "USD"
+    },
+    "available_sizes": ["Slim Bifold"],
+    "available_colors": ["Black", "Java", "Caramel"],
+    "stock_status": "In Stock",
+    "sku": "BEL-HS-LDR-03",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Environmentally Certified Leather",
+      "sole": "N/A",
+      "lining": "Polyester"
+    },
+    "weight": "60g",
+    "heel_type": "N/A",
+    "closure_type": "Bifold",
+    "country_of_origin": "India",
+    "care_instructions": "Wipe with leather cleaner",
+    "size_system": "Standard",
+    "fit_type": "Slim Profile",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Free gift wrapping"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Michael R.", "text": "The hidden pocket is a genius idea for spare cash.", "date": "2023-09-18", "rating": 5 },
+      { "user": "Aiden M.", "text": "Beautiful leather that ages very well.", "date": "2023-11-30", "rating": 5 },
+      { "user": "Tom H.", "text": "Doesn't hold as many cards as my old bulky wallet.", "date": "2024-01-02", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "3 Year Warranty",
+    "quantity_available": 120,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-004",
+    "product_name": "Patagonia Men's Better Sweater Jacket",
+    "brand_name": "Patagonia",
+    "category": ["Men", "Outdoors", "Apparel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=9LhI7iTfD6g",
+    "price": {
+      "regular": 149,
+      "discounted": 149,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL"],
+    "available_colors": ["Stonewash", "Black", "New Navy"],
+    "stock_status": "In Stock",
+    "sku": "PAT-BSJ-04",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Recycled Polyester Fleece",
+      "sole": "N/A",
+      "lining": "Soft Fleece"
+    },
+    "weight": "638g",
+    "heel_type": "N/A",
+    "closure_type": "Full-Zip",
+    "country_of_origin": "Sri Lanka",
+    "care_instructions": "Machine wash warm, tumble dry low",
+    "size_system": "US Standard",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Runs slightly large, consider sizing down if between sizes",
+    "bundle_offers": ["Free Patagonia sticker pack"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Justin V.", "text": "Warm enough for fall days and looks professional too.", "date": "2023-10-20", "rating": 5 },
+      { "user": "Elena G.", "text": "Bought for my son, he wears it everywhere.", "date": "2023-11-12", "rating": 5 },
+      { "user": "Robert F.", "text": "Love the eco-friendly materials.", "date": "2023-12-05", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Ironclad Guarantee",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BLT-005",
+    "product_name": "Carhartt Men's Journeyman Belt",
+    "brand_name": "Carhartt",
+    "category": ["Men", "Accessories", "Belts"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1624222247344-550fb8055571?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-5",
+    "price": {
+      "regular": 34.99,
+      "discounted": 29.99,
+      "currency": "USD"
+    },
+    "available_sizes": ["32", "34", "36", "38", "40", "42"],
+    "available_colors": ["Black", "Brown"],
+    "stock_status": "In Stock",
+    "sku": "CAR-JMN-05",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Full Grain Leather",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "200g",
+    "heel_type": "N/A",
+    "closure_type": "Buckle",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash only",
+    "size_system": "US Inches",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "Buy one size larger than your waist size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      { "user": "Gary M.", "text": "Thick leather, very durable for work.", "date": "2023-09-25", "rating": 5 },
+      { "user": "Steven B.", "text": "Solid belt, but it's very stiff at first.", "date": "2023-11-08", "rating": 4 },
+      { "user": "Kevin P.", "text": "Buckle feels heavy and high quality.", "date": "2023-12-14", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Limited Lifetime Warranty",
+    "quantity_available": 500,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-006",
+    "product_name": "Ray-Ban Classic Aviator Sunglasses",
+    "brand_name": "Ray-Ban",
+    "category": ["Unisex", "Accessories", "Eyewear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511499767390-903390e6fbc1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=7i-N27E01qA",
+    "price": {
+      "regular": 163,
+      "discounted": 145,
+      "currency": "USD"
+    },
+    "available_sizes": ["Small (55mm)", "Standard (58mm)", "Large (62mm)"],
+    "available_colors": ["Gold/Green G-15", "Black/Grey", "Silver/Mirror"],
+    "stock_status": "In Stock",
+    "sku": "RAY-AV-3025",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Metal Frame",
+      "sole": "N/A",
+      "lining": "Glass Lenses"
+    },
+    "weight": "31g",
+    "heel_type": "N/A",
+    "closure_type": "N/A",
+    "country_of_origin": "Italy",
+    "care_instructions": "Use microfibre cloth and lens cleaner",
+    "size_system": "Millimeters",
+    "fit_type": "Aviator Fit",
+    "model_fit_suggestion": "Standard fits most faces",
+    "bundle_offers": ["Free protective case included"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Tom C.", "text": "Classic look that never goes out of style.", "date": "2023-07-20", "rating": 5 },
+      { "user": "Linda P.", "text": "Lenses are crystal clear and great for driving.", "date": "2023-10-05", "rating": 5 },
+      { "user": "Rick J.", "text": "Fragile frames, need to be careful.", "date": "2024-01-11", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "2 Year Warranty",
+    "quantity_available": 150,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-007",
+    "product_name": "Adidas Originals 3-Stripes Hoodie",
+    "brand_name": "Adidas",
+    "category": ["Unisex", "Sports", "Apparel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-7",
+    "price": {
+      "regular": 70,
+      "discounted": 55,
+      "currency": "USD"
+    },
+    "available_sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "available_colors": ["Black", "Night Sky", "Adicolor Red"],
+    "stock_status": "In Stock",
+    "sku": "ADI-3SH-007",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "70% Cotton, 30% Recycled Polyester",
+      "sole": "N/A",
+      "lining": "French Terry"
+    },
+    "weight": "450g",
+    "heel_type": "N/A",
+    "closure_type": "Pullover",
+    "country_of_origin": "Pakistan",
+    "care_instructions": "Machine wash cold inside out",
+    "size_system": "US Standard",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy hoodie and pants for 20% off"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Jake D.", "text": "Very soft material and great for gym.", "date": "2023-11-20", "rating": 5 },
+      { "user": "Megan L.", "text": "The classic stripes look amazing.", "date": "2023-12-05", "rating": 5 },
+      { "user": "Chris H.", "text": "A bit short in the sleeves for tall people.", "date": "2024-01-08", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "$5.00",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 250,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "BAG-008",
+    "product_name": "Herschel Supply Co. Little America Backpack",
+    "brand_name": "Herschel",
+    "category": ["Unisex", "Bags", "Travel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=Fm7K4n0uTQU",
+    "price": {
+      "regular": 120,
+      "discounted": 102.50,
+      "currency": "USD"
+    },
+    "available_sizes": ["25 Liters"],
+    "available_colors": ["Black", "Grey", "Navy"],
+    "stock_status": "In Stock",
+    "sku": "HER-LA-008",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "600D Polyester",
+      "sole": "N/A",
+      "lining": "Signature Striped Fabric"
+    },
+    "weight": "900g",
+    "heel_type": "N/A",
+    "closure_type": "Drawstring and Magnetic Straps",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash with mild soap",
+    "size_system": "Standard",
+    "fit_type": "Adjustable Straps",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      { "user": "Ryan S.", "text": "The laptop sleeve is super padded and secure.", "date": "2023-08-28", "rating": 5 },
+      { "user": "Anna F.", "text": "A bit heavy even when empty, but looks great.", "date": "2023-11-14", "rating": 4 },
+      { "user": "Kyle T.", "text": "Perfect for weekend trips.", "date": "2023-12-30", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "4-6 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Limited Lifetime Warranty",
+    "quantity_available": 90,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-009",
+    "product_name": "Uniqlo Men's Supima Cotton T-Shirt",
+    "brand_name": "Uniqlo",
+    "category": ["Men", "Apparel", "Essentials"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-9",
+    "price": {
+      "regular": 19.90,
+      "discounted": 14.90,
+      "currency": "USD"
+    },
+    "available_sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "available_colors": ["White", "Black", "Navy", "Olive"],
+    "stock_status": "In Stock",
+    "sku": "UNI-SUP-TS-09",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Supima Cotton",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "150g",
+    "heel_type": "N/A",
+    "closure_type": "N/A",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Machine wash cold, tumble dry low",
+    "size_system": "US Standard",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["Buy 3 for $39.90"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Paul B.", "text": "Nicest t-shirts for the price. Very soft.", "date": "2023-09-10", "rating": 5 },
+      { "user": "Victor K.", "text": "Doesn't shrink much after washing.", "date": "2023-11-25", "rating": 5 },
+      { "user": "Sam R.", "text": "Great basic for layering.", "date": "2024-01-02", "rating": 5 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "$7.00",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 1000,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "ACC-010",
+    "product_name": "Apple Watch Series 9",
+    "brand_name": "Apple",
+    "category": ["Unisex", "Electronics", "Accessories"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1434493907317-a46b5bc78344?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=LL7mI3n0-bI",
+    "price": {
+      "regular": 399,
+      "discounted": 379,
+      "currency": "USD"
+    },
+    "available_sizes": ["41mm", "45mm"],
+    "available_colors": ["Midnight", "Starlight", "Product Red"],
+    "stock_status": "In Stock",
+    "sku": "APL-W9-010",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Aluminum/Stainless Steel",
+      "sole": "N/A",
+      "lining": "Fluoroelastomer Band"
+    },
+    "weight": "38g",
+    "heel_type": "N/A",
+    "closure_type": "Pin-and-tuck buckle",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "Millimeters",
+    "fit_type": "Adjustable",
+    "model_fit_suggestion": "Measure wrist for band size",
+    "bundle_offers": ["3 months free Fitness+"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Kevin G.", "text": "Siri is much faster on this model.", "date": "2023-12-15", "rating": 5 },
+      { "user": "Monica S.", "text": "The double tap gesture is super useful.", "date": "2024-01-03", "rating": 5 },
+      { "user": "Josh W.", "text": "Battery still needs daily charging though.", "date": "2024-01-07", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year Limited Apple Warranty",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-011",
+    "product_name": "Calvin Klein Men's Cotton Stretch Boxers (3-Pack)",
+    "brand_name": "Calvin Klein",
+    "category": ["Men", "Apparel", "Underwear"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1590520603713-393f9f957597?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590520603713-393f9f957597?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-11",
+    "price": {
+      "regular": 45,
+      "discounted": 38,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL"],
+    "available_colors": ["Multicolor Black/Grey", "White"],
+    "stock_status": "In Stock",
+    "sku": "CK-CSB-011",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "95% Cotton, 5% Elastane",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "200g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Waistband",
+    "country_of_origin": "India",
+    "care_instructions": "Machine wash cold, tumble dry low",
+    "size_system": "US Standard",
+    "fit_type": "Body-defining fit",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      { "user": "Leo M.", "text": "The classic CK comfort. Best boxers.", "date": "2023-10-10", "rating": 5 },
+      { "user": "Omar Q.", "text": "Waistband doesn't roll down like cheaper brands.", "date": "2023-11-22", "rating": 5 },
+      { "user": "Ben J.", "text": "Pricey but worth the investment.", "date": "2024-01-04", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 400,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "BAG-012",
+    "product_name": "Coach Polished Pebble Leather Tote",
+    "brand_name": "Coach",
+    "category": ["Women", "Accessories", "Bags"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-12",
+    "price": {
+      "regular": 350,
+      "discounted": 295,
+      "currency": "USD"
+    },
+    "available_sizes": ["One Size"],
+    "available_colors": ["Black", "Chalk", "Saddle"],
+    "stock_status": "In Stock",
+    "sku": "COA-PPLT-012",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polished Pebble Leather",
+      "sole": "N/A",
+      "lining": "Fabric"
+    },
+    "weight": "800g",
+    "heel_type": "N/A",
+    "closure_type": "Zip-top Closure",
+    "country_of_origin": "Philippines",
+    "care_instructions": "Use Coach leather cleaner and moisturizer",
+    "size_system": "Standard",
+    "fit_type": "Shoulder Bag",
+    "model_fit_suggestion": "N/A",
+    "bundle_offers": ["Free leather cleaning kit"],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      { "user": "Sophia L.", "text": "The leather is so soft and the bag is huge!", "date": "2023-09-12", "rating": 5 },
+      { "user": "Isabella V.", "text": "Elegant enough for work and casual enough for weekends.", "date": "2023-11-05", "rating": 5 },
+      { "user": "Rachel Z.", "text": "Straps could be a little longer.", "date": "2024-01-06", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year Limited Warranty",
+    "quantity_available": 40,
+    "is_best_seller": false,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLO-013",
+    "product_name": "Nike Sportswear Tech Fleece Joggers",
+    "brand_name": "Nike",
+    "category": ["Men", "Sports", "Apparel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1552664110-ad304297f581?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580906853203-f493cea9ff28?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-13",
+    "price": {
+      "regular": 110,
+      "discounted": 95,
+      "currency": "USD"
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL"],
+    "available_colors": ["Grey Heather", "Black", "Dark Marina Blue"],
+    "stock_status": "In Stock",
+    "sku": "NK-TFJ-013",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "66% Cotton, 34% Polyester",
+      "sole": "N/A",
+      "lining": "Tech Fleece"
+    },
+    "weight": "400g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Drawstring",
+    "country_of_origin": "Cambodia",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US Standard",
+    "fit_type": "Slim Tapered",
+    "model_fit_suggestion": "Runs small, order one size up for a looser fit",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      { "user": "Derrick W.", "text": "Best joggers on the market, very warm.", "date": "2023-11-18", "rating": 5 },
+      { "user": "Julian S.", "text": "Zipper pocket is perfect for phones.", "date": "2023-12-02", "rating": 5 },
+      { "user": "Mark B.", "text": "Too expensive for sweatpants, but quality is there.", "date": "2024-01-05", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "None",
+    "quantity_available": 120,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "ACC-014",
+    "product_name": "Timberland Men's Classic Leather Belt",
+    "brand_name": "Timberland",
+    "category": ["Men", "Accessories", "Belts"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1614165939092-4467c9f8078c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1624222247344-550fb8055571?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-14",
+    "price": {
+      "regular": 25,
+      "discounted": 22.50,
+      "currency": "USD"
+    },
+    "available_sizes": ["32", "34", "36", "38", "40"],
+    "available_colors": ["Wheat", "Brown", "Black"],
+    "stock_status": "In Stock",
+    "sku": "TIM-CLB-014",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Genuine Leather",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "180g",
+    "heel_type": "N/A",
+    "closure_type": "Single Prong Buckle",
+    "country_of_origin": "India",
+    "care_instructions": "Spot clean",
+    "size_system": "US Inches",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      { "user": "George P.", "text": "Solid belt that matches my Timbs perfectly.", "date": "2023-08-15", "rating": 5 },
+      { "user": "Felix L.", "text": "Good quality leather for the price.", "date": "2023-10-20", "rating": 5 },
+      { "user": "Brian K.", "text": "The buckle finish scratches easily.", "date": "2023-12-10", "rating": 3 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "$4.99",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLO-015",
+    "product_name": "The North Face Women's Denali Jacket",
+    "brand_name": "The North Face",
+    "category": ["Women", "Outdoors", "Apparel"],
+    "product_images": [
+      "https://images.unsplash.com/photo-1634547466547-06368d44747c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-link-15",
+    "price": {
+      "regular": 180,
+      "discounted": 180,
+      "currency": "USD"
+    },
+    "available_sizes": ["XS", "S", "M", "L", "XL"],
+    "available_colors": ["TNF Black", "Gardenia White", "Lavender Fog"],
+    "stock_status": "In Stock",
+    "sku": "TNF-WDN-015",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Recycled Polyester Fleece",
+      "sole": "N/A",
+      "lining": "Water-repellent overlay"
+    },
+    "weight": "500g",
+    "heel_type": "N/A",
+    "closure_type": "Full Zip",
+    "country_of_origin": "El Salvador",
+    "care_instructions": "Machine wash warm, tumble dry low",
+    "size_system": "US Standard",
+    "fit_type": "Relaxed",
+    "model_fit_suggestion": "Roomy fit, great for layering",
+    "bundle_offers": ["None"],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      { "user": "Emily R.", "text": "Extremely warm and the vintage look is cool.", "date": "2023-11-20", "rating": 5 },
+      { "user": "Sarah M.", "text": "Love the reinforcement on the chest and shoulders.", "date": "2023-12-15", "rating": 5 },
+      { "user": "Jessica D.", "text": "The sleeves are a bit long for me.", "date": "2024-01-02", "rating": 4 }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 110,
+    "is_best_seller": true,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BOOT-DM-1460",
+    "product_name": "Dr. Martens 1460 Smooth Leather Boots",
+    "brand_name": "Dr. Martens",
+    "category": [
+      "Unisex",
+      "Shoes",
+      "Boots"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1541778480-fc17528afc11?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=Wy_f0GqWkX0",
+    "price": {
+      "regular": 170,
+      "discounted": 170,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "US 7",
+      "US 8",
+      "US 9",
+      "US 10",
+      "US 11"
+    ],
+    "available_colors": [
+      "Black",
+      "Cherry Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "DM-1460-BLK",
+    "shoe_type": "Boot",
+    "material": {
+      "upper": "Smooth Leather",
+      "sole": "PVC AirWair",
+      "lining": "Leather/Textile"
+    },
+    "weight": "850g",
+    "heel_type": "Block",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Thailand",
+    "care_instructions": "Clean with damp cloth, apply Wonder Balsam",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Requires break-in period",
+    "bundle_offers": [
+      "Free yellow laces included"
+    ],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "Alice Cooper",
+        "text": "Painful for the first week, but now they are the most comfortable shoes I own.",
+        "date": "2023-09-10",
+        "rating": 5
+      },
+      {
+        "user": "Bob Marley",
+        "text": "Classic style. Indestructible sole.",
+        "date": "2023-11-05",
+        "rating": 5
+      },
+      {
+        "user": "Charlie P.",
+        "text": "They run a bit large, I suggest sizing down.",
+        "date": "2024-01-12",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year Warranty",
+    "quantity_available": 100,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "UND-CK-3PK",
+    "product_name": "Calvin Klein Cotton Stretch Boxer Briefs 3-Pack",
+    "brand_name": "Calvin Klein",
+    "category": [
+      "Men",
+      "Clothing",
+      "Underwear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1583425423320-2386622cd2e4?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-video-ck",
+    "price": {
+      "regular": 45,
+      "discounted": 39.50,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "available_colors": [
+      "Black/White/Grey",
+      "All Black"
+    ],
+    "stock_status": "In Stock",
+    "sku": "CK-BOX-3PK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "95% Cotton, 5% Elastane",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "200g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Waist",
+    "country_of_origin": "India",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Tight",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      {
+        "user": "David B.",
+        "text": "Waistband doesn't roll over. Very good.",
+        "date": "2023-08-20",
+        "rating": 5
+      },
+      {
+        "user": "Sam K.",
+        "text": "Cotton feels premium but legs ride up a little.",
+        "date": "2023-10-15",
+        "rating": 4
+      },
+      {
+        "user": "John D.",
+        "text": "Best basics you can buy.",
+        "date": "2024-01-02",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "5.00",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "BAG-FJ-KANK",
+    "product_name": "Fjallraven Kanken Classic Backpack",
+    "brand_name": "Fjallraven",
+    "category": [
+      "Unisex",
+      "Bags",
+      "Backpacks"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1590422749847-759b6d644782?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=tT47VjVfM1Y",
+    "price": {
+      "regular": 90,
+      "discounted": 80,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "16L"
+    ],
+    "available_colors": [
+      "Ochre",
+      "Frost Green",
+      "Black"
+    ],
+    "stock_status": "In Stock",
+    "sku": "FJL-KAN-OCH",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Vinylon F",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "300g",
+    "heel_type": "N/A",
+    "closure_type": "Zip",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Soft brush and lukewarm water",
+    "size_system": "N/A",
+    "fit_type": "Boxy",
+    "model_fit_suggestion": "Small but spacious",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Emma W.",
+        "text": "Love the color! Fits my MacBook Air perfectly.",
+        "date": "2023-12-01",
+        "rating": 5
+      },
+      {
+        "user": "Liam N.",
+        "text": "Straps are thin, not great for heavy books.",
+        "date": "2024-01-10",
+        "rating": 4
+      },
+      {
+        "user": "Olivia S.",
+        "text": "Water resistant fabric actually works.",
+        "date": "2024-02-15",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Limited Lifetime Warranty",
+    "quantity_available": 150,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "POLO-RL-SLIM",
+    "product_name": "Ralph Lauren Custom Slim Fit Polo",
+    "brand_name": "Ralph Lauren",
+    "category": [
+      "Men",
+      "Clothing",
+      "Tops"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1626427389140-59cb27404a11?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1598522338167-75949d06b53b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-polo-rl",
+    "price": {
+      "regular": 110,
+      "discounted": 110,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "available_colors": [
+      "White",
+      "Navy",
+      "Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "RL-POL-NAV",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Cotton Mesh",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "250g",
+    "heel_type": "N/A",
+    "closure_type": "Button",
+    "country_of_origin": "China",
+    "care_instructions": "Machine wash warm",
+    "size_system": "US",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Size up for looser fit",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "George H.",
+        "text": "Iconic. The fabric breathes really well in summer.",
+        "date": "2023-07-20",
+        "rating": 5
+      },
+      {
+        "user": "Frank T.",
+        "text": "Sleeves are a bit tight on the biceps.",
+        "date": "2023-09-11",
+        "rating": 4
+      },
+      {
+        "user": "Bill K.",
+        "text": "Color holds up after many washes.",
+        "date": "2024-01-05",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 200,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "BELT-FOS-JOE",
+    "product_name": "Fossil Joe Belt",
+    "brand_name": "Fossil",
+    "category": [
+      "Men",
+      "Accessories",
+      "Belts"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1553545985-1e0d8781d5db?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1616782299710-18e404b96788?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-belt-vid",
+    "price": {
+      "regular": 40,
+      "discounted": 34,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "available_colors": [
+      "Brown",
+      "Black"
+    ],
+    "stock_status": "Low Stock",
+    "sku": "FOS-JOE-BRN",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Genuine Leather",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "150g",
+    "heel_type": "N/A",
+    "closure_type": "Buckle",
+    "country_of_origin": "India",
+    "care_instructions": "Wipe clean",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Order 2 inches larger than waist size",
+    "bundle_offers": [],
+    "customer_ratings": 4.4,
+    "customer_reviews": [
+      {
+        "user": "Mark Y.",
+        "text": "Solid everyday belt. Leather is thick.",
+        "date": "2023-11-20",
+        "rating": 5
+      },
+      {
+        "user": "Luke P.",
+        "text": "Buckle feels a bit cheap but looks good.",
+        "date": "2023-12-15",
+        "rating": 4
+      },
+      {
+        "user": "Tony S.",
+        "text": "Great vintage look.",
+        "date": "2024-02-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "4.99",
+    "cod_available": true,
+    "warranty": "1 Year Warranty",
+    "quantity_available": 20,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "WALT-RDG-ALU",
+    "product_name": "The Ridge Wallet - Aluminum",
+    "brand_name": "The Ridge",
+    "category": [
+      "Men",
+      "Accessories",
+      "Wallets"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1620706689714-c8c34c452c93?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1634710186985-5b486b02660b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-ridge-vid",
+    "price": {
+      "regular": 95,
+      "discounted": 85,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "One Size"
+    ],
+    "available_colors": [
+      "Gunmetal",
+      "Matte Black",
+      "Navy"
+    ],
+    "stock_status": "In Stock",
+    "sku": "RDG-ALU-BLK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "6061-T6 Aluminum",
+      "sole": "N/A",
+      "lining": "Elastic"
+    },
+    "weight": "56g",
+    "heel_type": "N/A",
+    "closure_type": "Elastic Strap",
+    "country_of_origin": "China",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "N/A",
+    "fit_type": "Minimalist",
+    "model_fit_suggestion": "Holds 1-12 cards",
+    "bundle_offers": [
+      "Includes cash strap and money clip"
+    ],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "TechGuy99",
+        "text": "Changed my pocket game forever. So slim.",
+        "date": "2023-09-30",
+        "rating": 5
+      },
+      {
+        "user": "OldSchool",
+        "text": "Hard to get specific cards out quickly.",
+        "date": "2023-11-12",
+        "rating": 3
+      },
+      {
+        "user": "Minimalist M.",
+        "text": "Durable and blocks RFID. Love it.",
+        "date": "2024-01-08",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "SHOE-VANS-OS",
+    "product_name": "Vans Old Skool",
+    "brand_name": "Vans",
+    "category": [
+      "Unisex",
+      "Shoes",
+      "Sneakers"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1565158623547-020589a1c6a7?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-vans-vid",
+    "price": {
+      "regular": 70,
+      "discounted": 65,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "US 6",
+      "US 7",
+      "US 8",
+      "US 9",
+      "US 10",
+      "US 11",
+      "US 12"
+    ],
+    "available_colors": [
+      "Black/White",
+      "Navy",
+      "Checkerboard"
+    ],
+    "stock_status": "In Stock",
+    "sku": "VNS-OLD-BLK",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "Suede/Canvas",
+      "sole": "Waffle Rubber",
+      "lining": "Textile"
+    },
+    "weight": "420g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Spot clean",
+    "size_system": "US",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Skater Boi",
+        "text": "Classic skate shoe. Board feel is amazing.",
+        "date": "2023-08-15",
+        "rating": 5
+      },
+      {
+        "user": "Jenny L.",
+        "text": "Super cute with dresses or jeans.",
+        "date": "2023-10-02",
+        "rating": 5
+      },
+      {
+        "user": "Mike R.",
+        "text": "Suede fades a bit fast if you wear them daily.",
+        "date": "2023-12-20",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "5.99",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 500,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "JKT-CG-EXP",
+    "product_name": "Canada Goose Expedition Parka",
+    "brand_name": "Canada Goose",
+    "category": [
+      "Men",
+      "Clothing",
+      "Outerwear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1542841791-1925b02a2bbb?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-cg-vid",
+    "price": {
+      "regular": 1495,
+      "discounted": 1495,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "available_colors": [
+      "Black",
+      "Red",
+      "White"
+    ],
+    "stock_status": "In Stock",
+    "sku": "CG-EXP-RED",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Arctic Tech",
+      "sole": "N/A",
+      "lining": "625 Fill Power Down"
+    },
+    "weight": "1500g",
+    "heel_type": "N/A",
+    "closure_type": "Zip and Velcro",
+    "country_of_origin": "Canada",
+    "care_instructions": "Dry clean only",
+    "size_system": "US",
+    "fit_type": "Oversized",
+    "model_fit_suggestion": "Runs very large, size down",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      {
+        "user": "Arctic Explorer",
+        "text": "Kept me warm at -30C. Worth every penny.",
+        "date": "2023-01-15",
+        "rating": 5
+      },
+      {
+        "user": "City Dweller",
+        "text": "Too warm for regular city winter, honestly.",
+        "date": "2023-11-20",
+        "rating": 4
+      },
+      {
+        "user": "Richie R.",
+        "text": "The quality is undeniable.",
+        "date": "2024-01-05",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 30,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-LC-PLI",
+    "product_name": "Longchamp Le Pliage Original Tote L",
+    "brand_name": "Longchamp",
+    "category": [
+      "Women",
+      "Bags",
+      "Totes"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1598532163257-99a37f0e136e?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=dummy-lc-vid",
+    "price": {
+      "regular": 145,
+      "discounted": 145,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "Large"
+    ],
+    "available_colors": [
+      "Black",
+      "Navy",
+      "Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "LC-PLI-NAV",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polyamide Canvas",
+      "sole": "N/A",
+      "lining": "Unlined"
+    },
+    "weight": "300g",
+    "heel_type": "N/A",
+    "closure_type": "Zip and Snap",
+    "country_of_origin": "France",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "N/A",
+    "fit_type": "Spacious",
+    "model_fit_suggestion": "Folds up small for travel",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Traveler Jane",
+        "text": "The best travel bag. Indestructible.",
+        "date": "2023-09-12",
+        "rating": 5
+      },
+      {
+        "user": "Office Girl",
+        "text": "Corners wear out after a few years, but I still buy it.",
+        "date": "2023-11-08",
+        "rating": 4
+      },
+      {
+        "user": "Sophie M.",
+        "text": "Fits everything perfectly.",
+        "date": "2024-02-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Manufacturer Defect Only",
+    "quantity_available": 120,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "JEAN-501",
+    "product_name": "Levi's 501 Original Fit Jeans",
+    "brand_name": "Levi's",
+    "category": [
+      "Men",
+      "Clothing",
+      "Denim"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=b2vUcsjNDks",
+    "price": {
+      "regular": 79.5,
+      "discounted": 69.99,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "29W 30L",
+      "30W 30L",
+      "31W 32L",
+      "32W 32L",
+      "34W 32L"
+    ],
+    "available_colors": [
+      "Indigo",
+      "Black",
+      "Light Wash"
+    ],
+    "stock_status": "In Stock",
+    "sku": "LEV-501-IND",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Cotton Denim",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "600g",
+    "heel_type": "N/A",
+    "closure_type": "Button Fly",
+    "country_of_origin": "Mexico",
+    "care_instructions": "Wash cold, tumble dry medium",
+    "size_system": "US",
+    "fit_type": "Straight",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [
+      "Buy 2 pairs for $120"
+    ],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "Michael T.",
+        "text": "The classic fit is unbeatable. They break in perfectly after a few washes.",
+        "date": "2023-09-12",
+        "rating": 5
+      },
+      {
+        "user": "David B.",
+        "text": "Button fly takes some getting used to, but the denim quality is top notch.",
+        "date": "2023-11-05",
+        "rating": 4
+      },
+      {
+        "user": "Chris A.",
+        "text": "A bit stiff at first, but that's what you expect from real denim.",
+        "date": "2024-01-20",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Limited Warranty",
+    "quantity_available": 300,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-HLA-30",
+    "product_name": "Herschel Little America Backpack",
+    "brand_name": "Herschel Supply Co.",
+    "category": [
+      "Unisex",
+      "Bags",
+      "Travel"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1581605405669-fcdf8116543f?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=pBJWl5k6xfA",
+    "price": {
+      "regular": 120,
+      "discounted": 100,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "One Size"
+    ],
+    "available_colors": [
+      "Black",
+      "Navy",
+      "Grey"
+    ],
+    "stock_status": "In Stock",
+    "sku": "HER-LA-30L",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polyester",
+      "sole": "N/A",
+      "lining": "Signature Striped Fabric"
+    },
+    "weight": "900g",
+    "heel_type": "N/A",
+    "closure_type": "Magnetic Strap",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Spot clean only",
+    "size_system": "N/A",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Fits 15-inch laptop",
+    "bundle_offers": [
+      "Free pencil case with purchase"
+    ],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Sarah L.",
+        "text": "Perfect for college. The laptop sleeve is super plush and protective.",
+        "date": "2023-08-15",
+        "rating": 5
+      },
+      {
+        "user": "James K.",
+        "text": "Great style, but the magnetic snaps can be a bit finicky to align quickly.",
+        "date": "2023-10-22",
+        "rating": 4
+      },
+      {
+        "user": "Emily R.",
+        "text": "Very comfortable straps even when fully loaded.",
+        "date": "2023-12-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Limited Lifetime Warranty",
+    "quantity_available": 120,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BELT-GUC-GG",
+    "product_name": "Gucci Double G Leather Belt",
+    "brand_name": "Gucci",
+    "category": [
+      "Women",
+      "Accessories",
+      "Belts"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1624222247342-19e497f6d084?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=raGwbjxwEB4",
+    "price": {
+      "regular": 490,
+      "discounted": 490,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "75cm",
+      "80cm",
+      "85cm",
+      "90cm"
+    ],
+    "available_colors": [
+      "Black",
+      "Dusty Pink",
+      "White"
+    ],
+    "stock_status": "In Stock",
+    "sku": "GUC-GG-BLK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Leather",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "300g",
+    "heel_type": "N/A",
+    "closure_type": "Buckle",
+    "country_of_origin": "Italy",
+    "care_instructions": "Professional leather clean",
+    "size_system": "EU",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Order one size up for hip wear",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      {
+        "user": "Jessica M.",
+        "text": "Absolutely stunning. Elevates any outfit immediately.",
+        "date": "2023-11-10",
+        "rating": 5
+      },
+      {
+        "user": "Ashley W.",
+        "text": "The leather is high quality, but it scratches if you aren't careful.",
+        "date": "2023-12-05",
+        "rating": 4
+      },
+      {
+        "user": "Sophia L.",
+        "text": "Worth the investment. A timeless classic.",
+        "date": "2024-01-12",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "5-7 Business Days",
+    "shipping_cost": "25.00",
+    "cod_available": false,
+    "warranty": "2 Year Manufacturer Warranty",
+    "quantity_available": 50,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "WALT-BEL-SLM",
+    "product_name": "Bellroy Slim Sleeve Wallet",
+    "brand_name": "Bellroy",
+    "category": [
+      "Men",
+      "Accessories",
+      "Wallets"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1627123424574-181ce5171af3?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1627123424683-b7964402636a?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=wzgCRtVjt8w",
+    "price": {
+      "regular": 79,
+      "discounted": 69,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "One Size"
+    ],
+    "available_colors": [
+      "Tan",
+      "Black",
+      "Cocoa"
+    ],
+    "stock_status": "In Stock",
+    "sku": "BEL-SS-TAN",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Eco-tanned Leather",
+      "sole": "N/A",
+      "lining": "Polyester"
+    },
+    "weight": "50g",
+    "heel_type": "N/A",
+    "closure_type": "Bi-fold",
+    "country_of_origin": "India",
+    "care_instructions": "Wipe with damp cloth",
+    "size_system": "N/A",
+    "fit_type": "Slim",
+    "model_fit_suggestion": "Holds 4-8 cards comfortably",
+    "bundle_offers": [
+      "10% off with key holder"
+    ],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Tom H.",
+        "text": "Finally, a wallet that doesn't bulge in my pocket. The pull-tab is genius.",
+        "date": "2023-09-20",
+        "rating": 5
+      },
+      {
+        "user": "Ryan G.",
+        "text": "Leather feels premium. It holds less cash than I'd like, but great for cards.",
+        "date": "2023-10-30",
+        "rating": 4
+      },
+      {
+        "user": "Kevin P.",
+        "text": "Minimalist perfection. Aging beautifully after 6 months.",
+        "date": "2024-01-02",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "5.00",
+    "cod_available": true,
+    "warranty": "3 Year Warranty",
+    "quantity_available": 200,
+    "is_best_seller": false,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": false
+  },
+  {
+    "product_id": "JKT-TNF-1996",
+    "product_name": "The North Face 1996 Retro Nuptse Jacket",
+    "brand_name": "The North Face",
+    "category": [
+      "Unisex",
+      "Clothing",
+      "Outerwear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1517942481491-a589e4141680?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=WUWgeP2bUhE",
+    "price": {
+      "regular": 330,
+      "discounted": 330,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "available_colors": [
+      "Black",
+      "Yellow",
+      "Blue"
+    ],
+    "stock_status": "In Stock",
+    "sku": "TNF-NUP-BLK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Nylon Ripstop",
+      "sole": "N/A",
+      "lining": "Goose Down"
+    },
+    "weight": "720g",
+    "heel_type": "N/A",
+    "closure_type": "Zip",
+    "country_of_origin": "Bangladesh",
+    "care_instructions": "Machine wash warm, tumble dry low",
+    "size_system": "US",
+    "fit_type": "Boxy",
+    "model_fit_suggestion": "Runs slightly large",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Alex F.",
+        "text": "Incredibly warm and packs down into its own pocket. Essential for winter.",
+        "date": "2023-12-15",
+        "rating": 5
+      },
+      {
+        "user": "Brian K.",
+        "text": "Classic look. It is a bit puffy for driving, but great for walking.",
+        "date": "2024-01-08",
+        "rating": 4
+      },
+      {
+        "user": "Matt S.",
+        "text": "The quality is unmatched. I've had mine for years.",
+        "date": "2024-02-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Lifetime Warranty",
+    "quantity_available": 80,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "SUN-RB-AV",
+    "product_name": "Ray-Ban Aviator Classic",
+    "brand_name": "Ray-Ban",
+    "category": [
+      "Unisex",
+      "Accessories",
+      "Sunglasses"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=MFq5MilKUDY",
+    "price": {
+      "regular": 163,
+      "discounted": 145,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "Standard",
+      "Large"
+    ],
+    "available_colors": [
+      "Gold/Green",
+      "Silver/Grey",
+      "Black"
+    ],
+    "stock_status": "In Stock",
+    "sku": "RB-3025-001",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Metal Frame",
+      "sole": "N/A",
+      "lining": "Glass Lens"
+    },
+    "weight": "30g",
+    "heel_type": "N/A",
+    "closure_type": "N/A",
+    "country_of_origin": "Italy",
+    "care_instructions": "Clean with microfiber cloth",
+    "size_system": "N/A",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "Standard fits most faces",
+    "bundle_offers": [
+      "Free care kit included"
+    ],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Daniel C.",
+        "text": "Can't beat the original. They look good with everything.",
+        "date": "2023-07-20",
+        "rating": 5
+      },
+      {
+        "user": "Mike R.",
+        "text": "Glass lenses are heavy but very clear. Don't drop them!",
+        "date": "2023-08-14",
+        "rating": 4
+      },
+      {
+        "user": "Steve J.",
+        "text": "Timeless style. The gold frame is very durable.",
+        "date": "2023-09-01",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "2-4 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "2 Year Warranty",
+    "quantity_available": 100,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "SHOE-UB-022",
+    "product_name": "Adidas Ultraboost Light",
+    "brand_name": "Adidas",
+    "category": [
+      "Men",
+      "Sports",
+      "Running"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aef4?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=shaGc6eGv80",
+    "price": {
+      "regular": 190,
+      "discounted": 160,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "US 8",
+      "US 9",
+      "US 10",
+      "US 11"
+    ],
+    "available_colors": [
+      "Cloud White",
+      "Core Black",
+      "Solar Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "ADI-UB-LGT",
+    "shoe_type": "Running",
+    "material": {
+      "upper": "Primeknit+ Textile",
+      "sole": "Continental Rubber",
+      "lining": "Textile"
+    },
+    "weight": "290g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "China",
+    "care_instructions": "Hand wash, air dry",
+    "size_system": "US",
+    "fit_type": "Sock-like",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Ben H.",
+        "text": "Most comfortable shoes I own. The new light boost is noticeably lighter.",
+        "date": "2023-10-05",
+        "rating": 5
+      },
+      {
+        "user": "Lucas P.",
+        "text": "Great for running and walking, though the white gets dirty fast.",
+        "date": "2023-11-12",
+        "rating": 4
+      },
+      {
+        "user": "Gary N.",
+        "text": "Excellent energy return on long runs.",
+        "date": "2024-01-10",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "1 Year Manufacturer Warranty",
+    "quantity_available": 75,
+    "is_best_seller": true,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-MK-JET",
+    "product_name": "Michael Kors Jet Set Tote",
+    "brand_name": "Michael Kors",
+    "category": [
+      "Women",
+      "Bags",
+      "Totes"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=xA5-15C-UHk",
+    "price": {
+      "regular": 298,
+      "discounted": 149,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "Large"
+    ],
+    "available_colors": [
+      "Brown",
+      "Vanilla",
+      "Black"
+    ],
+    "stock_status": "In Stock",
+    "sku": "MK-JET-BRN",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Saffiano Leather",
+      "sole": "N/A",
+      "lining": "Polyester"
+    },
+    "weight": "800g",
+    "heel_type": "N/A",
+    "closure_type": "Zip",
+    "country_of_origin": "Cambodia",
+    "care_instructions": "Wipe clean",
+    "size_system": "N/A",
+    "fit_type": "Spacious",
+    "model_fit_suggestion": "Fits 13-inch laptop",
+    "bundle_offers": [
+      "50% off wallet with bag purchase"
+    ],
+    "customer_ratings": 4.6,
+    "customer_reviews": [
+      {
+        "user": "Amanda S.",
+        "text": "My go-to work bag. Durable and fits everything I need.",
+        "date": "2023-09-02",
+        "rating": 5
+      },
+      {
+        "user": "Rachel D.",
+        "text": "Beautiful bag but the straps are a little thin for heavy loads.",
+        "date": "2023-10-18",
+        "rating": 4
+      },
+      {
+        "user": "Chloe M.",
+        "text": "Love the zipper closure, keeps everything secure on the subway.",
+        "date": "2023-11-25",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year Limited Warranty",
+    "quantity_available": 200,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "PANT-LULU-ALN",
+    "product_name": "Lululemon Align High-Rise Pant 25\"",
+    "brand_name": "Lululemon",
+    "category": [
+      "Women",
+      "Clothing",
+      "Activewear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1506619216599-9d939743f0cb?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1552160793-cbafc83095c1?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=TWs0IMValMI",
+    "price": {
+      "regular": 98,
+      "discounted": 98,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "available_colors": [
+      "Black",
+      "True Navy",
+      "Dark Olive"
+    ],
+    "stock_status": "In Stock",
+    "sku": "LULU-ALN-BLK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Nulu Fabric",
+      "sole": "N/A",
+      "lining": "N/A"
+    },
+    "weight": "200g",
+    "heel_type": "N/A",
+    "closure_type": "Pull-on",
+    "country_of_origin": "Sri Lanka",
+    "care_instructions": "Machine wash cold, tumble dry low",
+    "size_system": "US",
+    "fit_type": "Tight",
+    "model_fit_suggestion": "True to size, buttery soft feel",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Jenny W.",
+        "text": "Literally feels like wearing nothing. So soft.",
+        "date": "2023-08-30",
+        "rating": 5
+      },
+      {
+        "user": "Laura B.",
+        "text": "Great for yoga but they pill if your thighs rub together.",
+        "date": "2023-10-12",
+        "rating": 4
+      },
+      {
+        "user": "Sarah H.",
+        "text": "Best leggings on the market. Worth every penny.",
+        "date": "2024-01-05",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": true,
+    "warranty": "Quality Promise",
+    "quantity_available": 150,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "SHOE-CON-70",
+    "product_name": "Converse Chuck 70 Vintage Canvas",
+    "brand_name": "Converse",
+    "category": [
+      "Unisex",
+      "Shoes",
+      "Sneakers"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1494496195158-c31b43097f93?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=cjCPiCJzQXs",
+    "price": {
+      "regular": 90,
+      "discounted": 85,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "US 7",
+      "US 8",
+      "US 9",
+      "US 10"
+    ],
+    "available_colors": [
+      "Black",
+      "Parchment",
+      "Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "CON-C70-PAR",
+    "shoe_type": "Sneaker",
+    "material": {
+      "upper": "12oz Canvas",
+      "sole": "Rubber",
+      "lining": "Canvas"
+    },
+    "weight": "400g",
+    "heel_type": "Flat",
+    "closure_type": "Lace-up",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Spot clean only",
+    "size_system": "US",
+    "fit_type": "Narrow",
+    "model_fit_suggestion": "Runs large, order half size down",
+    "bundle_offers": [],
+    "customer_ratings": 4.7,
+    "customer_reviews": [
+      {
+        "user": "Evan M.",
+        "text": "Way more comfortable than the regular All Stars. The insole is great.",
+        "date": "2023-09-05",
+        "rating": 5
+      },
+      {
+        "user": "Kate P.",
+        "text": "Love the vintage look and the glossy midsole.",
+        "date": "2023-11-20",
+        "rating": 5
+      },
+      {
+        "user": "Jack D.",
+        "text": "They run big, definitely size down.",
+        "date": "2023-12-15",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "5.99",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 200,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLTH-PAT-FLEE",
+    "product_name": "Patagonia Better Sweater Fleece Jacket",
+    "brand_name": "Patagonia",
+    "category": [
+      "Men",
+      "Clothing",
+      "Outerwear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1504194569245-2f41b2b62947?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=gROvKfoVys8",
+    "price": {
+      "regular": 149,
+      "discounted": 149,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "available_colors": [
+      "Stonewash",
+      "Black",
+      "Navy"
+    ],
+    "stock_status": "In Stock",
+    "sku": "PAT-BS-STO",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Recycled Polyester Fleece",
+      "sole": "N/A",
+      "lining": "Polyester Jersey"
+    },
+    "weight": "638g",
+    "heel_type": "N/A",
+    "closure_type": "Zip",
+    "country_of_origin": "Thailand",
+    "care_instructions": "Machine wash warm, tumble dry low",
+    "size_system": "US",
+    "fit_type": "Regular",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [],
+    "customer_ratings": 4.9,
+    "customer_reviews": [
+      {
+        "user": "Rob S.",
+        "text": "The perfect mid-layer. Warm but breathable.",
+        "date": "2023-10-10",
+        "rating": 5
+      },
+      {
+        "user": "Tim W.",
+        "text": "Looks professional enough for the office but performs on the trail.",
+        "date": "2023-12-05",
+        "rating": 5
+      },
+      {
+        "user": "Greg L.",
+        "text": "Sleeves are a bit long, but otherwise a great fit.",
+        "date": "2024-01-15",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "Ironclad Guarantee",
+    "quantity_available": 60,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "BAG-COA-TAB",
+    "product_name": "Coach Tabby Shoulder Bag 26",
+    "brand_name": "Coach",
+    "category": [
+      "Women",
+      "Bags",
+      "Handbags"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1590739225287-bd2f20e6a0b9?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=OoqQZx0VF-g",
+    "price": {
+      "regular": 395,
+      "discounted": 395,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "26cm"
+    ],
+    "available_colors": [
+      "Black",
+      "Chalk",
+      "Red"
+    ],
+    "stock_status": "In Stock",
+    "sku": "COA-TAB-26",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polished Pebble Leather",
+      "sole": "N/A",
+      "lining": "Fabric"
+    },
+    "weight": "700g",
+    "heel_type": "N/A",
+    "closure_type": "Snap",
+    "country_of_origin": "Vietnam",
+    "care_instructions": "Use Coach leather cleaner",
+    "size_system": "N/A",
+    "fit_type": "Structured",
+    "model_fit_suggestion": "Comes with two straps for versatility",
+    "bundle_offers": [],
+    "customer_ratings": 4.8,
+    "customer_reviews": [
+      {
+        "user": "Monica G.",
+        "text": "The 'It' bag of the year. Looks so expensive.",
+        "date": "2023-09-18",
+        "rating": 5
+      },
+      {
+        "user": "Lisa K.",
+        "text": "Perfect size for essentials. The C buckle scratches easily though.",
+        "date": "2023-11-02",
+        "rating": 4
+      },
+      {
+        "user": "Rachel F.",
+        "text": "Love that I can wear it crossbody or as a shoulder bag.",
+        "date": "2023-12-20",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "Free",
+    "cod_available": false,
+    "warranty": "1 Year Warranty",
+    "quantity_available": 40,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": true,
+    "is_featured": true
+  },
+  {
+    "product_id": "CLTH-NKE-HD",
+    "product_name": "Nike Sportswear Club Fleece Hoodie",
+    "brand_name": "Nike",
+    "category": [
+      "Men",
+      "Clothing",
+      "Activewear"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1556906781-9a412961d28c?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=WUWgeP2bUhE",
+    "price": {
+      "regular": 60,
+      "discounted": 45,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "available_colors": [
+      "Grey Heather",
+      "Black",
+      "Navy"
+    ],
+    "stock_status": "In Stock",
+    "sku": "NKE-CLB-GRY",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Cotton/Polyester Blend",
+      "sole": "N/A",
+      "lining": "Brushed Fleece"
+    },
+    "weight": "400g",
+    "heel_type": "N/A",
+    "closure_type": "Pullover",
+    "country_of_origin": "Cambodia",
+    "care_instructions": "Machine wash cold",
+    "size_system": "US",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "True to size",
+    "bundle_offers": [
+      "2 for $80"
+    ],
+    "customer_ratings": 4.5,
+    "customer_reviews": [
+      {
+        "user": "Jason D.",
+        "text": "A classic staple. Soft and fits well.",
+        "date": "2023-10-01",
+        "rating": 5
+      },
+      {
+        "user": "Mark S.",
+        "text": "Shrinks a little bit after drying, maybe size up.",
+        "date": "2023-11-15",
+        "rating": 4
+      },
+      {
+        "user": "Paul B.",
+        "text": "Good value for the price. Very comfortable.",
+        "date": "2024-01-10",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "5.99",
+    "cod_available": true,
+    "warranty": "N/A",
+    "quantity_available": 500,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "WALT-TOM-LEA",
+    "product_name": "Tommy Hilfiger Leather Ranger Wallet",
+    "brand_name": "Tommy Hilfiger",
+    "category": [
+      "Men",
+      "Accessories",
+      "Wallets"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1605733513597-a8f8341084e6?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1620706689626-d34e405a8f4c?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=y8nHEGtxIIA",
+    "price": {
+      "regular": 45,
+      "discounted": 29.99,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "One Size"
+    ],
+    "available_colors": [
+      "Black",
+      "Brown",
+      "Tan"
+    ],
+    "stock_status": "In Stock",
+    "sku": "TOM-RAN-BLK",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "100% Cowhide Leather",
+      "sole": "N/A",
+      "lining": "Leather"
+    },
+    "weight": "80g",
+    "heel_type": "N/A",
+    "closure_type": "Bi-fold",
+    "country_of_origin": "India",
+    "care_instructions": "Wipe clean",
+    "size_system": "N/A",
+    "fit_type": "Standard",
+    "model_fit_suggestion": "Fits all currencies",
+    "bundle_offers": [],
+    "customer_ratings": 4.4,
+    "customer_reviews": [
+      {
+        "user": "Harry O.",
+        "text": "Great quality leather for the price. Passcase is useful.",
+        "date": "2023-08-05",
+        "rating": 5
+      },
+      {
+        "user": "Will T.",
+        "text": "A bit thick when fully loaded, but durable.",
+        "date": "2023-09-22",
+        "rating": 4
+      },
+      {
+        "user": "Sam R.",
+        "text": "Classic gift for dad. He loves it.",
+        "date": "2023-12-18",
+        "rating": 5
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "4.99",
+    "cod_available": true,
+    "warranty": "1 Year Warranty",
+    "quantity_available": 250,
+    "is_best_seller": true,
+    "is_new_arrival": false,
+    "is_trending": false,
+    "is_featured": false
+  },
+  {
+    "product_id": "CLTH-ZRA-BLZ",
+    "product_name": "Zara Oversized Blazer",
+    "brand_name": "Zara",
+    "category": [
+      "Women",
+      "Clothing",
+      "Jackets"
+    ],
+    "product_images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1548624149-f80e03504360?auto=format&fit=crop&w=500&q=60"
+    ],
+    "product_video": "https://www.youtube.com/watch?v=iSdBU5AlQio",
+    "price": {
+      "regular": 89.90,
+      "discounted": 69.90,
+      "currency": "USD"
+    },
+    "available_sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "available_colors": [
+      "Black",
+      "Camel",
+      "Grey"
+    ],
+    "stock_status": "In Stock",
+    "sku": "ZAR-OV-BLZ",
+    "shoe_type": "N/A",
+    "material": {
+      "upper": "Polyester/Viscose",
+      "sole": "N/A",
+      "lining": "Acetate"
+    },
+    "weight": "500g",
+    "heel_type": "N/A",
+    "closure_type": "Button",
+    "country_of_origin": "Spain",
+    "care_instructions": "Dry clean only",
+    "size_system": "EU",
+    "fit_type": "Oversized",
+    "model_fit_suggestion": "Intentionally large, stick to your size",
+    "bundle_offers": [],
+    "customer_ratings": 4.3,
+    "customer_reviews": [
+      {
+        "user": "Olivia P.",
+        "text": "Chic and affordable. Looks great with jeans.",
+        "date": "2023-10-14",
+        "rating": 5
+      },
+      {
+        "user": "Emma S.",
+        "text": "Fabric feels a bit synthetic, but the cut is perfect.",
+        "date": "2023-11-28",
+        "rating": 4
+      },
+      {
+        "user": "Sophia K.",
+        "text": "Shoulder pads are a bit much for me, but very trendy.",
+        "date": "2024-01-20",
+        "rating": 4
+      }
+    ],
+    "verified_purchase": true,
+    "estimated_delivery_time": "3-5 Business Days",
+    "shipping_cost": "5.95",
+    "cod_available": false,
+    "warranty": "N/A",
+    "quantity_available": 90,
+    "is_best_seller": true,
+    "is_new_arrival": true,
+    "is_trending": true,
+    "is_featured": true
+  },
   {
     "product_id": "SHOE-001",
     "product_name": "Nike Air Zoom Pegasus 39",

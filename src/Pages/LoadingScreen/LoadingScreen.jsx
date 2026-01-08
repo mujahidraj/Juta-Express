@@ -33,7 +33,7 @@ const LoadingScreen = () => {
         />
       </div>
       <h2 className="mb-6 text-2xl font-black uppercase tracking-tight text-gray-900">
-        Juta<span className="text-amber-600">Express</span>
+        New<span className="text-amber-600">Lifestyle</span>
       </h2>
       <div className="relative h-1.5 w-64 overflow-hidden rounded-full bg-gray-100">
         <div className="absolute left-0 top-0 h-full w-full origin-left animate-[progress_2s_ease-in-out_infinite] bg-amber-500 rounded-full"></div>

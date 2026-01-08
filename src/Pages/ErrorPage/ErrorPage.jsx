@@ -8,7 +8,7 @@ const ErrorPage = () => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gray-50 px-4 text-center">
       <div className="absolute top-8">
-        <img src={logo} alt="Juta Express" className="h-10 opacity-50 grayscale" />
+        <img src={logo} alt="New Lifestyle" className="h-10 opacity-50 grayscale" />
       </div>
 
       <div className="relative z-10 max-w-lg">

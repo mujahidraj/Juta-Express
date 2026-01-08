@@ -91,9 +91,9 @@ const Navbar = () => {
           </div>
 
           <Link to="/" className="flex flex-col items-center justify-center gap-0 group">
-            <img className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-110" src={logo} alt="Juta Express" />
+            <img className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-110" src={logo} alt="New Lifestyle" />
             <h2 className="text-[10px] font-black uppercase leading-none tracking-tight text-gray-900 mt-1">
-              Juta<span className="text-amber-600">Express</span>
+              New<span className="text-amber-600"> Lifestyle</span>
             </h2>
           </Link>
 

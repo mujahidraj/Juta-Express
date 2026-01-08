@@ -35,10 +35,10 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img src={logo} alt="Logo" className="h-8 grayscale brightness-200" />
-              <span className="text-xl font-black uppercase tracking-tighter">Juta Express</span>
+              <span className="text-xl font-black uppercase tracking-tighter">New Lifestyle</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Bangladesh's #1 destination for premium footwear. We bridge the gap between performance and street style.
+              Bangladesh's #1 destination for premium Fashion Product. We bridge the gap between performance and street style.
             </p>
             <div className="flex gap-4 pt-2">
               {[<FiFacebook></FiFacebook>, <FiInstagram></FiInstagram>, <FiTwitter></FiTwitter>, <FiYoutube></FiYoutube>].map((icon, i) => (
@@ -81,11 +81,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <FiPhone className="h-5 w-5 text-amber-500" />
-                <span>+880 1796-059406</span>
+                <span>+8801641621584</span>
               </li>
               <li className="flex items-center gap-3">
                 <FiMail className="h-5 w-5 text-amber-500" />
-                <span>jutaexpress@gmail.com</span>
+                <span>newlifestylenls2026@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -93,7 +93,8 @@ const Footer = () => {
         </div>
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 md:flex-row">
 
-          <p>&copy; {new Date().getFullYear()} Juta Express. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} New Lifestyle. All rights reserved.</p>
+          <p> Developed by Mujahid Raj with TechWisdom web solution LTD.</p>
 
           <div className="flex gap-4">
             <div className="h-8 w-12 rounded bg-white/10 flex items-center justify-center text-[10px] font-bold text-gray-300">VISA</div>
