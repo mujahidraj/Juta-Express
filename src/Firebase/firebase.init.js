@@ -18,5 +18,15 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-// eslint-disable-next-line no-unused-vars
-const analytics = getAnalytics(app);
+
+const canUseAnalytics = Boolean(firebaseConfig.projectId)
+  && Boolean(firebaseConfig.appId)
+  && Boolean(firebaseConfig.measurementId);
+
+if (canUseAnalytics) {
+  getAnalytics(app);
+} else if (import.meta.env.DEV) {
+  console.warn(
+    "Firebase analytics disabled: missing VITE_projectId, VITE_appId, or VITE_measurementId."
+  );
+}
